@@ -1,0 +1,280 @@
+<!--
+  AUTORES: Alejandro Ortega Freire
+  ASIGNATURA: Fundamentos de Hardware
+  CURSO: 1º ASIR 
+  FECHA: 03/04/2014
+  ACTIVIDAD:  A2: Recuperación de datos
+-->
+
+<html>
+	<head>
+		<title>A1: Recuperaci&oacute;n de datos</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	</head>
+	<body>
+		<div id='indice' style='display:table-row; padding: 10px;'>
+			  <div style='float: left; width=20%; padding:10px;'>
+				<img src='./files/logo.png'/>
+			  </div>
+			  <div style='float: left;padding:10px'>
+				  <ul>
+					<li><b>M&oacute;dulo:</b> <i>Fundamentos de Hardware</i></li>
+					<li><b>T&iacute;tulo del trabajo:</b> <i>A2: Recuperación de datos</i></li>
+					<li><b>Componentes del grupo:</b> <i>Alejandro Ortega Freire</i></li>
+					<li><b>Curso Acad&eacute;mico:</b> <i>2013/2014</i></li>
+					<li><b>Fecha de entrega:</b> <i>03 de abril de 2014</i></li>
+				  </ul>
+			  </div>
+		</div>
+		<div style='float: clear;background-color: #eeeeee; border:2px solid; border-radius:10px; padding: 10px;'>
+			<a href='#indice'>1.- Introducción</a> | <a href='#2'>2- Soporte en fichero</a> | <a href='#2.1'>2.1- Crear fichero</a> | <a href='#2.2'>2.2.- Formatear fichero</a> | <a href='#3'>3.- Escribir en el soporte</a> | <a href='#3.1'>3.1- Acceder</a> | <a href='#3.2'>3.2- Escribir en el sistema</a> | <a href='#4'>4.- Eliminar un fichero</a> | <a href='#5'>5.- Recuperación</a> | <a href='#5.1'>5.1- Clonar el fichero soporte</a> | <a href='#5.2'>5.2- Herramientas de recuperación</a> | <a href='#5.3'>5.3- TestDisk</a> | <a href='#5.4'>5.4- Scalpel</a>
+		</div>
+	<h1>1.- Introducción</h1>
+	<p>Se va a emplear una máquina virtual con Sistema Operativo GNU/Linux (se utilizó un Ubuntu 12.04), para simular el borrado de un fichero y su recuperación.
+	<br/>
+	Para el dispositivo de almacenamiento donde se va a aplicar la recuperación, se puede elegir entre los siguientes:
+	<br/>
+	<ul>
+		<li>Un disquete real</li>
+		<li>Un fichero</li>
+	</ul></p>
+	<div style='float: clear;background-color: #D7FABC; border:2px dotted; border-radius:10px; padding: 10px;'>
+		<b>NOTA 1:</b>Dado que se dispone de un portátil sin disquetera se opta por realizar la práctica con un <b>FICHERO</b>.
+	</div>
+	<hr id='2' size='3px' noshade='noshade'/>
+	<a href='#indice'><img src='./files/flecha2.png' class='icon' width='20px'/></a> <a href='#indice'>Principio del punto 1</a> | <a href='#3'><img src='./files/flecha.png' class='icon' width='20px'/></a> <a href='#3'>Fin del punto 2</a> | <a href='#indice'><img src='./files/Icono_lupa.png' class='icon' width='20px'/></a> <a href='#indice'>Índice</a>	
+	<h1>2.- Soporte en fichero</h1>
+	<h3 id='2.1'>2.1- Crear fichero soporte</h3>
+	<ul>
+		<li>Abrir consola como superusuario.</li>
+		<li>Crear un fichero llamado "file-soporte", de tamaño 1MB y lleno de ceros. Para ello se empleó el comando (dataset definition) <b>dd if=/dev/zero of=/tmp/file-soporte bs=512 count=2048</b> donde:</li>
+		<ul type='square'>
+			<li><b>if</b> -> indica desde qué fichero/dispositivo se lee</li>
+			<li><b>of</b> -> indica en qué fichero/dispositivo se escribe</li>
+			<li><b>bs</b> -> tamaño del bloque (512 en este caso)</li>
+			<li><b>count</b> -> indica cuantos bloques se copian del archivo de origen</li>
+		</ul>
+	</ul>
+	<center>
+		<img src='./files/photorec/Imagen002.png' width='70%'/><br/>		
+		<p><i><b>Imagen 1:</b> Creación del fichero <b>file-soporte</b> de tamaño 1MB.</i></p>			
+	</center>
+	<div style='float: clear;background-color: #D7FABC; border:2px dotted; border-radius:10px; padding: 10px;'>
+		<b>NOTA 2:</b>El comando dd se utiliza para clonar (copiar a bajo nivel) dispositivos. Aunque en este caso se ha usado para crear un archivo de un tamaño determinado.
+	</div>
+	<h3 id='2.2'>2.2- Formatear el fichero soporte</h3>
+	<ul>
+		<li>Se crea un <b>sistema de ficheros tipo ext2</b> dentro del fichero "file-soporte". Comando: <b>mkfs.ext2 /tmp/file-soporte</b>.</li>
+	</ul>
+	<center>
+		<img src='./files/photorec/Imagen003.png' width='70%'/><br/>		
+		<p><i><b>Imagen 2:</b> Crear sistema de ficheros tipo ext2.</i></p>			
+	</center>
+	<hr id='3' size='3px' noshade='noshade'/>
+	<a href='#2'><img src='./files/flecha2.png' class='icon' width='20px'/></a> <a href='#2'>Principio del punto 2</a> | <a href='#4'><img src='./files/flecha.png' class='icon' width='20px'/></a> <a href='#4'>Fin del punto 3</a> | <a href='#indice'><img src='./files/Icono_lupa.png' class='icon' width='20px'/></a> <a href='#indice'>Índice</a>	
+	<h1>3.- Escribir en el soporte</h1>
+	<h3 id='3.1'>3.1- Acceder al sistema de ficheros</h3>
+	<div style='float: clear;background-color: #D7FABC; border:2px dotted; border-radius:10px; padding: 10px;'>
+		<b>NOTA 3:</b>Para poder acceder al sistema de ficheros recién creado se debe montar previamente en un directorio.
+	</div>
+	<ul>
+		<li>Crear el directorio /mnt/dir-montaje. Comando: <b>mkdir /mnt/dir-montaje</b>.</li>
+		<li>Montar el dispositivo soporte. Comando: <b>mount -t ext2 /tmp/file-soporte /mnt/dir-montaje</b>.</li>
+		<ul type='square'>
+			<li><b>t ext2</b> -> indica qué tipo de sistema de ficheros se va a montar (ext2 en este caso)</li>
+			<li><b>/tmp/file-soporte</b> -> dispositivo que se monta</li>
+			<li><b>/mnt/dir-montaje</b> -> directorio sobre el que se va a montar el dispositivo</li>
+		</ul>
+		<li>Comprobar que el sistema de ficheros está montado. Comando: <b>df -hT</b>.</li>
+	</ul>
+	<center>
+		<img src='./files/photorec/Imagen004.png' width='70%'/><br/>		
+		<p><i><b>Imagen 3:</b> Montar el dispositivo soporte en el directorio /mnt/dir-montaje.</i></p>		
+	</center>
+	<h3 id='3.2'>3.2- Escribir en el sistema de ficheros</h3>
+	<ul>
+		<li>Crear el fichero /mnt/dir-montaje/docs/README.txt. Comando: <b>touch /mnt/dir-montaje/docs/README.txt</b></li>
+		<li>Escribir dentro algunas frases en inglés (se usó la aplicación nano).</li>
+	</ul>
+	<center>
+		<img src='./files/photorec/Imagen005.png' width='70%'/><br/><br/>
+		<img src='./files/photorec/Imagen007.png' width='70%'/><br/>		
+		<p><i><b>Imágenes 4 y 5:</b> Crear fichero README.</i></p>		
+	</center>	
+	<ul>
+		<li>Crear el fichero /mnt/dir-montaje/docs/LEEME.txt. Comando: <b>touch /mnt/dir-montaje/docs/LEEME.txt</b></li>
+		<li>Escribir dentro el nombre del autor de la práctica (se usó la aplicación nano).</li>
+	</ul>
+	<center>
+		<img src='./files/photorec/Imagen006.png' width='70%'/><br/><br/>
+		<img src='./files/photorec/Imagen008.png' width='70%'/><br/>		
+		<p><i><b>Imágenes 6 y 7:</b> Crear fichero LEEME.</i></p>		
+		<img src='./files/photorec/Imagen009.png' width='70%'/><br/>		
+		<p><i><b>Imagen 8:</b> Ficheros README y LEEME.</i></p>	
+	</center>	
+	<ul>
+		<li>Desmontar el sistema de ficheros. Comando: <b>umount /mnt/dir-montaje</b>.</li>
+		<li>Comando: <b>vdir /mnt/dir-montaje</b>. La información no se ha perdido. Sólo que el sistema de ficheros no está montado.</li>
+		<li>Montar sistema de ficheros y probar <b>vdir /mnt/dir-montaje</b>.</li>
+	</ul>
+	<center>
+		<img src='./files/photorec/Imagen010.png' width='80%'/><br/>		
+		<p><i><b>Imagen 9:</b> Desmontar y montar de nuevo el sistema de ficheros.</i></p>		
+	</center>
+	<hr id='4' size='3px' noshade='noshade'/>
+	<a href='#3'><img src='./files/flecha2.png' class='icon' width='20px'/></a> <a href='#3'>Principio del punto 3</a> | <a href='#5'><img src='./files/flecha.png' class='icon' width='20px'/></a> <a href='#5'>Fin del punto 4</a> | <a href='#indice'><img src='./files/Icono_lupa.png' class='icon' width='20px'/></a> <a href='#indice'>Índice</a>	
+	<h1>4.- Eliminar un fichero</h1>	
+	<ul>
+		<li>Borrar el fichero /mnt/dir-montaje/docs/README.txt. Comando: <b>rm /mnt/dir-montaje/docs/README.txt</b>.</li>
+		<li>Comando: <b>vdir /mnt/dir-montaje</b>.</li>
+	</ul>	
+	<center>
+		<img src='./files/photorec/Imagen011.png' width='70%'/><br/>		
+		<p><i><b>Imagen 10:</b> Borrar README.</i></p>		
+	</center>	
+	<ul>
+		<li>Desmontar el sistema de ficheros. Comando: <b>umount /mnt/dir-montaje</b>.</li>
+	</ul>	
+	<center>
+		<img src='./files/photorec/Imagen012.png' width='70%'/><br/>		
+		<p><i><b>Imagen 11:</b> Desmontar el sistema de ficheros.</i></p>		
+	</center>	
+	<hr id='5' size='3px' noshade='noshade'/>
+	<a href='#4'><img src='./files/flecha2.png' class='icon' width='20px'/></a> <a href='#4'>Principio del punto 4</a> | <a href='#6'><img src='./files/flecha.png' class='icon' width='20px'/></a> <a href='#6'>Fin del punto 5</a> | <a href='#indice'><img src='./files/Icono_lupa.png' class='icon' width='20px'/></a> <a href='#indice'>Índice</a>	
+	<h1>5.- Recuperar el archivo eliminado</h1>
+	<h3 id='5.1'>5.1- Clonar el fichero soporte</h3>	
+	<ul>
+		<li>Si se introduce el comando <b>cat /mnt/file-soporte</b> se ve en pantalla el contenido (en crudo) del sistema de ficheros. Se puede comprobar que el contenido del fichero eliminado se muestra por pantalla. Por lo tanto <font color='red'><b>¡no ha sido eliminado compleatamente del sistema de almacenamiento!</b></font></li>
+	</ul>	
+	<center>
+		<img src='./files/photorec/Imagen013.png' width='80%'/><br/>		
+		<p><i><b>Imagen 12:</b> Contenido en crudo del sistema de ficheros.</i></p>		
+	</center>
+	<ul>
+		<li>Por seguridad, vamos a clonar el fichero soporte:</li>
+		<ul type='square'>
+			<li>Comando: <b>dd if=/tmp/file-soporte of=/mnt/soporte-clonado.alfa</b></li>
+			<li>Comando: <b>dd if=/tmp/file-soporte of=/mnt/soporte-clonado.beta</b></li>
+		</ul>
+	</ul>	
+	<center>
+		<img src='./files/photorec/Imagen014.png' width='80%'/><br/>		
+		<p><i><b>Imagen 13:</b> Clonado del sistema de ficheros.</i></p>		
+	</center>	
+	<h3 id='5.2'>5.2- Herramientas de recuperación</h3>	
+	<ul>
+		<li>Listado de algunas herramientas de recuperación:</li>
+		<ul type='square'>
+			<li><b>PhotoRec</b></li>
+			<li><b>Foremost</b></li>
+			<li><b>Scalpel</b></li>
+			<li><b>TestDisk</b>: reparación de discos duros</li>
+		</ul>
+		<li>Usar alguna herramienta de recuperación de archivos (comando o GUI) sobre la clonación BETA, realizada al dispositivo, para recuperar el archivo README.</li>
+	</ul>	
+	<h3 id='5.3'>5.3- Recuperación con TestDisk (PhotoRec)</h3>	
+	<ul>
+		<li>La primera herramienta de recuperación empleada fue <b>TestDisk</b> que incluía la aplicación <b>PhotoRec</b>. Se siguieron los siguientes pasos:</li><br/>
+		<li style=list-style:none;><b>I.-</b> Instalación de TestDisk con PhotoRec. Se empleó el gestor de paquetes Synaptic.</li>
+	</ul>	
+	<center>
+		<img src='./files/photorec/Imagen016.png' width='70%'/><br/>		
+		<p><i><b>Imagen 14:</b> Instalación de TestDisk + PhotoRec.</i></p>		
+	</center>
+	<ul>
+		<li style=list-style:none;><b>II.-</b> Iniciar la aplicación photorec. Para ello siendo superusuario escribimos el comando <b>photorec</b>.</li>
+		<li style=list-style:none;><b>III.-</b> Selección del disco sobre el que se va a hacer la recuperación. El problema surge en este punto puesto que la aplicación sólo permite escoger entre los discos de la máquina sin poder selecciona un fichero soporte como el utilizado en la práctica. <b>Para comprobar el funcionamiento de PhotoRec se optó por añadir un disco de 100MB de capacidad</b> a la máquina virtual, donde se siguió los mismos pasos de arriba. Es decir, darle formato ext2, crear los ficheros README.txt y LEEME.txt y borrar el primero.</li>
+	</ul>	
+	<center>
+		<img src='./files/photorec/Imagen017.png' width='70%'/><br/>		
+		<p><i><b>Imagen 15:</b> Selección de disco (<b>NO ES POSIBLE SELECCIONAR EL FICHERO SOPORTE</b>).</i></p>		
+		<img src='./files/photorec/Imagen018.png' width='70%'/><br/>		
+		<p><i><b>Imagen 16:</b> Añadir nuevo disco a la máquina virtual.</i></p>	
+		<img src='./files/photorec/Imagen019.png' width='80%'/><br/>		
+		<p><i><b>Imagen 17:</b> Crear una partición en del disco nuevo con el comando <b>fdisk</b>.</i></p>		
+		<img src='./files/photorec/Imagen020.png' width='80%'/><br/>		
+		<p><i><b>Imagen 18:</b> Secuencia de comandos de la práctica hasta el punto anterior a la recuperación del fichero README.txt.</i></p>	
+	</center>
+	<ul>
+		<li style=list-style:none;><b>IV.-</b> Selección en la aplicación PhotoRec del disco <b>sdb</b>.</li>
+	</ul>	
+	<center>
+		<img src='./files/photorec/Imagen021.png' width='70%'/><br/>		
+		<p><i><b>Imagen 19:</b> Selección de disco.</i></p>	
+	</center>
+	<ul>
+		<li style=list-style:none;><b>V.-</b> Pasos hasta la recuperación.</li>
+	</ul>	
+	<center>
+		<img src='./files/photorec/Imagen022.png' width='70%'/><br/>		
+		<p><i><b>Imagen 20:</b> Seleccionar la partición.</i></p>	
+		<img src='./files/photorec/Imagen023.png' width='70%'/><br/>		
+		<p><i><b>Imagen 21:</b> Seleccionar el tipo de sistema de archivos de la partición.</i></p>	
+		<img src='./files/photorec/Imagen024.png' width='70%'/><br/>		
+		<p><i><b>Imagen 22:</b> Seleccionar si quieres recuperar del espacio libre (free) o de un disco desaparecido (whole).</i></p>
+		<img src='./files/photorec/Imagen025.png' width='70%'/><br/>		
+		<p><i><b>Imagen 22:</b> Seleccionar la carpeta donde se escribirán los archivos recuperados.</i></p>			
+	</center>
+	<ul>
+		<li style=list-style:none;><b>VI.-</b> Resultado de la recuperación. El proceso no dió ningún resultado y no sé recuperó el archivo README.txt.</li>
+	</ul>	
+	<center>
+		<img src='./files/photorec/Imagen026.png' width='42%'/>	
+		<img src='./files/photorec/Imagen027.png' width='42%'/><br/>			
+		<p><i><b>Imágenes 24 y 25:</b> Resultado de la recuperación.</i></p>	
+	</center>
+	<h3 id='5.4'>5.4- Recuperación con Scalpel</h3>	
+	<ul>
+		<li>La segunda herramienta de recuperación empleada fue <b>Scalpel</b></li><br/>
+		<li style=list-style:none;><b>I.-</b> Instalación de Scalpel. Se empleó el gestor de paquetes Synaptic.</li>
+	</ul>	
+	<center>
+		<img src='./files/scalpel/Imagen002.png' width='70%'/><br/>		
+		<p><i><b>Imagen 26:</b> Instalación de Scalpel.</i></p>		
+	</center>
+	<ul>
+		<li style=list-style:none;><b>II.-</b> Antes de iniciar la aplicación es necesario modificar el fichero <b>/etc/scalpel/scalpel.conf</b>. En éste archivo se "descomentará" todos los tipos de archivos que se desea que scalpel recupere. En este caso se quiere recuperar el archivo README.txt, así que se desmarca el comentario de la línea "txt", como se muestra en las imágenes siguientes.</li>
+	</ul>		
+	<center>
+		<img src='./files/scalpel/Imagen004.png' width='80%'/><br/><br/>
+		<img src='./files/scalpel/Imagen003.png' width='80%'/><br/>		
+		<p><i><b>Imágenes 27 y 28:</b> Modificar /etc/scalpel/scalpel.conf.</i></p>		
+	</center>	
+	<ul>
+		<li style=list-style:none;><b>III.-</b> Recuperar archivo. Comando: <b>scalpel /mnt/soporte-clonado.beta -o /home/alejandro/Documentos</b></li>
+	</ul>		
+	<center>
+		<img src='./files/scalpel/Imagen005.png' width='80%'/><br/>		
+		<p><i><b>Imagen 29:</b> Recuperación con <b>scalpel</b> en el soporte-clonado.beta.</i></p>		
+	</center>	
+	<ul>
+		<li style=list-style:none;><b>IV.-</b> Resultado de la recuperación. El proceso no dió ningún resultado y no sé recuperó el archivo README.txt.</li>
+	</ul>	
+	<center>
+		<img src='./files/scalpel/Imagen006.png' width='80%'/><br/>			
+		<p><i><b>Imagen 30:</b> Resultado de la recuperación.</i></p>	
+	</center>
+	</center>	
+	<ul>
+		<li style=list-style:none;><b>V.-</b> Se probó con el disco duro añadido (sdb) y tampoco se recuperó el archivo README.txt. Sí se obtuvo un archivo llamado 00000000.pgp que no tenía nada que ver.</li>
+	</ul>	
+	<center>
+		<img src='./files/scalpel/Imagen007.png' width='80%'/><br/>			
+		<p><i><b>Imagen 31:</b> Recuperación con <b>scalpel</b> en el disco sdb.</i></p>	
+		<img src='./files/scalpel/Imagen008.png' width='45%'/>
+		<img src='./files/scalpel/Imagen009.png' width='45%'/><br/>			
+		<p><i><b>Imágenes 32 y 33:</b> Resultado de la recuperación.</i></p>	
+	</center>	
+	<hr id='6' size='3px' noshade='noshade'/>
+	<a href='#5'><img src='./files/flecha2.png' width='20px'/></a> <a href='#5'>Principio del punto 5</a> | <a href='#indice'><img src='./files/Icono_lupa.png' width='20px'/></a> <a href='#indice'>Índice</a>
+	<br/><br/>	
+	<center>
+		<font size='2' color='grey'>Alejandro Ortega Freire 1ºASIR
+		<br/>
+		Fundamentos de Hardware
+		</font>
+		<br/>
+		<img src='./files/logoale.png' width='100px' class='icon'/><br/>
+	</center>
+	</body>
+</html>

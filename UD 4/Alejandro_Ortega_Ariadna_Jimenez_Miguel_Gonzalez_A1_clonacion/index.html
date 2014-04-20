@@ -1,0 +1,309 @@
+<!--
+  AUTORES: Alejandro Ortega Freire, Ariadna Jiménez Rodríguez, Miguel Ángel González Rodríguez
+  ASIGNATURA: Fundamentos de Hardware
+  CURSO: 1º ASIR 
+  FECHA: 18/03/2014
+  ACTIVIDAD: A1: Software general y clonación
+-->
+
+<html>
+	<head>
+		<title>A1: Software general y clonación</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<style type="text/css">
+			img {border: 1px solid black;}
+			img.icon {border: none;}
+		</style>
+	</head>
+	<body>
+		<div id='indice' style='display:table-row; padding: 10px;'>
+			  <div style='float: left; width=20%; padding:10px;'>
+				<img class='icon' src='./files/logo.png'/>
+			  </div>
+			  <div style='float: left;padding:10px'>
+				  <ul>
+					<li><b>M&oacute;dulo:</b> <i>Fundamentos de Hardware</i></li>
+					<li><b>T&iacute;tulo del trabajo:</b> <i>A1: Software general y clonación</i></li>
+					<li><b>Componentes del grupo:</b> <i>Alejandro Ortega Freire, Ariadna Jiménez Rodríguez, Miguel Ángel González Rodríguez</i></li>
+					<li><b>Curso Acad&eacute;mico:</b> <i>2013/2014</i></li>
+					<li><b>Fecha de entrega:</b> <i>18 de marzo de 2014</i></li>
+				  </ul>
+			  </div>
+		</div>
+		<div style='float: clear;background-color: #eeeeee; border:2px solid; border-radius:10px; padding: 10px;'>
+			<a href='#1'>1.- Software General</a> | <a href='#1.1'>1.1.- Instalaciones</a> | <a href='#1.2'>1.2.- Drivers</a> | <a href='#2'>2.- Clonación</a> | <a href='#2.1'>2.1.- Clonación de MV</a> | <a href='#2.2'>2.2.- Bootloader</a> | <a href='#2.3'>3.- Registro de Windows</a>  
+		</div>
+	<br/>
+	<div style='float: clear;background-color: #D7FABC; border:2px dotted; border-radius:10px; padding: 10px;'>
+		<b>NOTA 1:</b> La presente práctica se inició sin tener ninguna máquina real al dejar de funcionar el servidor que teníamos, así que se realizó en una máquina virtual con Sistema Operativo Windows XP.<br/> 
+		Durante la realización de la actividad hemos podido preparar un portátil, mientras continuábamos con la práctica, con una instalación Dual de Windows 7 y OpenSuse 13.1, que nos permitirá realizar las siguientes prácticas con una máquina real.
+	</div>	
+	<h1 id='1'>1.- Software General</h1>
+	<h2 id='1.1'>1.1.- Instalaciones</h2>
+	<ul>
+		<li>Realizar las siguientes instalaciones en una máquina con el sistema operativo Windows.</li>
+		<li>Instalación de alguna herramienta de compresión. Por ejemplo: Winzip, WinRar, etc.</li><br/>
+			<ul type='square'>
+				<li><b>WinZip 18.0</b></li><br/>
+				<a href='http://www.winzip.com/' target='_blank'><img src='./files/home-icon.png' class='icon' width='20px'/>Página Oficial.</a>
+			</ul>
+	</ul>
+	<center>
+		<img src='./files/software/Imagen-005.png' width='47%'/>
+		<img src='./files/software/Imagen-007.png' width='47%'/><br/>
+		<p><i><b>Imágenes 1 y 2:</b> Winzip 18.0 instalado y en uso.</i></p>
+	</center>
+	<ul>
+			<ul type='square'>
+				<li><b>7-Zip 9.2</b></li><br/>
+				<a href='http://www.7-zip.org/' target='_blank'><img src='./files/home-icon.png' class='icon' width='20px'/>Página Oficial.</a>
+			</ul>
+	</ul>
+	<center>
+		<img src='./files/software/Imagen-009.png' width='47%'/>
+		<img src='./files/software/Imagen-010.png' width='47%'/><br/>
+		<p><i><b>Imágenes 3 y 4:</b> 7zip 9.2 instalado y en uso.</i></p>
+	</center>	
+	<ul>
+		<li>Instalación de alguna herramienta de tratamiento de imágenes. Por ejemplo: GIMP, etc.</li><br/>
+			<ul type='square'>
+				<li><b>GIMP 2.8</b></li><br/>
+				<a href='http://www.gimp.org/' target='_blank'><img src='./files/home-icon.png' class='icon' width='20px'/>Página Oficial.</a>
+			</ul>
+	</ul>
+	<center>
+		<img src='./files/software/Imagen027.png' width='47%'/>
+		<img src='./files/software/Imagen028.png' width='47%'/><br/>
+		<p><i><b>Imágenes 5 y 6:</b> GIMP 2.8 instalado y en uso.</i></p>
+	</center>
+	<ul>
+		<li>Instalación de algún antivirus. Por ejempl: AVAST, Antivir, AVG, etc.</li><br/>
+			<ul type='square'>
+				<li><b>Avast PRO ANTIVIRUS</b>: se realizó una prueba de análisis del disco duro y correción de amenazas.</li><br/>
+				<a href='http://www.avast.com/index' target='_blank'><img src='./files/home-icon.png' class='icon' width='20px'/>Página Oficial.</a>
+			</ul>
+	</ul>
+	<center>
+		<img src='./files/software/Imagen017.png' width='47%'/>
+		<img src='./files/software/Imagen019.png' width='47%'/><br/>
+		<p><i><b>Imágenes 7 y 8:</b> Análisis con Avast PRO ANTIVIRUS.</i></p>
+		<img src='./files/software/Imagen016.png' width='60%'/><br/>
+		<p><i><b>Imagen 9:</b>Protección con Avast PRO ANTIVIRUS.</i></p>
+	</center>
+	<ul>
+		<li>Instalar algún programa anti-spyware, anti-troyanos, anti-rootkits.</li><br/>
+			<ul type='square'>
+				<li><b>Malwarebytes Anti-Malware 1.75</b>: aplicación que es a la vez anti-spyware, anti-troyanos y anti-rootkits. Se realizó una prueba de análisis del disco duro y correción de amenazas.</li><br/>
+				<a href='http://www.malwarebytes.org' target='_blank'><img src='./files/home-icon.png' class='icon' width='20px'/>Página Oficial.</a>
+			</ul>
+	</ul>
+	<center>
+		<img src='./files/software/Imagen021.png' width='47%'/>
+		<img src='./files/software/Imagen022.png' width='47%'/><br/>
+		<p><i><b>Imágenes 10 y 11:</b> Actualización de bases de datos de amenazas y análisis del disco duro con Malwarebytes 1.75.</i></p>
+		<img src='./files/software/Imagen023.png' width='47%'/>
+		<img src='./files/software/Imagen024.png' width='47%'/><br/>
+		<p><i><b>Imágenes 12 y 13:</b> Fin y resultado del análisis.</i></p>
+	</center>
+	<ul>
+		<li>Instalar algún programa para la limpieza de archivos de Internet, etc.</li><br/>
+			<ul type='square'>
+				<li><b>Diskcleaner 1.7</b></li><br/>
+				<a href='http://www.diskcleaner.nl/' target='_blank'><img src='./files/home-icon.png' class='icon' width='20px'/>Página Oficial.</a>
+			</ul>
+	</ul>
+	<center>
+		<img src='./files/software/Imagen-030.png' width='47%'/>
+		<img src='./files/software/Imagen-031.png' width='47%'/><br/>
+		<p><i><b>Imágenes 14 y 15:</b> Uso de Diskcleaner 1.7.</i></p>
+	</center>	
+	<ul>
+		<li>Instalar algún programa limpiador del registro.</li><br/>
+			<ul type='square'>
+				<li><b>CCleaner 4.11</b>: se realizaron dos pruebas, una de limpieza del disco duro y otra de limpieza del registro.</li><br/>
+				<a href='https://www.piriform.com/ccleaner' target='_blank'><img src='./files/home-icon.png' class='icon' width='20px'/>Página Oficial.</a>
+			</ul>
+	</ul>
+	<center>
+		<img src='./files/software/Imagen032.png' width='47%'/>
+		<img src='./files/software/Imagen034.png' width='47%'/><br/>
+		<p><i><b>Imágenes 16 y 17:</b> Instalación de CCleaner 4.11 y limpieza del disco duro.</i></p>
+		<img src='./files/software/Imagen033.png' width='47%'/>
+		<img src='./files/software/Imagen036.png' width='47%'/><br/>
+		<p><i><b>Imágenes 18 y 19:</b> Limpieza del registro con CCleaner 4.11.</i></p>
+	</center>
+	<hr id='1.2' size='3px' noshade='noshade'/>
+	<a href='#1.1'><img src='./files/flecha2.png' class='icon' width='20px'/></a> <a href='#1.1'>Principio del Punto 1.1</a> | <a href='#1'><img src='./files/windows.png' class='icon' width='20px'/></a> <a href='#1'>Principio del Bloque 1</a> | <a href='#2'><img src='./files/flecha.png' class='icon' width='20px'/></a> <a href='#2'>Fin del punto 1.2</a> | <a href='#indice'><img src='./files/Icono_lupa.png' class='icon' width='20px'/></a> <a href='#indice'>Índice</a>	
+	<h2 id='1.1'>1.2.- Drivers</h2>
+	<ul>
+		<li>Instalar el programa <b>SlimDrivers</b> para buscar, descargar e instalar las actualizaciones más recientes de los controladores del hardware.</li><br/>
+			<ul type='square'>
+				<li><b>SlimDrivers 2.2</b></li><br/>
+				<a href='http://slimdrivers.es.joydownload.com/' target='_blank'><img src='./files/home-icon.png' class='icon' width='20px'/>Página Oficial.</a>
+			</ul>
+	</ul>
+	<center>
+		<img src='./files/software/Imagen037.png' width='47%'/>
+		<img src='./files/software/Imagen041.png' width='47%'/><br/>
+		<p><i><b>Imágenes 20 y 21:</b> Instalación de SlimDrivers 2.2 y uso.</i></p>
+		<img src='./files/software/Imagen040.png' width='47%'/>
+		<img src='./files/software/Imagen042.png' width='47%'/><br/>
+		<p><i><b>Imágenes 22 y 23:</b> Análisis de drives del equipo con SlimDrivers 2.2.</i></p>
+	</center>	
+	<ul>
+		<li>Descargar e instalar en un pendrive alguna aplicación portable.</li><br/>
+			<ul type='square'>
+				<li><b>Everest Ultimate Edition 5.5 PORTABLE</b></li>
+			</ul>
+	</ul>
+	<center>
+		<img src='./files/software/Imagen043.png' width='47%'/>
+		<img src='./files/software/Imagen044.png' width='47%'/><br/>
+		<p><i><b>Imágenes 24 y 25:</b> Programa Everest en su formato portable en un pendrive.</i></p>
+	</center>		
+	<hr id='2' size='3px' noshade='noshade'/>
+	<a href='#1.2'><img src='./files/flecha2.png' class='icon' width='20px'/></a> <a href='#1.2'>Principio del Punto 1.2</a> | <a href='#1'><img src='./files/windows.png' class='icon' width='20px'/></a> <a href='#1'>Principio del Bloque 1</a> | <a href='#2.2'><img src='./files/flecha.png' class='icon' width='20px'/></a> <a href='#2.2'>Fin del punto 2.1</a> | <a href='#indice'><img src='./files/Icono_lupa.png' class='icon' width='20px'/></a> <a href='#indice'>Índice</a>	
+	<h1>2.- Clonación</h1>
+	<h2 id='2.1'>2.1.- Clonación en máquina virtual</h2>
+	<ul>
+		<li>En el caso de no poder realizar la clonación en máquinas reales, usaremos máquinas virtuales. Para ello partiremos de una MV con SO Windows.</li>
+		<li>En VirtualBox añadiremos un segundo disco duro.</li>
+			<ul type='square'>
+				<li>Disco duro SATA si clonamos Window 7.</li>
+				<li><b>Disco duro IDE si clonamos Window XP.</b></li>
+			</ul>
+		<li>El objetivo será clonar el contenido del disco1 Win1 en el disco2 Win2.</li>
+	</ul>	
+	<center>
+		<img src='./files/clonacion/Imagen046.png' width='55%'/><br/>
+		<p><i><b>Imagen 26:</b> Añadir nuevo disco duro IDE a la máquina virtual de Windows XP.</i></p>
+	</center>		
+	<ul>
+		<li>Iniciar el equipo con CDLIVE Clonezilla, HIREN u otro similar.</li><br/>
+			<ul type='square'>
+				<li><b>Hiren's BootCD 15.2</b>: es un Live CD que contiene utilidades para resolver averías de arranque del ordenador. Es útil, cuando el sistema operativo primario no es capaz de iniciarse. El Hiren's BootCD tiene una lista extensa de programas. Las utilidades con funcionalidad similar en el disco, se agrupan en menús y aunque parecen redundantes, poseen diferencias entre ellas que las hacen complementarias. Dentro de los programas que se incluye está el <a href='http://clonezilla.org/' target='_blank'>Clonezilla</a> que es el utilizado en esta práctica para realizar la clonación del disco duro.</li><br/>
+				<a href='http://www.hiren.info/pages/bootcd' target='_blank'><img src='./files/home-icon.png' class='icon' width='20px'/>Página Oficial.</a>
+			</ul>
+		<br/>
+		<li>Proceder a clonar el disco con Windows sobre sobre el disco nuevo. Para ello se siguió el siguiente proceso:</li>
+			<ul type='square'>
+				<li>Iniciar la máquina con el CD Live Hiren's BootCD.</li>
+				<li>Dentro de las opciones a elegir en el menú inicial, seleccionar "Programas Dos" (Dos Programs).</li>
+				<li>Entre los "Programas Dos" elegir Clonezilla.
+			</ul>
+	</ul>	
+	<center>
+		<img src='./files/clonacion/Imagen048.png' width='47%'/>
+		<img src='./files/clonacion/Imagen050.png' width='47%'/><br/>
+		<p><i><b>Imágenes 27 y 28:</b> Accediendo a "Programas Dos".</i></p>
+		<img src='./files/clonacion/Imagen049.png' width='47%'/>
+		<img src='./files/clonacion/Imagen051.png' width='47%'/><br/>
+		<p><i><b>Imágenes 29 y 30:</b> Cargando Clonezilla.</i></p>
+	</center>	
+	<ul>
+		<ul type='square'>
+			<li>Seguir los pasos que indica el programa para clonar el disco1 en el disco2.</li>
+		</ul>
+	</ul>
+	<center>
+		<img src='./files/clonacion/Imagen054.png' width='65%'/><br/><br/>
+		<img src='./files/clonacion/Imagen056.png' width='65%'/><br/><br/>
+		<img src='./files/clonacion/Imagen057.png' width='65%'/><br/><br/>
+		<img src='./files/clonacion/Imagen058.png' width='65%'/><br/><br/>
+		<img src='./files/clonacion/Imagen059.png' width='65%'/><br/><br/>
+		<img src='./files/clonacion/Imagen063.png' width='65%'/><br/><br/>
+		<img src='./files/clonacion/Imagen064.png' width='65%'/><br/><br/>
+		<img src='./files/clonacion/Imagen066.png' width='65%'/><br/>
+		<p><i><b>Imágenes 31 a 38:</b> Clonación de disco1 en el disco2 con Clonezilla.</i></p>
+	</center>	
+	<ul>
+		<li>Una vez terminado el proceso de clonación obtenemos dos instalaciones de Windows idénticas (Win1 y Win2).</li>
+		<li>Reiniciar el SO de la partición Windows (Win1) y comprobarlo.</li>
+	</ul>		
+	<center>
+		<img src='./files/clonacion/Imagen068.png' width='78%'/><br/>
+		<p><i><b>Imagen 39:</b> Comparativa entre el disco de origen (C:) y el clonado (E:).</i></p>
+	</center>	
+	<hr id='2.2' size='3px' noshade='noshade'/>
+	<a href='#2'><img src='./files/flecha2.png' class='icon' width='20px'/></a> <a href='#2'>Principio del Punto 2.1</a> | <a href='#2'><img src='./files/windows.png' class='icon' width='20px'/></a> <a href='#2'>Principio del Bloque 2</a> | <a href='#2.3'><img src='./files/flecha.png' class='icon' width='20px'/></a> <a href='#2.3'>Fin del punto 2.2</a> | <a href='#indice'><img src='./files/Icono_lupa.png' class='icon' width='20px'/></a> <a href='#indice'>Índice</a>	
+	<h2 id='2.2'>2.2.- Bootloader Windows XP</h2>
+	<ul>
+		<li>Ahora se modifica el fichero <b>C:\BOOT.INI</b> del disco 1, para poder elegir en el arranque entre los dos Windows.</li>
+		<li>Herramientas -> Opciones de carpeta -> Ver . Desmarcar "Ocultar extensiones..." y "Ocultar archivos...". Marcar "Ver ficheros ocultos..."</li>
+		<li>Editar <b>C:\BOOT:INI</b> y añadir líneas en negrita:</li>
+<pre>[boot loader]
+timeout=30
+default=multi(0)disk(0)rdisk(0)partition(1)\WINDOWS
+[operating systems]
+multi(0)disk(0)rdisk(0)partition(1)\WINDOWS="Microsoft Windows XP Professional" /noexecute=optin /fastdetect
+<b>multi(0)disk(1)rdisk(0)partition(1)\WINDOWS="Microsoft Windows XP Professional Clonado" /noexecute=optin /fastdetect</b></pre>
+	</ul>
+	<center>
+		<img src='./files/clonacion/Imagen069.png' width='78%'/><br/>
+		<p><i><b>Imagen 40:</b> Modificación de C:\BOOT:INI.</i></p>
+	</center>
+	<ul>
+		<li>Al reiniciar la máquina virtual se ven dos SSOO Windows XP para iniciar el equipo. <b>El segundo corresponde al sistema clonado</b>.</li>
+	</ul>
+	<center>
+		<img src='./files/clonacion/Imagen070.png' width='55%'/><br/>
+		<p><i><b>Imagen 41:</b> Selector de inicio entre los dos Windows.</i></p>
+		<img src='./files/clonacion/Imagen071.png' width='55%'/><br/>
+		<p><i><b>Imagen 42:</b> El disco duro clonado es idéntico al original.</i></p>
+	</center>	
+	<hr id='2.3' size='3px' noshade='noshade'/>
+	<a href='#2.2'><img src='./files/flecha2.png' class='icon' width='20px'/></a> <a href='#2.2'>Principio del Punto 2.2</a> | <a href='#2'><img src='./files/windows.png' class='icon' width='20px'/></a> <a href='#2'>Principio del Bloque 2</a> | <a href='#2.4'><img src='./files/flecha.png' class='icon' width='20px'/></a> <a href='#2.4'>Fin del punto 3</a> | <a href='#indice'><img src='./files/Icono_lupa.png' class='icon' width='20px'/></a> <a href='#indice'>Índice</a>	
+	<h1 id='2.3'>3.- Registro de Windows</h1>
+	<ul>
+		<li>Aplicar algunos de los siguientes <a href='http://www.trucoswindows.com/trucos_winxp/trucos_winxp.php' target='_blank'>"trucos"</a> del registro de windows XP en el SO clonado.</li>
+		<li>Se aplicaron los siguientes cuatro:</li><br/>
+			<ul type='square'>
+				<li><a href='http://www.trucoswindows.com/trucos_para/windows_XP/229/truco/liberar-memoria-ram' target='_blank'>Liberar memoria RAM</a></li>
+			</ul>
+	</ul>
+	<center>
+		<img src='./files/clonacion/Imagen072.png' width='30%'/><br/>
+		<p><i><b>Imagen 42:</b> liberar.vbe</i></p>
+	</center>
+	<ul>
+		<ul type='square'>
+			<li><a href='http://www.trucoswindows.com/trucos_para/windows_XP/14/truco/acelerar-el-menu-inicio' target='_blank'>Acelerar el menú de inicio</a></li>
+		</ul>
+	</ul>
+	<center>
+		<img src='./files/clonacion/Imagen073.png' width='55%'/><br/>
+		<p><i><b>Imagen 43:</b> Acelerar menú de inicio.</i></p>
+	</center>
+	<ul>
+		<ul type='square'>
+			<li><a href='http://www.trucoswindows.com/trucos_para/windows_XP/236/truco/mensaje-al-iniciar-windows-xp' target='_blank'>Mensaje al iniciar Windows XP</a></li>
+		</ul>
+	</ul>
+	<center>
+		<img src='./files/clonacion/Imagen074.png' width='55%'/><br/>
+		<p><i><b>Imagen 44:</b> Crear el mensaje en el registro.</i></p>
+		<img src='./files/clonacion/Imagen076.png' width='35%'/><br/>
+		<p><i><b>Imagen 45:</b> Mensaje al iniciar Windows XP.</i></p>
+	</center>
+	<ul>
+		<ul type='square'>
+			<li><a href='http://www.trucoswindows.com/trucos_para/windows_XP/147/truco/descargar-de-la-memoria-ram-las-dll%C2%B4s-no-utilizadas' target='_blank'>Descargar de la memoria RAM las dll no utilizadas</a></li>
+		</ul>
+	</ul>
+	<center>
+		<img src='./files/clonacion/Imagen077.png' width='55%'/><br/>
+		<p><i><b>Imagen 46:</b> Descaragar dll.</i></p>
+	</center>
+	<br/>
+	<hr id='2.4' size='3px' noshade='noshade'/>
+	<a href='#2.3'><img src='./files/flecha2.png' class='icon' width='20px'/></a> <a href='#2.3'>Principio del Punto 3</a> | <a href='#2.3'><img src='./files/windows.png' class='icon' width='20px'/></a> <a href='#2.3'>Principio del Bloque 3</a> | <a href='#indice'><img src='./files/Icono_lupa.png' class='icon' width='20px'/></a> <a href='#indice'>Índice</a>	
+	<br/><br/>	
+	<center>
+		<font size='2' color='grey'>Alejandro Ortega Freire - Ariadna Jiménez Rodríguez - Miguel Ángel González Rodríguez - 1ºASIR
+		<br/>
+		Fundamentos de Hardware
+		</font>
+		<br/><br/>
+	</center>	
+	</body>
+</html>
