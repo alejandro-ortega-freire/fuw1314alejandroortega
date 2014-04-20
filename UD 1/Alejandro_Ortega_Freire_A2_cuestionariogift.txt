@@ -1,0 +1,40 @@
+//[PÁGINAS 11-19] [GRUPO: Alejandro Ortega Freire, Silvano Pérez Yanes y Beatriz de Armas Salvador]
+
+//Pregunta con respuesta múltiple
+::ram::[html]¿Cuántas celdas hay en un bloque de una memoria RAM?{
+=8
+~16
+~6
+~12
+}
+
+//Pregunta con respuesta corta
+::ram::[html]¿Cuáles son las memorias que se actualizan dos veces con cada pulso de reloj?{
+=%100%DDRAM#
+}
+
+//Emparejar tipos de memoria
+::memorias-tipo::[html]Asocia cada memoria con su tipo\:{
+=ROM -> Memoria de sólo lectura
+=RAM -> Memoria de acceso aleatorio
+=DAT -> Memoria externa o secundaria
+}
+
+//Pregunta con respuesta única
+::ram::[html]Las memorias de acceso aleatorio (RAM)...{
+=... son memorias volátiles que almacenan la información mientras el ordenador está encendido.
+~... son memorias permanentes que nos permiten almacenar información, datos y programas.
+~... también reciben el nombre de memorias externas o secundarias.
+~... son memorias no volátiles y de sólo lectura.
+}
+
+//Pregunta verdadero/falso
+::memoria::[html]La memoria interna, principal o central (MC) es la que está situada físicamente dentro de la carcasa del ordenador.<br />{TRUE}
+
+//Pregunta con respuesta única
+::direccionamiento::[html]El direccionamiento relativo...{
+=... se llama relativo cuando la dirección del dato que interviene en la instrucción se obtiene sumando a la dirección de la propia.
+~... produce cuando la dirección obtenida no es el objeto deseado, sino su dirección.
+~... produce cuando expresa la dirección real del objeto.
+~... se produce cuando la dirección obtenida no es el objeto deseado, sino su dirección.
+} 
