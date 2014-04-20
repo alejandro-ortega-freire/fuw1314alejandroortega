@@ -1,0 +1,2200 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mlt title="Anonymous Submission" version="0.8.8" root="/home/rootalejadro" LC_NUMERIC="es_ES.UTF-8">
+ <profile width="1440" display_aspect_den="9" colorspace="709" frame_rate_den="1" description="HDV 1440x1080i 25 fps" height="1080" display_aspect_num="16" frame_rate_num="25" progressive="0" sample_aspect_num="4" sample_aspect_den="3"/>
+ <producer in="0" out="500" id="black">
+  <property name="mlt_type">producer</property>
+  <property name="length">15000</property>
+  <property name="eof">pause</property>
+  <property name="resource">black</property>
+  <property name="aspect_ratio">0</property>
+  <property name="mlt_service">colour</property>
+ </producer>
+ <playlist id="black_track">
+  <entry in="0" out="8883" producer="black"/>
+ </playlist>
+ <playlist id="playlist1"/>
+ <playlist id="playlist2"/>
+ <producer in="0" out="159" id="29">
+  <property name="mlt_type">producer</property>
+  <property name="length">160</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="progressive">1</property>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="1920" height="1080" out="125" LC_NUMERIC="es_ES.UTF-8">
+ &lt;item z-index="0" type="QGraphicsPixmapItem">
+  &lt;position x="0" y="0">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content url="/home/rootalejadro/Escritorio/Servidor/azul-oscuro-organizados-por-temas-91982.jpg"/>
+ &lt;/item>
+ &lt;startviewport rect="0,0,1920,1080"/>
+ &lt;endviewport rect="0,0,1920,1080"/>
+ &lt;background color="0,0,0,0"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+ </producer>
+ <producer in="0" out="124" id="46">
+  <property name="mlt_type">producer</property>
+  <property name="length">125</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="progressive">1</property>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" height="1080" LC_NUMERIC="es_ES.UTF-8">
+ &lt;item z-index="0" type="QGraphicsTextItem">
+  &lt;position x="277" y="430">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="0,0,0,255" font-outline-color="0,0,0,255" font-pixel-size="90" font-italic="0" alignment="4" font-underline="0" font-weight="75" font="Arial Black" font-outline="2,7">1. ABRIENDO EL SERVIDOR
+COMPONENTES&lt;/content>
+ &lt;/item>
+ &lt;item z-index="0" type="QGraphicsPixmapItem">
+  &lt;position x="-2" y="-61">
+   &lt;transform zoom="188">1.88,0,0,0,1.88,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content url="/home/rootalejadro/Escritorio/Servidor/fondo.png"/>
+ &lt;/item>
+ &lt;item z-index="0" type="QGraphicsTextItem">
+  &lt;position x="277" y="430">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="0,0,0,255" font-outline-color="0,0,0,255" font-pixel-size="90" font-italic="0" alignment="4" font-underline="0" font-weight="75" font="Arial Black" font-outline="2,7">1. ABRIENDO EL SERVIDOR
+COMPONENTES&lt;/content>
+ &lt;/item>
+ &lt;startviewport rect="0,0,1920,1080"/>
+ &lt;endviewport rect="0,0,1920,1080"/>
+ &lt;background color="0,0,0,0"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+ </producer>
+ <producer in="0" out="947" id="41_2">
+  <property name="mlt_type">producer</property>
+  <property name="length">948</property>
+  <property name="eof">pause</property>
+  <property name="resource">Escritorio/Servidor/FUW video practica/MOV_0126.mp4</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">16,113349</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">1,000000</property>
+  <property name="meta.media.0.codec.width">640</property>
+  <property name="meta.media.0.codec.height">480</property>
+  <property name="meta.media.0.codec.frame_rate">180000,000000</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">0,000000</property>
+  <property name="meta.media.0.codec.colorspace">601</property>
+  <property name="meta.media.0.codec.name">h264</property>
+  <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
+  <property name="meta.media.0.codec.bit_rate">1067845</property>
+  <property name="meta.attr.0.stream.creation_time.markup">1948-01-16 12:45:38</property>
+  <property name="meta.attr.0.stream.language.markup">eng</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">s16</property>
+  <property name="meta.media.1.codec.sample_rate">48000</property>
+  <property name="meta.media.1.codec.channels">2</property>
+  <property name="meta.media.1.codec.name">aac</property>
+  <property name="meta.media.1.codec.long_name">Advanced Audio Coding</property>
+  <property name="meta.media.1.codec.bit_rate">128095</property>
+  <property name="meta.attr.1.stream.creation_time.markup">1948-01-16 12:45:38</property>
+  <property name="meta.attr.1.stream.language.markup">eng</property>
+  <property name="meta.attr.major_brand.markup">isom</property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">isom3gp4</property>
+  <property name="meta.attr.creation_time.markup">1948-01-16 12:45:38</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">65536</property>
+  <property name="meta.media.sample_aspect_den">65536</property>
+  <property name="aspect_ratio">1,000000</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.frame_rate_num">854</property>
+  <property name="meta.media.frame_rate_den">53</property>
+  <property name="meta.media.colorspace">601</property>
+  <property name="meta.media.width">640</property>
+  <property name="meta.media.height">480</property>
+  <property name="meta.media.top_field_first">0</property>
+  <property name="meta.media.progressive">1</property>
+ </producer>
+ <producer in="0" out="124" id="34">
+  <property name="mlt_type">producer</property>
+  <property name="length">125</property>
+  <property name="eof">pause</property>
+  <property name="resource">Escritorio/Servidor/FUW video practica/CAM00483.jpg</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="loop">1</property>
+  <property name="meta.media.width">1920</property>
+  <property name="meta.media.height">2560</property>
+  <property name="mlt_service">pixbuf</property>
+ </producer>
+ <producer in="0" out="124" id="5">
+  <property name="mlt_type">producer</property>
+  <property name="length">125</property>
+  <property name="eof">pause</property>
+  <property name="resource">Escritorio/Servidor/2014-01-16 12.46.44.jpg</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="loop">1</property>
+  <property name="meta.media.width">2048</property>
+  <property name="meta.media.height">1536</property>
+  <property name="mlt_service">pixbuf</property>
+ </producer>
+ <producer in="0" out="124" id="11">
+  <property name="mlt_type">producer</property>
+  <property name="length">125</property>
+  <property name="eof">pause</property>
+  <property name="resource">Escritorio/Servidor/2014-01-16 12.53.41.jpg</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="loop">1</property>
+  <property name="meta.media.width">2048</property>
+  <property name="meta.media.height">1536</property>
+  <property name="mlt_service">pixbuf</property>
+ </producer>
+ <producer in="0" out="124" id="35">
+  <property name="mlt_type">producer</property>
+  <property name="length">125</property>
+  <property name="eof">pause</property>
+  <property name="resource">Escritorio/Servidor/FUW video practica/CAM00484.jpg</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="loop">1</property>
+  <property name="meta.media.width">1920</property>
+  <property name="meta.media.height">2560</property>
+  <property name="mlt_service">pixbuf</property>
+ </producer>
+ <producer in="0" out="124" id="7">
+  <property name="mlt_type">producer</property>
+  <property name="length">125</property>
+  <property name="eof">pause</property>
+  <property name="resource">Escritorio/Servidor/2014-01-16 12.47.07.jpg</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="loop">1</property>
+  <property name="meta.media.width">2048</property>
+  <property name="meta.media.height">1536</property>
+  <property name="mlt_service">pixbuf</property>
+ </producer>
+ <producer in="0" out="124" id="8">
+  <property name="mlt_type">producer</property>
+  <property name="length">125</property>
+  <property name="eof">pause</property>
+  <property name="resource">Escritorio/Servidor/2014-01-16 12.47.26.jpg</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="loop">1</property>
+  <property name="meta.media.width">2048</property>
+  <property name="meta.media.height">1536</property>
+  <property name="mlt_service">pixbuf</property>
+ </producer>
+ <producer in="0" out="124" id="18">
+  <property name="mlt_type">producer</property>
+  <property name="length">125</property>
+  <property name="eof">pause</property>
+  <property name="resource">Escritorio/Servidor/2014-01-16 13.46.47.jpg</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="loop">1</property>
+  <property name="meta.media.width">2048</property>
+  <property name="meta.media.height">1536</property>
+  <property name="mlt_service">pixbuf</property>
+ </producer>
+ <producer in="0" out="124" id="9">
+  <property name="mlt_type">producer</property>
+  <property name="length">125</property>
+  <property name="eof">pause</property>
+  <property name="resource">Escritorio/Servidor/2014-01-16 12.47.46.jpg</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="loop">1</property>
+  <property name="meta.media.width">2048</property>
+  <property name="meta.media.height">1536</property>
+  <property name="mlt_service">pixbuf</property>
+ </producer>
+ <producer in="0" out="124" id="48">
+  <property name="mlt_type">producer</property>
+  <property name="length">125</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="progressive">1</property>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" height="1080" LC_NUMERIC="es_ES.UTF-8">
+ &lt;item z-index="0" type="QGraphicsTextItem">
+  &lt;position x="184" y="483">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="0,0,0,255" font-outline-color="0,0,0,255" font-pixel-size="90" font-italic="0" font-underline="0" font-weight="75" font="Arial Black" font-outline="2,7">2. ARRANCANDO EL SERVIDOR&lt;/content>
+ &lt;/item>
+ &lt;item z-index="0" type="QGraphicsPixmapItem">
+  &lt;position x="-2" y="-61">
+   &lt;transform zoom="188">1.88,0,0,0,1.88,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content url="/home/rootalejadro/kdenlive/titles/bb2f15ce4495c786625ab55882b28fb3.titlepart"/>
+ &lt;/item>
+ &lt;item z-index="0" type="QGraphicsTextItem">
+  &lt;position x="184" y="483">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="0,0,0,255" font-outline-color="0,0,0,255" font-pixel-size="90" font-italic="0" font-underline="0" font-weight="75" font="Arial Black" font-outline="2,7">2. ARRANCANDO EL SERVIDOR&lt;/content>
+ &lt;/item>
+ &lt;startviewport rect="0,0,1920,1080"/>
+ &lt;endviewport rect="0,0,1920,1080"/>
+ &lt;background color="0,0,0,0"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+ </producer>
+ <producer in="0" out="222" id="55">
+  <property name="mlt_type">producer</property>
+  <property name="length">223</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="progressive">1</property>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" height="1080" LC_NUMERIC="es_ES.UTF-8">
+ &lt;item z-index="1" type="QGraphicsPixmapItem">
+  &lt;position x="1528" y="882">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content url="/home/rootalejadro/Escritorio/Servidor/logo-white.png"/>
+ &lt;/item>
+ &lt;item z-index="1" type="QGraphicsPixmapItem">
+  &lt;position x="1822,222222222221" y="-22">
+   &lt;transform zoom="55" rotation="0,0,90">0,0.55,0,-0.55,0,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content url="/home/rootalejadro/Escritorio/Servidor/2014-01-16 13.22.04.jpg"/>
+ &lt;/item>
+ &lt;item z-index="1" type="QGraphicsPixmapItem">
+  &lt;position x="1528" y="882">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content url="/home/rootalejadro/Escritorio/Servidor/logo-white.png"/>
+ &lt;/item>
+ &lt;item z-index="0" type="QGraphicsPixmapItem">
+  &lt;position x="937,6675925925925" y="-29,40740740740739">
+   &lt;transform zoom="55" rotation="0,0,90">0,0.55,0,-0.55,0,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content url="/home/rootalejadro/Escritorio/Servidor/2014-01-16 13.21.55.jpg"/>
+ &lt;/item>
+ &lt;startviewport rect="0,0,1920,1080"/>
+ &lt;endviewport rect="0,0,1920,1080"/>
+ &lt;background color="0,0,0,255"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+ </producer>
+ <producer in="0" out="204" id="42_2">
+  <property name="mlt_type">producer</property>
+  <property name="length">205</property>
+  <property name="eof">pause</property>
+  <property name="resource">Escritorio/Servidor/FUW video practica/MOV_0127.mp4</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">16,035415</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">1,000000</property>
+  <property name="meta.media.0.codec.width">640</property>
+  <property name="meta.media.0.codec.height">480</property>
+  <property name="meta.media.0.codec.frame_rate">180000,000000</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">0,000000</property>
+  <property name="meta.media.0.codec.colorspace">601</property>
+  <property name="meta.media.0.codec.name">h264</property>
+  <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
+  <property name="meta.media.0.codec.bit_rate">1054391</property>
+  <property name="meta.attr.0.stream.creation_time.markup">1948-01-16 12:58:08</property>
+  <property name="meta.attr.0.stream.language.markup">eng</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">s16</property>
+  <property name="meta.media.1.codec.sample_rate">48000</property>
+  <property name="meta.media.1.codec.channels">2</property>
+  <property name="meta.media.1.codec.name">aac</property>
+  <property name="meta.media.1.codec.long_name">Advanced Audio Coding</property>
+  <property name="meta.media.1.codec.bit_rate">128139</property>
+  <property name="meta.attr.1.stream.creation_time.markup">1948-01-16 12:58:08</property>
+  <property name="meta.attr.1.stream.language.markup">eng</property>
+  <property name="meta.attr.major_brand.markup">isom</property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">isom3gp4</property>
+  <property name="meta.attr.creation_time.markup">1948-01-16 12:58:08</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">65536</property>
+  <property name="meta.media.sample_aspect_den">65536</property>
+  <property name="aspect_ratio">1,000000</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.frame_rate_num">449</property>
+  <property name="meta.media.frame_rate_den">28</property>
+  <property name="meta.media.colorspace">601</property>
+  <property name="meta.media.width">640</property>
+  <property name="meta.media.height">480</property>
+  <property name="meta.media.top_field_first">0</property>
+  <property name="meta.media.progressive">1</property>
+ </producer>
+ <producer in="0" out="757" id="3_2">
+  <property name="mlt_type">producer</property>
+  <property name="length">758</property>
+  <property name="eof">pause</property>
+  <property name="resource">Escritorio/Servidor/video-2014-01-16-12-52-02.mp4</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">s16</property>
+  <property name="meta.media.0.codec.sample_rate">48000</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">aac</property>
+  <property name="meta.media.0.codec.long_name">Advanced Audio Coding</property>
+  <property name="meta.media.0.codec.bit_rate">62675</property>
+  <property name="meta.attr.0.stream.creation_time.markup">1948-01-16 12:52:33</property>
+  <property name="meta.attr.0.stream.language.markup">eng</property>
+  <property name="meta.media.1.stream.type">video</property>
+  <property name="meta.media.1.stream.frame_rate">14,523199</property>
+  <property name="meta.media.1.stream.sample_aspect_ratio">1,000000</property>
+  <property name="meta.media.1.codec.width">320</property>
+  <property name="meta.media.1.codec.height">240</property>
+  <property name="meta.media.1.codec.frame_rate">1000,000000</property>
+  <property name="meta.media.1.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.1.codec.sample_aspect_ratio">1,000000</property>
+  <property name="meta.media.1.codec.colorspace">601</property>
+  <property name="meta.media.1.codec.name">mpeg4</property>
+  <property name="meta.media.1.codec.long_name">MPEG-4 part 2</property>
+  <property name="meta.media.1.codec.bit_rate">715882</property>
+  <property name="meta.attr.1.stream.creation_time.markup">1948-01-16 12:52:33</property>
+  <property name="meta.attr.1.stream.language.markup">eng</property>
+  <property name="meta.attr.major_brand.markup">isom</property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">isom3gp4</property>
+  <property name="meta.attr.creation_time.markup">1948-01-16 12:52:33</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="aspect_ratio">1,000000</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">1</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.frame_rate_num">944</property>
+  <property name="meta.media.frame_rate_den">65</property>
+  <property name="meta.media.colorspace">601</property>
+  <property name="meta.media.width">320</property>
+  <property name="meta.media.height">240</property>
+  <property name="meta.media.top_field_first">0</property>
+  <property name="meta.media.progressive">1</property>
+ </producer>
+ <producer in="0" out="125" id="12">
+  <property name="mlt_type">producer</property>
+  <property name="length">126</property>
+  <property name="eof">pause</property>
+  <property name="resource">Escritorio/Servidor/2014-01-16 12.59.34.jpg</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="loop">1</property>
+  <property name="meta.media.width">2048</property>
+  <property name="meta.media.height">1536</property>
+  <property name="mlt_service">pixbuf</property>
+ </producer>
+ <producer in="0" out="124" id="66">
+  <property name="mlt_type">producer</property>
+  <property name="length">125</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="progressive">1</property>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" height="1080" LC_NUMERIC="es_ES.UTF-8">
+ &lt;item z-index="3" type="QGraphicsTextItem">
+  &lt;position x="165" y="773">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,0,255" font-outline-color="0,0,0,255" font-pixel-size="53" font-italic="0" font-underline="0" font-weight="75" font="Arial Black" font-outline="3,8">Una vez borrada la contraseña se modifica la fecha y
+hora de la BIOS.&lt;/content>
+ &lt;/item>
+ &lt;item z-index="1" type="QGraphicsPixmapItem">
+  &lt;position x="1528" y="882">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content url="/home/rootalejadro/Escritorio/Servidor/logo-white.png"/>
+ &lt;/item>
+ &lt;item z-index="1" type="QGraphicsPixmapItem">
+  &lt;position x="907,6923076923073" y="-11,53846153846155">
+   &lt;transform zoom="55" rotation="0,0,90">0,0.55,0,-0.55,0,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content url="/home/rootalejadro/Escritorio/Servidor/2014-01-16 13.30.35.jpg"/>
+ &lt;/item>
+ &lt;item z-index="0" type="QGraphicsPixmapItem">
+  &lt;position x="1862,051282051282" y="-35,89743589743568">
+   &lt;transform zoom="60" rotation="0,0,90">0,0.6,0,-0.6,0,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content url="/home/rootalejadro/Escritorio/Servidor/2014-01-16 13.48.35.jpg"/>
+ &lt;/item>
+ &lt;startviewport rect="0,0,1920,1080"/>
+ &lt;endviewport rect="0,0,1920,1080"/>
+ &lt;background color="0,0,0,255"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+ </producer>
+ <producer in="0" out="124" id="62">
+  <property name="mlt_type">producer</property>
+  <property name="length">125</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="progressive">1</property>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" height="1080" LC_NUMERIC="es_ES.UTF-8">
+ &lt;item z-index="0" type="QGraphicsTextItem">
+  &lt;position x="512" y="483">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="0,0,0,255" font-outline-color="0,0,0,255" font-pixel-size="90" font-italic="0" font-underline="0" font-weight="75" font="Arial Black" font-outline="2,7">3. PARTICIONADO&lt;/content>
+ &lt;/item>
+ &lt;item z-index="0" type="QGraphicsPixmapItem">
+  &lt;position x="-2" y="-61">
+   &lt;transform zoom="188">1.88,0,0,0,1.88,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content url="/home/rootalejadro/kdenlive/titles/bb2f15ce4495c786625ab55882b28fb3.titlepart"/>
+ &lt;/item>
+ &lt;item z-index="0" type="QGraphicsTextItem">
+  &lt;position x="512" y="483">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="0,0,0,255" font-outline-color="0,0,0,255" font-pixel-size="90" font-italic="0" font-underline="0" font-weight="75" font="Arial Black" font-outline="2,7">3. PARTICIONADO&lt;/content>
+ &lt;/item>
+ &lt;startviewport rect="0,0,1920,1080"/>
+ &lt;endviewport rect="0,0,1920,1080"/>
+ &lt;background color="0,0,0,0"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+ </producer>
+ <producer in="0" out="276" id="30">
+  <property name="mlt_type">producer</property>
+  <property name="length">277</property>
+  <property name="eof">pause</property>
+  <property name="resource">Escritorio/Servidor/FUW video practica/CAM00478.jpg</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="loop">1</property>
+  <property name="meta.media.width">2560</property>
+  <property name="meta.media.height">1920</property>
+  <property name="mlt_service">pixbuf</property>
+ </producer>
+ <producer in="0" out="124" id="67">
+  <property name="mlt_type">producer</property>
+  <property name="length">125</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="progressive">1</property>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" height="1080" LC_NUMERIC="es_ES.UTF-8">
+ &lt;item z-index="0" type="QGraphicsTextItem">
+  &lt;position x="340" y="430">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="0,0,0,255" font-outline-color="0,0,0,255" font-pixel-size="90" font-italic="0" alignment="4" font-underline="0" font-weight="75" font="Arial Black" font-outline="2,7">4. INSTALACIÓN DE
+WINDOWS 2008 SERVER&lt;/content>
+ &lt;/item>
+ &lt;item z-index="0" type="QGraphicsPixmapItem">
+  &lt;position x="-2" y="-61">
+   &lt;transform zoom="188">1.88,0,0,0,1.88,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content url="/home/rootalejadro/kdenlive/titles/bb2f15ce4495c786625ab55882b28fb3.titlepart"/>
+ &lt;/item>
+ &lt;item z-index="0" type="QGraphicsTextItem">
+  &lt;position x="340" y="430">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="0,0,0,255" font-outline-color="0,0,0,255" font-pixel-size="90" font-italic="0" alignment="4" font-underline="0" font-weight="75" font="Arial Black" font-outline="2,7">4. INSTALACIÓN DE 
+WINDOWS 2008 SERVER&lt;/content>
+ &lt;/item>
+ &lt;startviewport rect="0,0,1920,1080"/>
+ &lt;endviewport rect="0,0,1920,1080"/>
+ &lt;background color="0,0,0,0"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+ </producer>
+ <producer in="0" out="2343" id="36_2">
+  <property name="mlt_type">producer</property>
+  <property name="length">2344</property>
+  <property name="eof">pause</property>
+  <property name="resource">Escritorio/Servidor/FUW video practica/CAM00486.mp4</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">29,609684</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">1,000000</property>
+  <property name="meta.media.0.codec.width">640</property>
+  <property name="meta.media.0.codec.height">480</property>
+  <property name="meta.media.0.codec.frame_rate">300,000000</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1,000000</property>
+  <property name="meta.media.0.codec.colorspace">601</property>
+  <property name="meta.media.0.codec.name">mpeg4</property>
+  <property name="meta.media.0.codec.long_name">MPEG-4 part 2</property>
+  <property name="meta.media.0.codec.bit_rate">5115209</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2014-01-23 12:47:12</property>
+  <property name="meta.attr.0.stream.language.markup">eng</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">s16</property>
+  <property name="meta.media.1.codec.sample_rate">16000</property>
+  <property name="meta.media.1.codec.channels">1</property>
+  <property name="meta.media.1.codec.name">aac</property>
+  <property name="meta.media.1.codec.long_name">Advanced Audio Coding</property>
+  <property name="meta.media.1.codec.bit_rate">95933</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2014-01-23 12:47:12</property>
+  <property name="meta.attr.1.stream.language.markup">eng</property>
+  <property name="meta.attr.major_brand.markup">isom</property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">isom3gp4</property>
+  <property name="meta.attr.creation_time.markup">2014-01-23 12:47:12</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="aspect_ratio">1,000000</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.frame_rate_num">300</property>
+  <property name="meta.media.frame_rate_den">1</property>
+  <property name="meta.media.colorspace">601</property>
+  <property name="meta.media.width">640</property>
+  <property name="meta.media.height">480</property>
+  <property name="meta.media.top_field_first">0</property>
+  <property name="meta.media.progressive">1</property>
+ </producer>
+ <producer in="0" out="1888" id="37_2">
+  <property name="mlt_type">producer</property>
+  <property name="length">1889</property>
+  <property name="eof">pause</property>
+  <property name="resource">Escritorio/Servidor/FUW video practica/CAM00487.mp4</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">25,686397</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">1,000000</property>
+  <property name="meta.media.0.codec.width">640</property>
+  <property name="meta.media.0.codec.height">480</property>
+  <property name="meta.media.0.codec.frame_rate">300,000000</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1,000000</property>
+  <property name="meta.media.0.codec.colorspace">601</property>
+  <property name="meta.media.0.codec.name">mpeg4</property>
+  <property name="meta.media.0.codec.long_name">MPEG-4 part 2</property>
+  <property name="meta.media.0.codec.bit_rate">5077243</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2014-01-23 13:04:43</property>
+  <property name="meta.attr.0.stream.language.markup">eng</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">s16</property>
+  <property name="meta.media.1.codec.sample_rate">16000</property>
+  <property name="meta.media.1.codec.channels">1</property>
+  <property name="meta.media.1.codec.name">aac</property>
+  <property name="meta.media.1.codec.long_name">Advanced Audio Coding</property>
+  <property name="meta.media.1.codec.bit_rate">96000</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2014-01-23 13:04:43</property>
+  <property name="meta.attr.1.stream.language.markup">eng</property>
+  <property name="meta.attr.major_brand.markup">isom</property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">isom3gp4</property>
+  <property name="meta.attr.creation_time.markup">2014-01-23 13:04:43</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="aspect_ratio">1,000000</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.frame_rate_num">300</property>
+  <property name="meta.media.frame_rate_den">1</property>
+  <property name="meta.media.colorspace">601</property>
+  <property name="meta.media.width">640</property>
+  <property name="meta.media.height">480</property>
+  <property name="meta.media.top_field_first">0</property>
+  <property name="meta.media.progressive">1</property>
+ </producer>
+ <producer in="0" out="142" id="39_2">
+  <property name="mlt_type">producer</property>
+  <property name="length">143</property>
+  <property name="eof">pause</property>
+  <property name="resource">Escritorio/Servidor/FUW video practica/CAM00489.mp4</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">24,822475</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">1,000000</property>
+  <property name="meta.media.0.codec.width">640</property>
+  <property name="meta.media.0.codec.height">480</property>
+  <property name="meta.media.0.codec.frame_rate">300,000000</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1,000000</property>
+  <property name="meta.media.0.codec.colorspace">601</property>
+  <property name="meta.media.0.codec.name">mpeg4</property>
+  <property name="meta.media.0.codec.long_name">MPEG-4 part 2</property>
+  <property name="meta.media.0.codec.bit_rate">4186106</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2014-01-23 13:10:18</property>
+  <property name="meta.attr.0.stream.language.markup">eng</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">s16</property>
+  <property name="meta.media.1.codec.sample_rate">16000</property>
+  <property name="meta.media.1.codec.channels">1</property>
+  <property name="meta.media.1.codec.name">aac</property>
+  <property name="meta.media.1.codec.long_name">Advanced Audio Coding</property>
+  <property name="meta.media.1.codec.bit_rate">96000</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2014-01-23 13:10:18</property>
+  <property name="meta.attr.1.stream.language.markup">eng</property>
+  <property name="meta.attr.major_brand.markup">isom</property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">isom3gp4</property>
+  <property name="meta.attr.creation_time.markup">2014-01-23 13:10:18</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="aspect_ratio">1,000000</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.frame_rate_num">300</property>
+  <property name="meta.media.frame_rate_den">1</property>
+  <property name="meta.media.colorspace">601</property>
+  <property name="meta.media.width">640</property>
+  <property name="meta.media.height">480</property>
+  <property name="meta.media.top_field_first">0</property>
+  <property name="meta.media.progressive">1</property>
+ </producer>
+ <producer in="0" out="4504" id="40_2">
+  <property name="mlt_type">producer</property>
+  <property name="length">4505</property>
+  <property name="eof">pause</property>
+  <property name="resource">Escritorio/Servidor/FUW video practica/CAM00492.mp4</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">30,097120</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">1,000000</property>
+  <property name="meta.media.0.codec.width">640</property>
+  <property name="meta.media.0.codec.height">480</property>
+  <property name="meta.media.0.codec.frame_rate">300,000000</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1,000000</property>
+  <property name="meta.media.0.codec.colorspace">601</property>
+  <property name="meta.media.0.codec.name">mpeg4</property>
+  <property name="meta.media.0.codec.long_name">MPEG-4 part 2</property>
+  <property name="meta.media.0.codec.bit_rate">5093886</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2014-01-23 13:15:11</property>
+  <property name="meta.attr.0.stream.language.markup">eng</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">s16</property>
+  <property name="meta.media.1.codec.sample_rate">16000</property>
+  <property name="meta.media.1.codec.channels">1</property>
+  <property name="meta.media.1.codec.name">aac</property>
+  <property name="meta.media.1.codec.long_name">Advanced Audio Coding</property>
+  <property name="meta.media.1.codec.bit_rate">95975</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2014-01-23 13:15:11</property>
+  <property name="meta.attr.1.stream.language.markup">eng</property>
+  <property name="meta.attr.major_brand.markup">isom</property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">isom3gp4</property>
+  <property name="meta.attr.creation_time.markup">2014-01-23 13:15:11</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="aspect_ratio">1,000000</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.frame_rate_num">300</property>
+  <property name="meta.media.frame_rate_den">1</property>
+  <property name="meta.media.colorspace">601</property>
+  <property name="meta.media.width">640</property>
+  <property name="meta.media.height">480</property>
+  <property name="meta.media.top_field_first">0</property>
+  <property name="meta.media.progressive">1</property>
+ </producer>
+ <playlist id="playlist3">
+  <entry in="0" out="84" producer="29"/>
+  <entry in="0" out="67" producer="46">
+   <filter out="24" id="fade_from_black">
+    <property name="track">0</property>
+    <property name="start">0</property>
+    <property name="mlt_type">filter</property>
+    <property name="mlt_service">brightness</property>
+    <property name="kdenlive_id">fade_from_black</property>
+    <property name="tag">brightness</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="end">1</property>
+    <property name="kdenlive_info"/>
+   </filter>
+  </entry>
+  <entry in="0" out="212" producer="41_2">
+   <filter out="25" id="filter0">
+    <property name="track">0</property>
+    <property name="start">0</property>
+    <property name="mlt_type">filter</property>
+    <property name="mlt_service">brightness</property>
+    <property name="kdenlive_id">fade_from_black</property>
+    <property name="tag">brightness</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="end">1</property>
+    <property name="kdenlive_info"/>
+   </filter>
+  </entry>
+  <entry in="0" out="45" producer="34"/>
+  <entry in="213" out="335" producer="41_2"/>
+  <entry in="0" out="45" producer="5"/>
+  <entry in="0" out="45" producer="11"/>
+  <entry in="336" out="529" producer="41_2"/>
+  <entry in="0" out="45" producer="35"/>
+  <entry in="0" out="45" producer="7"/>
+  <entry in="530" out="656" producer="41_2"/>
+  <entry in="0" out="45" producer="8"/>
+  <entry in="0" out="45" producer="18"/>
+  <entry in="657" out="842" producer="41_2"/>
+  <entry in="0" out="45" producer="9"/>
+  <entry in="843" out="883" producer="41_2"/>
+  <entry in="0" out="67" producer="48"/>
+  <entry in="0" out="174" producer="55"/>
+  <entry in="0" out="111" producer="42_2">
+   <filter out="22" id="filter1">
+    <property name="track">0</property>
+    <property name="start">0</property>
+    <property name="mlt_type">filter</property>
+    <property name="mlt_service">brightness</property>
+    <property name="kdenlive_id">fade_from_black</property>
+    <property name="tag">brightness</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="end">1</property>
+    <property name="kdenlive_info"/>
+   </filter>
+  </entry>
+  <entry in="112" out="204" producer="42_2">
+   <filter in="179" out="204" id="fade_to_black">
+    <property name="track">0</property>
+    <property name="start">1</property>
+    <property name="mlt_type">filter</property>
+    <property name="mlt_service">brightness</property>
+    <property name="kdenlive_id">fade_to_black</property>
+    <property name="tag">brightness</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="end">0</property>
+    <property name="kdenlive_info"/>
+   </filter>
+  </entry>
+  <entry in="0" out="634" producer="3_2">
+   <filter out="44" id="filter2">
+    <property name="track">0</property>
+    <property name="start">0</property>
+    <property name="mlt_type">filter</property>
+    <property name="mlt_service">brightness</property>
+    <property name="kdenlive_id">fade_from_black</property>
+    <property name="tag">brightness</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="end">1</property>
+    <property name="kdenlive_info"/>
+   </filter>
+  </entry>
+  <entry in="0" out="45" producer="11"/>
+  <entry in="0" out="45" producer="12"/>
+  <entry in="0" out="100" producer="66"/>
+  <entry in="0" out="67" producer="62"/>
+  <entry in="0" out="112" producer="30">
+   <filter out="33" id="filter3">
+    <property name="track">0</property>
+    <property name="start">0</property>
+    <property name="mlt_type">filter</property>
+    <property name="mlt_service">brightness</property>
+    <property name="kdenlive_id">fade_from_black</property>
+    <property name="tag">brightness</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="end">1</property>
+    <property name="kdenlive_info"/>
+   </filter>
+  </entry>
+  <entry in="0" out="159" producer="29"/>
+  <entry in="0" out="21" producer="30">
+   <filter in="10" out="21" id="filter4">
+    <property name="track">0</property>
+    <property name="start">1</property>
+    <property name="mlt_type">filter</property>
+    <property name="mlt_service">brightness</property>
+    <property name="kdenlive_id">fade_to_black</property>
+    <property name="tag">brightness</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="end">0</property>
+   </filter>
+  </entry>
+  <entry in="0" out="67" producer="67"/>
+  <entry in="0" out="50" producer="36_2"/>
+  <entry in="1331" out="2343" producer="36_2">
+   <filter in="2318" out="2343" id="filter5">
+    <property name="track">0</property>
+    <property name="start">1</property>
+    <property name="mlt_type">filter</property>
+    <property name="mlt_service">brightness</property>
+    <property name="kdenlive_id">fade_to_black</property>
+    <property name="tag">brightness</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="end">0</property>
+    <property name="kdenlive_info"/>
+   </filter>
+  </entry>
+  <entry in="441" out="1057" producer="37_2">
+   <filter in="441" out="466" id="filter6">
+    <property name="track">0</property>
+    <property name="start">0</property>
+    <property name="mlt_type">filter</property>
+    <property name="mlt_service">brightness</property>
+    <property name="kdenlive_id">fade_from_black</property>
+    <property name="tag">brightness</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="end">1</property>
+    <property name="kdenlive_info"/>
+   </filter>
+   <filter in="1032" out="1057" id="filter7">
+    <property name="track">0</property>
+    <property name="start">1</property>
+    <property name="mlt_type">filter</property>
+    <property name="mlt_service">brightness</property>
+    <property name="kdenlive_id">fade_to_black</property>
+    <property name="tag">brightness</property>
+    <property name="kdenlive_ix">2</property>
+    <property name="end">0</property>
+    <property name="kdenlive_info"/>
+   </filter>
+  </entry>
+  <entry in="0" out="142" producer="39_2"/>
+  <entry in="0" out="1450" producer="40_2"/>
+  <entry in="1725" out="3386" producer="40_2"/>
+  <entry in="3387" out="3769" producer="40_2"/>
+  <entry in="4016" out="4467" producer="40_2">
+   <filter in="4442" out="4467" id="filter8">
+    <property name="track">0</property>
+    <property name="start">1</property>
+    <property name="mlt_type">filter</property>
+    <property name="mlt_service">brightness</property>
+    <property name="kdenlive_id">fade_to_black</property>
+    <property name="tag">brightness</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="end">0</property>
+    <property name="kdenlive_info"/>
+   </filter>
+  </entry>
+ </playlist>
+ <producer in="0" out="125" id="24">
+  <property name="mlt_type">producer</property>
+  <property name="length">126</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="progressive">1</property>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="1920" height="1080" out="125" LC_NUMERIC="es_ES.UTF-8">
+ &lt;item z-index="20" type="QGraphicsPixmapItem">
+  &lt;position x="1526" y="882">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content url="/home/rootalejadro/Escritorio/Servidor/logo-white.png"/>
+ &lt;/item>
+ &lt;item z-index="19" type="QGraphicsTextItem">
+  &lt;position x="576" y="549,8672566401621">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="254,255,240,255" font-outline-color="0,0,0,255" font-pixel-size="50" font-italic="0" font-underline="0" font-weight="75" font="Arial Black" font-outline="2,7">Ariadna Jiménez Rodríguez&lt;/content>
+ &lt;/item>
+ &lt;item z-index="16" type="QGraphicsTextItem">
+  &lt;position x="485" y="454,9026548698967">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="254,255,240,255" font-outline-color="0,0,0,255" font-pixel-size="50" font-italic="0" font-underline="0" font-weight="75" font="Arial Black" font-outline="2,7">Miguel Ángel González Rodríguez&lt;/content>
+ &lt;/item>
+ &lt;item z-index="16" type="QGraphicsTextItem">
+  &lt;position x="830" y="632,7777777777777">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,255,255" font-outline-color="0,0,0,255" font-pixel-size="40" font-italic="0" font-underline="0" font-weight="75" font="Arial Black" font-outline="1,3">29/01/2014&lt;/content>
+ &lt;/item>
+ &lt;item z-index="10" type="QGraphicsTextItem">
+  &lt;position x="850" y="272,7777777777777">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,255,255" font-outline-color="0,0,0,255" font-pixel-size="50" font-italic="0" font-underline="0" font-weight="75" font="Arial Black" font-outline="1">1º ASIR&lt;/content>
+ &lt;/item>
+ &lt;item z-index="9" type="QGraphicsTextItem">
+  &lt;position x="521" y="191,6666666666666">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,255,255" font-outline-color="0,0,0,255" font-pixel-size="50" font-italic="0" font-underline="0" font-weight="75" font="Arial Black" font-outline="1">FUNDAMENTOS DE HARDWARE&lt;/content>
+ &lt;/item>
+ &lt;item z-index="5" type="QGraphicsTextItem">
+  &lt;position x="628,6637168141888" y="360,1878072755359">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="254,255,240,255" font-outline-color="0,0,0,255" font-pixel-size="50" font-italic="0" alignment="4" font-underline="0" font-weight="75" font="Arial Black" font-outline="2,7">Alejandro Ortega Freire&lt;/content>
+ &lt;/item>
+ &lt;item z-index="4" type="QGraphicsTextItem">
+  &lt;position x="35" y="915">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="254,255,240,255" font-outline-color="0,0,0,255" font-pixel-size="79" font-italic="0" font-underline="0" font-weight="50" font="Arial Black" font-outline="2,7">A1: Taller Práctico&lt;/content>
+ &lt;/item>
+ &lt;item z-index="1" type="QGraphicsRectItem">
+  &lt;position x="-6" y="850">
+   &lt;transform zoom="100">1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content pencolor="0,0,0,0" rect="0,0,1936,234" penwidth="0" brushcolor="175,175,175,136"/>
+ &lt;/item>
+ &lt;startviewport rect="0,0,1920,1080"/>
+ &lt;endviewport rect="0,0,1920,1080"/>
+ &lt;background color="0,0,0,0"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+ </producer>
+ <producer in="0" out="2343" id="47">
+  <property name="mlt_type">producer</property>
+  <property name="length">2344</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="progressive">1</property>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" height="1080" LC_NUMERIC="es_ES.UTF-8">
+ &lt;item z-index="0" type="QGraphicsPixmapItem">
+  &lt;position x="1528" y="882">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content url="/home/rootalejadro/Escritorio/Servidor/logo-black.png"/>
+ &lt;/item>
+ &lt;startviewport rect="0,0,1920,1080"/>
+ &lt;endviewport rect="0,0,1920,1080"/>
+ &lt;background color="0,0,0,0"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+ </producer>
+ <producer in="0" out="4199" id="23">
+  <property name="mlt_type">producer</property>
+  <property name="length">4200</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="progressive">1</property>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="1920" height="1080" out="125" LC_NUMERIC="es_ES.UTF-8">
+ &lt;item z-index="0" type="QGraphicsPixmapItem">
+  &lt;position x="1528,571428571428" y="882,8571428571428">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content url="/home/rootalejadro/Escritorio/Servidor/logo-white.png"/>
+ &lt;/item>
+ &lt;startviewport rect="0,0,1920,1080"/>
+ &lt;endviewport rect="0,0,1920,1080"/>
+ &lt;background color="0,0,0,0"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+ </producer>
+ <producer in="0" out="124" id="49">
+  <property name="mlt_type">producer</property>
+  <property name="length">125</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="progressive">1</property>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" height="1080" LC_NUMERIC="es_ES.UTF-8">
+ &lt;item z-index="2" type="QGraphicsTextItem">
+  &lt;position x="588" y="830,5579331134682">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,0,255" font-outline-color="0,0,0,255" font-pixel-size="53" font-italic="0" font-underline="0" font-weight="75" font="Arial Black" font-outline="3,8">2 MICROPROCESADORES&lt;/content>
+ &lt;/item>
+ &lt;item z-index="2" type="QGraphicsPixmapItem">
+  &lt;position x="1528" y="882">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content url="/home/rootalejadro/Escritorio/Servidor/logo-white.png"/>
+ &lt;/item>
+ &lt;startviewport rect="0,0,1920,1080"/>
+ &lt;endviewport rect="0,0,1920,1080"/>
+ &lt;background color="0,0,0,0"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+ </producer>
+ <producer in="0" out="161" id="50">
+  <property name="mlt_type">producer</property>
+  <property name="length">162</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="progressive">1</property>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" height="1080" LC_NUMERIC="es_ES.UTF-8">
+ &lt;item z-index="2" type="QGraphicsPixmapItem">
+  &lt;position x="1528" y="882">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content url="/home/rootalejadro/kdenlive/titles/10a717183a8f2d46792ca6b1d010dfcb.titlepart"/>
+ &lt;/item>
+ &lt;item z-index="2" type="QGraphicsTextItem">
+  &lt;position x="669" y="830,5579331134682">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,0,255" font-outline-color="0,0,0,255" font-pixel-size="53" font-italic="0" font-underline="0" font-weight="75" font="Arial Black" font-outline="3,8">2 TARJETAS DE RED&lt;/content>
+ &lt;/item>
+ &lt;startviewport rect="0,0,1920,1080"/>
+ &lt;endviewport rect="0,0,1920,1080"/>
+ &lt;background color="0,0,0,0"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+ </producer>
+ <producer in="0" out="156" id="51">
+  <property name="mlt_type">producer</property>
+  <property name="length">157</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="progressive">1</property>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" height="1080" LC_NUMERIC="es_ES.UTF-8">
+ &lt;item z-index="2" type="QGraphicsTextItem">
+  &lt;position x="403" y="830,5579331134682">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,0,255" font-outline-color="0,0,0,255" font-pixel-size="53" font-italic="0" font-underline="0" font-weight="75" font="Arial Black" font-outline="3,8">5 DISCOS DUROS CON CONEXIÓN IDE&lt;/content>
+ &lt;/item>
+ &lt;item z-index="2" type="QGraphicsPixmapItem">
+  &lt;position x="1528" y="882">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content url="/home/rootalejadro/kdenlive/titles/10a717183a8f2d46792ca6b1d010dfcb.titlepart"/>
+ &lt;/item>
+ &lt;startviewport rect="0,0,1920,1080"/>
+ &lt;endviewport rect="0,0,1920,1080"/>
+ &lt;background color="0,0,0,0"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+ </producer>
+ <producer in="0" out="143" id="52">
+  <property name="mlt_type">producer</property>
+  <property name="length">144</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="progressive">1</property>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" height="1080" LC_NUMERIC="es_ES.UTF-8">
+ &lt;item z-index="2" type="QGraphicsPixmapItem">
+  &lt;position x="1528" y="882">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content url="/home/rootalejadro/kdenlive/titles/10a717183a8f2d46792ca6b1d010dfcb.titlepart"/>
+ &lt;/item>
+ &lt;item z-index="2" type="QGraphicsTextItem">
+  &lt;position x="510" y="830,5579331134682">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,0,255" font-outline-color="0,0,0,255" font-pixel-size="53" font-italic="0" font-underline="0" font-weight="75" font="Arial Black" font-outline="3,8">2 FUENTES DE ALIMENTACIÓN&lt;/content>
+ &lt;/item>
+ &lt;startviewport rect="0,0,1920,1080"/>
+ &lt;endviewport rect="0,0,1920,1080"/>
+ &lt;background color="0,0,0,0"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+ </producer>
+ <producer in="0" out="124" id="53">
+  <property name="mlt_type">producer</property>
+  <property name="length">125</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="progressive">1</property>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" height="1080" LC_NUMERIC="es_ES.UTF-8">
+ &lt;item z-index="2" type="QGraphicsPixmapItem">
+  &lt;position x="1528" y="882">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content url="/home/rootalejadro/kdenlive/titles/10a717183a8f2d46792ca6b1d010dfcb.titlepart"/>
+ &lt;/item>
+ &lt;item z-index="2" type="QGraphicsTextItem">
+  &lt;position x="540" y="830,5579331134682">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,0,255" font-outline-color="0,0,0,255" font-pixel-size="53" font-italic="0" font-underline="0" font-weight="75" font="Arial Black" font-outline="3,8">1 UNIDAD LECTORA DVD/CD&lt;/content>
+ &lt;/item>
+ &lt;startviewport rect="0,0,1920,1080"/>
+ &lt;endviewport rect="0,0,1920,1080"/>
+ &lt;background color="0,0,0,0"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+ </producer>
+ <producer in="0" out="124" id="56">
+  <property name="mlt_type">producer</property>
+  <property name="length">125</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="progressive">1</property>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" height="1080" LC_NUMERIC="es_ES.UTF-8">
+ &lt;item z-index="2" type="QGraphicsPixmapItem">
+  &lt;position x="1528" y="882">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content url="/home/rootalejadro/kdenlive/titles/10a717183a8f2d46792ca6b1d010dfcb.titlepart"/>
+ &lt;/item>
+ &lt;item z-index="2" type="QGraphicsTextItem">
+  &lt;position x="125" y="748,8275862068965">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,0,255" font-outline-color="0,0,0,255" font-pixel-size="53" font-italic="0" font-underline="0" font-weight="75" font="Arial Black" font-outline="3,8">Al arrancar el equipo se observa que el Sistema Básico 
+de Arranque BIOS tiene contraseña. &lt;/content>
+ &lt;/item>
+ &lt;startviewport rect="0,0,1920,1080"/>
+ &lt;endviewport rect="0,0,1920,1080"/>
+ &lt;background color="0,0,0,0"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+ </producer>
+ <producer in="0" out="124" id="57">
+  <property name="mlt_type">producer</property>
+  <property name="length">125</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="progressive">1</property>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" height="1080" LC_NUMERIC="es_ES.UTF-8">
+ &lt;item z-index="2" type="QGraphicsPixmapItem">
+  &lt;position x="1528" y="882">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content url="/home/rootalejadro/kdenlive/titles/10a717183a8f2d46792ca6b1d010dfcb.titlepart"/>
+ &lt;/item>
+ &lt;item z-index="2" type="QGraphicsTextItem">
+  &lt;position x="307" y="773">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,0,255" font-outline-color="0,0,0,255" font-pixel-size="53" font-italic="0" font-underline="0" font-weight="75" font="Arial Black" font-outline="3,8">Para borrar la BIOS se siguieron dos pasos:&lt;/content>
+ &lt;/item>
+ &lt;startviewport rect="0,0,1920,1080"/>
+ &lt;endviewport rect="0,0,1920,1080"/>
+ &lt;background color="0,0,0,0"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+ </producer>
+ <producer in="0" out="204" id="58">
+  <property name="mlt_type">producer</property>
+  <property name="length">205</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="progressive">1</property>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" height="1080" LC_NUMERIC="es_ES.UTF-8">
+ &lt;item z-index="2" type="QGraphicsTextItem">
+  &lt;position x="85" y="773,8011763567114">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,0,255" font-outline-color="0,0,0,255" font-pixel-size="53" font-italic="0" font-underline="0" font-weight="75" font="Arial Black" font-outline="3,8">1.- Retirar y colocar pasado unos minutos de nuevo la pila
+de la BIOS.&lt;/content>
+ &lt;/item>
+ &lt;item z-index="2" type="QGraphicsPixmapItem">
+  &lt;position x="1528" y="882">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content url="/home/rootalejadro/kdenlive/titles/10a717183a8f2d46792ca6b1d010dfcb.titlepart"/>
+ &lt;/item>
+ &lt;startviewport rect="0,0,1920,1080"/>
+ &lt;endviewport rect="0,0,1920,1080"/>
+ &lt;background color="0,0,0,0"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+ </producer>
+ <producer in="0" out="124" id="63">
+  <property name="mlt_type">producer</property>
+  <property name="length">125</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="progressive">1</property>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" height="1080" LC_NUMERIC="es_ES.UTF-8">
+ &lt;item z-index="2" type="QGraphicsPixmapItem">
+  &lt;position x="1528" y="882">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content url="/home/rootalejadro/kdenlive/titles/10a717183a8f2d46792ca6b1d010dfcb.titlepart"/>
+ &lt;/item>
+ &lt;item z-index="2" type="QGraphicsTextItem">
+  &lt;position x="24" y="773">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,0,255" font-outline-color="0,0,0,255" font-pixel-size="53" font-italic="0" font-underline="0" font-weight="75" font="Arial Black" font-outline="3,8">Después de colocar de nuevo la pila aún solicitaba contraseña
+así que se pasó a modificar el jumper.&lt;/content>
+ &lt;/item>
+ &lt;startviewport rect="0,0,1920,1080"/>
+ &lt;endviewport rect="0,0,1920,1080"/>
+ &lt;background color="0,0,0,0"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+ </producer>
+ <producer in="0" out="124" id="59">
+  <property name="mlt_type">producer</property>
+  <property name="length">125</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="progressive">1</property>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" height="1080" LC_NUMERIC="es_ES.UTF-8">
+ &lt;item z-index="2" type="QGraphicsTextItem">
+  &lt;position x="139" y="773">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,0,255" font-outline-color="0,0,0,255" font-pixel-size="53" font-italic="0" font-underline="0" font-weight="75" font="Arial Black" font-outline="3,8">2.- Modificar el jumper de la placa para borrar la BIOS.&lt;/content>
+ &lt;/item>
+ &lt;item z-index="2" type="QGraphicsPixmapItem">
+  &lt;position x="1528" y="882">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content url="/home/rootalejadro/kdenlive/titles/10a717183a8f2d46792ca6b1d010dfcb.titlepart"/>
+ &lt;/item>
+ &lt;startviewport rect="0,0,1920,1080"/>
+ &lt;endviewport rect="0,0,1920,1080"/>
+ &lt;background color="0,0,0,0"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+ </producer>
+ <producer in="0" out="124" id="61">
+  <property name="mlt_type">producer</property>
+  <property name="length">125</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="progressive">1</property>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" height="1080" LC_NUMERIC="es_ES.UTF-8">
+ &lt;item z-index="2" type="QGraphicsPixmapItem">
+  &lt;position x="1528" y="882">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content url="/home/rootalejadro/kdenlive/titles/10a717183a8f2d46792ca6b1d010dfcb.titlepart"/>
+ &lt;/item>
+ &lt;item z-index="2" type="QGraphicsTextItem">
+  &lt;position x="840" y="830,5579331134682">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,0,255" font-outline-color="0,0,0,255" font-pixel-size="53" font-italic="0" font-underline="0" font-weight="75" font="Arial Black" font-outline="3,8">JUMPER&lt;/content>
+ &lt;/item>
+ &lt;startviewport rect="0,0,1920,1080"/>
+ &lt;endviewport rect="0,0,1920,1080"/>
+ &lt;background color="0,0,0,0"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+ </producer>
+ <producer in="0" out="124" id="64">
+  <property name="mlt_type">producer</property>
+  <property name="length">125</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="progressive">1</property>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" height="1080" LC_NUMERIC="es_ES.UTF-8">
+ &lt;item z-index="2" type="QGraphicsTextItem">
+  &lt;position x="145" y="773">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,0,255" font-outline-color="0,0,0,255" font-pixel-size="53" font-italic="0" font-underline="0" font-weight="75" font="Arial Black" font-outline="3,8">Para el particionado se usó un cd-live de knoppix 7.05
+con la aplicación gparted.&lt;/content>
+ &lt;/item>
+ &lt;item z-index="2" type="QGraphicsPixmapItem">
+  &lt;position x="1528" y="882">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content url="/home/rootalejadro/Escritorio/Servidor/logo-white.png"/>
+ &lt;/item>
+ &lt;startviewport rect="0,0,1920,1080"/>
+ &lt;endviewport rect="0,0,1920,1080"/>
+ &lt;background color="0,0,0,0"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+ </producer>
+ <producer in="0" out="159" id="65">
+  <property name="mlt_type">producer</property>
+  <property name="length">160</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="progressive">1</property>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" height="1080" LC_NUMERIC="es_ES.UTF-8">
+ &lt;item z-index="2" type="QGraphicsPixmapItem">
+  &lt;position x="1528" y="882">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content url="/home/rootalejadro/kdenlive/titles/10a717183a8f2d46792ca6b1d010dfcb.titlepart"/>
+ &lt;/item>
+ &lt;item z-index="2" type="QGraphicsTextItem">
+  &lt;position x="135" y="63">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,0,255" font-outline-color="0,0,0,255" font-pixel-size="53" font-italic="0" font-underline="0" font-weight="75" font="Arial Black" font-outline="3,8">La memoria secundaria (543.89 GB) se particiona de la
+siguiente forma:
+
+	- Partición primaria de 25 GB tipo NTFS para la
+	instalación de Windows 2008 server.
+
+	- Una partición extendida para el resto con dos
+	particiones lógicas:
+		
+		1.- Una de 20 GB tipo ext4 para la instalación de
+		OpenSuse 13.1
+
+		2.- Otra de 2 GB tipo swap.
+
+	- El resto queda sin asignar.&lt;/content>
+ &lt;/item>
+ &lt;startviewport rect="0,0,1920,1080"/>
+ &lt;endviewport rect="0,0,1920,1080"/>
+ &lt;background color="0,0,0,0"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+ </producer>
+ <producer in="0" out="124" id="68">
+  <property name="mlt_type">producer</property>
+  <property name="length">125</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="progressive">1</property>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" height="1080" LC_NUMERIC="es_ES.UTF-8">
+ &lt;item z-index="2" type="QGraphicsPixmapItem">
+  &lt;position x="1528" y="882">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content url="/home/rootalejadro/kdenlive/titles/10a717183a8f2d46792ca6b1d010dfcb.titlepart"/>
+ &lt;/item>
+ &lt;item z-index="2" type="QGraphicsTextItem">
+  &lt;position x="238" y="773">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,0,255" font-outline-color="0,0,0,255" font-pixel-size="53" font-italic="0" font-underline="0" font-weight="75" font="Arial Black" font-outline="3,8">Cambiar la política de contraseñas en Windows.&lt;/content>
+ &lt;/item>
+ &lt;startviewport rect="0,0,1920,1080"/>
+ &lt;endviewport rect="0,0,1920,1080"/>
+ &lt;background color="0,0,0,0"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+ </producer>
+ <producer in="0" out="124" id="69">
+  <property name="mlt_type">producer</property>
+  <property name="length">125</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="progressive">1</property>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" height="1080" LC_NUMERIC="es_ES.UTF-8">
+ &lt;item z-index="2" type="QGraphicsPixmapItem">
+  &lt;position x="1528" y="882">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content url="/home/rootalejadro/kdenlive/titles/10a717183a8f2d46792ca6b1d010dfcb.titlepart"/>
+ &lt;/item>
+ &lt;item z-index="2" type="QGraphicsTextItem">
+  &lt;position x="429" y="830,5579331134682">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,0,255" font-outline-color="0,0,0,255" font-pixel-size="53" font-italic="0" font-underline="0" font-weight="75" font="Arial Black" font-outline="3,8">Cambiar la contraseña a "profesor"&lt;/content>
+ &lt;/item>
+ &lt;startviewport rect="0,0,1920,1080"/>
+ &lt;endviewport rect="0,0,1920,1080"/>
+ &lt;background color="0,0,0,0"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+ </producer>
+ <playlist id="playlist4">
+  <entry in="0" out="84" producer="24"/>
+  <entry in="0" out="67" producer="47"/>
+  <entry in="0" out="152" producer="23"/>
+  <entry in="0" out="105" producer="49"/>
+  <entry in="0" out="52" producer="23"/>
+  <entry in="0" out="161" producer="50"/>
+  <entry in="0" out="128" producer="23"/>
+  <entry in="0" out="156" producer="51"/>
+  <entry in="0" out="74" producer="23"/>
+  <entry in="0" out="143" producer="52"/>
+  <entry in="0" out="161" producer="23"/>
+  <entry in="0" out="69" producer="53"/>
+  <entry in="0" out="40" producer="23"/>
+  <entry in="0" out="67" producer="47"/>
+  <entry in="0" out="97" producer="56"/>
+  <entry in="0" out="76" producer="57"/>
+  <entry in="0" out="102" producer="58"/>
+  <entry in="0" out="101" producer="63"/>
+  <entry in="0" out="124" producer="59"/>
+  <entry in="0" out="509" producer="23"/>
+  <entry in="0" out="91" producer="61"/>
+  <blank length="101"/>
+  <entry in="0" out="67" producer="47"/>
+  <entry in="0" out="112" producer="64"/>
+  <entry in="0" out="159" producer="65"/>
+  <entry in="0" out="21" producer="23"/>
+  <entry in="0" out="67" producer="47"/>
+  <entry in="0" out="4199" producer="23"/>
+  <entry in="0" out="124" producer="68"/>
+  <entry in="0" out="994" producer="23"/>
+  <entry in="0" out="124" producer="69"/>
+  <entry in="0" out="325" producer="23"/>
+ </playlist>
+ <playlist id="playlist5"/>
+ <tractor title="Anonymous Submission" global_feed="1" in="0" out="8883" id="maintractor">
+  <property name="meta.volume">1</property>
+  <track producer="black_track"/>
+  <track hide="video" producer="playlist1"/>
+  <track hide="video" producer="playlist2"/>
+  <track producer="playlist3"/>
+  <track producer="playlist4"/>
+  <track producer="playlist5"/>
+  <transition id="transition0">
+   <property name="a_track">1</property>
+   <property name="b_track">2</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="combine">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+  <transition id="transition1">
+   <property name="a_track">1</property>
+   <property name="b_track">3</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="combine">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+  <transition id="transition2">
+   <property name="a_track">1</property>
+   <property name="b_track">4</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="combine">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+  <transition id="transition3">
+   <property name="a_track">1</property>
+   <property name="b_track">5</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="combine">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+  <transition out="84" id="transition4">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="start">0/0:100%x100%</property>
+   <property name="factory">loader</property>
+   <property name="aligned">1</property>
+   <property name="progressive">1</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">composite</property>
+   <property name="automatic">1</property>
+   <property name="kdenlive_id">composite</property>
+   <property name="force_track">0</property>
+   <property name="deinterlace">0</property>
+   <property name="distort">0</property>
+   <property name="fill">1</property>
+   <property name="geometry">0%/0%:100%x100%:100</property>
+   <property name="luma_invert">0</property>
+   <property name="operator">over</property>
+   <property name="softness">0</property>
+  </transition>
+  <transition in="85" out="152" id="transition5">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="distort">0</property>
+   <property name="geometry">0/0:100%x100%:100%</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">affine</property>
+   <property name="automatic">1</property>
+   <property name="force_track">0</property>
+   <property name="keyed">1</property>
+   <property name="rotate_x">0</property>
+   <property name="rotate_y">0</property>
+   <property name="rotate_z">0</property>
+   <property name="shear_x">0</property>
+   <property name="shear_y">0</property>
+   <property name="shear_z">0</property>
+  </transition>
+  <transition in="306" out="411" id="transition6">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="distort">0</property>
+   <property name="geometry">0/0:100%x100%:100%</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">affine</property>
+   <property name="automatic">1</property>
+   <property name="force_track">0</property>
+   <property name="keyed">1</property>
+   <property name="rotate_x">0</property>
+   <property name="rotate_y">0</property>
+   <property name="rotate_z">0</property>
+   <property name="shear_x">0</property>
+   <property name="shear_y">0</property>
+   <property name="shear_z">0</property>
+  </transition>
+  <transition in="153" out="305" id="transition7">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="distort">0</property>
+   <property name="geometry">0/0:100%x100%:100%</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">affine</property>
+   <property name="automatic">1</property>
+   <property name="force_track">0</property>
+   <property name="keyed">1</property>
+   <property name="rotate_x">0</property>
+   <property name="rotate_y">0</property>
+   <property name="rotate_z">0</property>
+   <property name="shear_x">0</property>
+   <property name="shear_y">0</property>
+   <property name="shear_z">0</property>
+  </transition>
+  <transition in="465" out="626" id="transition8">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="distort">0</property>
+   <property name="geometry">0/0:100%x100%:100%</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">affine</property>
+   <property name="automatic">1</property>
+   <property name="force_track">0</property>
+   <property name="keyed">1</property>
+   <property name="rotate_x">0</property>
+   <property name="rotate_y">0</property>
+   <property name="rotate_z">0</property>
+   <property name="shear_x">0</property>
+   <property name="shear_y">0</property>
+   <property name="shear_z">0</property>
+  </transition>
+  <transition in="756" out="912" id="transition9">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="distort">0</property>
+   <property name="geometry">0/0:100%x100%:100%</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">affine</property>
+   <property name="automatic">1</property>
+   <property name="force_track">0</property>
+   <property name="keyed">1</property>
+   <property name="rotate_x">0</property>
+   <property name="rotate_y">0</property>
+   <property name="rotate_z">0</property>
+   <property name="shear_x">0</property>
+   <property name="shear_y">0</property>
+   <property name="shear_z">0</property>
+  </transition>
+  <transition in="988" out="1131" id="transition10">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="distort">0</property>
+   <property name="geometry">0/0:100%x100%:100%</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">affine</property>
+   <property name="automatic">1</property>
+   <property name="force_track">0</property>
+   <property name="keyed">1</property>
+   <property name="rotate_x">0</property>
+   <property name="rotate_y">0</property>
+   <property name="rotate_z">0</property>
+   <property name="shear_x">0</property>
+   <property name="shear_y">0</property>
+   <property name="shear_z">0</property>
+  </transition>
+  <transition in="627" out="755" id="transition11">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="distort">0</property>
+   <property name="geometry">0/0:100%x100%:100%</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">affine</property>
+   <property name="automatic">1</property>
+   <property name="force_track">0</property>
+   <property name="keyed">1</property>
+   <property name="rotate_x">0</property>
+   <property name="rotate_y">0</property>
+   <property name="rotate_z">0</property>
+   <property name="shear_x">0</property>
+   <property name="shear_y">0</property>
+   <property name="shear_z">0</property>
+  </transition>
+  <transition in="412" out="464" id="transition12">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="distort">0</property>
+   <property name="geometry">0/0:100%x100%:100%</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">affine</property>
+   <property name="automatic">1</property>
+   <property name="force_track">0</property>
+   <property name="keyed">1</property>
+   <property name="rotate_x">0</property>
+   <property name="rotate_y">0</property>
+   <property name="rotate_z">0</property>
+   <property name="shear_x">0</property>
+   <property name="shear_y">0</property>
+   <property name="shear_z">0</property>
+  </transition>
+  <transition in="913" out="987" id="transition13">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="distort">0</property>
+   <property name="geometry">0/0:100%x100%:100%</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">affine</property>
+   <property name="automatic">1</property>
+   <property name="force_track">0</property>
+   <property name="keyed">1</property>
+   <property name="rotate_x">0</property>
+   <property name="rotate_y">0</property>
+   <property name="rotate_z">0</property>
+   <property name="shear_x">0</property>
+   <property name="shear_y">0</property>
+   <property name="shear_z">0</property>
+  </transition>
+  <transition in="1294" out="1363" id="transition14">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="distort">0</property>
+   <property name="geometry">0/0:100%x100%:100%</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">affine</property>
+   <property name="automatic">1</property>
+   <property name="force_track">0</property>
+   <property name="keyed">1</property>
+   <property name="rotate_x">0</property>
+   <property name="rotate_y">0</property>
+   <property name="rotate_z">0</property>
+   <property name="shear_x">0</property>
+   <property name="shear_y">0</property>
+   <property name="shear_z">0</property>
+  </transition>
+  <transition in="1132" out="1293" id="transition15">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="distort">0</property>
+   <property name="geometry">0/0:100%x100%:100%</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">affine</property>
+   <property name="automatic">1</property>
+   <property name="force_track">0</property>
+   <property name="keyed">1</property>
+   <property name="rotate_x">0</property>
+   <property name="rotate_y">0</property>
+   <property name="rotate_z">0</property>
+   <property name="shear_x">0</property>
+   <property name="shear_y">0</property>
+   <property name="shear_z">0</property>
+  </transition>
+  <transition in="1405" out="1472" id="transition16">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="distort">0</property>
+   <property name="geometry">0/0:100%x100%:100%</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">affine</property>
+   <property name="automatic">1</property>
+   <property name="force_track">0</property>
+   <property name="keyed">1</property>
+   <property name="rotate_x">0</property>
+   <property name="rotate_y">0</property>
+   <property name="rotate_z">0</property>
+   <property name="shear_x">0</property>
+   <property name="shear_y">0</property>
+   <property name="shear_z">0</property>
+  </transition>
+  <transition in="1364" out="1404" id="transition17">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="distort">0</property>
+   <property name="geometry">0/0:100%x100%:100%</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">affine</property>
+   <property name="automatic">1</property>
+   <property name="force_track">0</property>
+   <property name="keyed">1</property>
+   <property name="rotate_x">0</property>
+   <property name="rotate_y">0</property>
+   <property name="rotate_z">0</property>
+   <property name="shear_x">0</property>
+   <property name="shear_y">0</property>
+   <property name="shear_z">0</property>
+  </transition>
+  <transition in="1473" out="1570" id="transition18">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="distort">0</property>
+   <property name="geometry">0/0:100%x100%:100%</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">affine</property>
+   <property name="automatic">1</property>
+   <property name="force_track">0</property>
+   <property name="keyed">1</property>
+   <property name="rotate_x">0</property>
+   <property name="rotate_y">0</property>
+   <property name="rotate_z">0</property>
+   <property name="shear_x">0</property>
+   <property name="shear_y">0</property>
+   <property name="shear_z">0</property>
+  </transition>
+  <transition in="1571" out="1647" id="transition19">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="distort">0</property>
+   <property name="geometry">0/0:100%x100%:100%</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">affine</property>
+   <property name="automatic">1</property>
+   <property name="force_track">0</property>
+   <property name="keyed">1</property>
+   <property name="rotate_x">0</property>
+   <property name="rotate_y">0</property>
+   <property name="rotate_z">0</property>
+   <property name="shear_x">0</property>
+   <property name="shear_y">0</property>
+   <property name="shear_z">0</property>
+  </transition>
+  <transition in="1648" out="1750" id="transition20">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="distort">0</property>
+   <property name="geometry">0/0:100%x100%:100%</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">affine</property>
+   <property name="automatic">1</property>
+   <property name="force_track">0</property>
+   <property name="keyed">1</property>
+   <property name="rotate_x">0</property>
+   <property name="rotate_y">0</property>
+   <property name="rotate_z">0</property>
+   <property name="shear_x">0</property>
+   <property name="shear_y">0</property>
+   <property name="shear_z">0</property>
+  </transition>
+  <transition in="1853" out="1977" id="transition21">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="distort">0</property>
+   <property name="geometry">0/0:100%x100%:100%</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">affine</property>
+   <property name="automatic">1</property>
+   <property name="force_track">0</property>
+   <property name="keyed">1</property>
+   <property name="rotate_x">0</property>
+   <property name="rotate_y">0</property>
+   <property name="rotate_z">0</property>
+   <property name="shear_x">0</property>
+   <property name="shear_y">0</property>
+   <property name="shear_z">0</property>
+  </transition>
+  <transition in="2488" out="2579" id="transition22">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="distort">0</property>
+   <property name="geometry">0/0:100%x100%:100%</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">affine</property>
+   <property name="automatic">1</property>
+   <property name="force_track">0</property>
+   <property name="keyed">1</property>
+   <property name="rotate_x">0</property>
+   <property name="rotate_y">0</property>
+   <property name="rotate_z">0</property>
+   <property name="shear_x">0</property>
+   <property name="shear_y">0</property>
+   <property name="shear_z">0</property>
+  </transition>
+  <transition in="1978" out="2487" id="transition23">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="distort">0</property>
+   <property name="geometry">0/0:100%x100%:100%</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">affine</property>
+   <property name="automatic">1</property>
+   <property name="force_track">0</property>
+   <property name="keyed">1</property>
+   <property name="rotate_x">0</property>
+   <property name="rotate_y">0</property>
+   <property name="rotate_z">0</property>
+   <property name="shear_x">0</property>
+   <property name="shear_y">0</property>
+   <property name="shear_z">0</property>
+  </transition>
+  <transition in="2681" out="2748" id="transition24">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="distort">0</property>
+   <property name="geometry">0/0:100%x100%:100%</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">affine</property>
+   <property name="automatic">1</property>
+   <property name="force_track">0</property>
+   <property name="keyed">1</property>
+   <property name="rotate_x">0</property>
+   <property name="rotate_y">0</property>
+   <property name="rotate_z">0</property>
+   <property name="shear_x">0</property>
+   <property name="shear_y">0</property>
+   <property name="shear_z">0</property>
+  </transition>
+  <transition in="1751" out="1852" id="transition25">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="distort">0</property>
+   <property name="geometry">0/0:100%x100%:100%</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">affine</property>
+   <property name="automatic">1</property>
+   <property name="force_track">0</property>
+   <property name="keyed">1</property>
+   <property name="rotate_x">0</property>
+   <property name="rotate_y">0</property>
+   <property name="rotate_z">0</property>
+   <property name="shear_x">0</property>
+   <property name="shear_y">0</property>
+   <property name="shear_z">0</property>
+  </transition>
+  <transition in="2749" out="2861" id="transition26">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="distort">0</property>
+   <property name="geometry">0/0:100%x100%:100%</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">affine</property>
+   <property name="automatic">1</property>
+   <property name="force_track">0</property>
+   <property name="keyed">1</property>
+   <property name="rotate_x">0</property>
+   <property name="rotate_y">0</property>
+   <property name="rotate_z">0</property>
+   <property name="shear_x">0</property>
+   <property name="shear_y">0</property>
+   <property name="shear_z">0</property>
+  </transition>
+  <transition in="2862" out="3021" id="transition27">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="distort">0</property>
+   <property name="geometry">0/0:100%x100%:100%</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">affine</property>
+   <property name="automatic">1</property>
+   <property name="force_track">0</property>
+   <property name="keyed">1</property>
+   <property name="rotate_x">0</property>
+   <property name="rotate_y">0</property>
+   <property name="rotate_z">0</property>
+   <property name="shear_x">0</property>
+   <property name="shear_y">0</property>
+   <property name="shear_z">0</property>
+  </transition>
+  <transition in="3022" out="3043" id="transition28">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="distort">0</property>
+   <property name="geometry">0/0:100%x100%:100%</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">affine</property>
+   <property name="automatic">1</property>
+   <property name="force_track">0</property>
+   <property name="keyed">1</property>
+   <property name="rotate_x">0</property>
+   <property name="rotate_y">0</property>
+   <property name="rotate_z">0</property>
+   <property name="shear_x">0</property>
+   <property name="shear_y">0</property>
+   <property name="shear_z">0</property>
+  </transition>
+  <transition in="3044" out="3111" id="transition29">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="distort">0</property>
+   <property name="geometry">0/0:100%x100%:100%</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">affine</property>
+   <property name="automatic">1</property>
+   <property name="force_track">0</property>
+   <property name="keyed">1</property>
+   <property name="rotate_x">0</property>
+   <property name="rotate_y">0</property>
+   <property name="rotate_z">0</property>
+   <property name="shear_x">0</property>
+   <property name="shear_y">0</property>
+   <property name="shear_z">0</property>
+  </transition>
+  <transition in="3112" out="7311" id="transition30">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="distort">0</property>
+   <property name="geometry">0/0:100%x100%:100%</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">affine</property>
+   <property name="automatic">1</property>
+   <property name="force_track">0</property>
+   <property name="keyed">1</property>
+   <property name="rotate_x">0</property>
+   <property name="rotate_y">0</property>
+   <property name="rotate_z">0</property>
+   <property name="shear_x">0</property>
+   <property name="shear_y">0</property>
+   <property name="shear_z">0</property>
+  </transition>
+  <transition in="7312" out="7436" id="transition31">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="distort">0</property>
+   <property name="geometry">0/0:100%x100%:100%</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">affine</property>
+   <property name="automatic">1</property>
+   <property name="force_track">0</property>
+   <property name="keyed">1</property>
+   <property name="rotate_x">0</property>
+   <property name="rotate_y">0</property>
+   <property name="rotate_z">0</property>
+   <property name="shear_x">0</property>
+   <property name="shear_y">0</property>
+   <property name="shear_z">0</property>
+  </transition>
+  <transition in="7437" out="8431" id="transition32">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="distort">0</property>
+   <property name="geometry">0/0:100%x100%:100%</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">affine</property>
+   <property name="automatic">1</property>
+   <property name="force_track">0</property>
+   <property name="keyed">1</property>
+   <property name="rotate_x">0</property>
+   <property name="rotate_y">0</property>
+   <property name="rotate_z">0</property>
+   <property name="shear_x">0</property>
+   <property name="shear_y">0</property>
+   <property name="shear_z">0</property>
+  </transition>
+  <transition in="8432" out="8556" id="transition33">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="distort">0</property>
+   <property name="geometry">0/0:100%x100%:100%</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">affine</property>
+   <property name="automatic">1</property>
+   <property name="force_track">0</property>
+   <property name="keyed">1</property>
+   <property name="rotate_x">0</property>
+   <property name="rotate_y">0</property>
+   <property name="rotate_z">0</property>
+   <property name="shear_x">0</property>
+   <property name="shear_y">0</property>
+   <property name="shear_z">0</property>
+  </transition>
+  <transition in="8557" out="8882" id="transition34">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="distort">0</property>
+   <property name="geometry">0/0:100%x100%:100%</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">affine</property>
+   <property name="automatic">1</property>
+   <property name="force_track">0</property>
+   <property name="keyed">1</property>
+   <property name="rotate_x">0</property>
+   <property name="rotate_y">0</property>
+   <property name="rotate_z">0</property>
+   <property name="shear_x">0</property>
+   <property name="shear_y">0</property>
+   <property name="shear_z">0</property>
+  </transition>
+ </tractor>
+ <kdenlivedoc profile="hdv_1080_50i" kdenliveversion="0.9.6" version="0,88" projectfolder="/home/rootalejadro/kdenlive">
+  <customeffects/>
+  <documentproperties documentid="1390465718866" renderdestination="" renderrescalewidth="320" proxyextension="ts" generateproxy="0" proxyimageminsize="2000" rendertctype="0" verticalzoom="1" renderprofile="Theora" renderrescaleheight="240" zonein="0" renderrescale="0" renderscanning="0" renderurl="/home/rootalejadro/Escritorio/prueba1.ogv" rendertwopass="0" renderplay="0" position="8883" proxyminsize="1000" renderstartguide="-1" zoom="7" renderratio="0" rendercategory="Theora" zoneout="100" renderzone="0" renderendguide="-1" renderexportaudio="0" proxyparams="-f mpegts -acodec libmp3lame -ac 2 -ab 128k -ar 48000 -vcodec mpeg2video -g 5 -deinterlace -s 480x270 -vb 400k" enableproxy="0" generateimageproxy="0" renderguide="0" rendertcoverlay="0"/>
+  <documentmetadata/>
+  <documentnotes>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Sans Serif'; font-size:8pt; font-weight:400; font-style:normal;">
+&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;br />&lt;/p>&lt;/body>&lt;/html></documentnotes>
+  <profileinfo width="1440" display_aspect_den="9" frame_rate_den="1" description="HDV 1440x1080i 25 fps" height="1080" frame_rate_num="25" display_aspect_num="16" progressive="0" sample_aspect_num="4" sample_aspect_den="3"/>
+  <tracksinfo>
+   <trackinfo blind="1" mute="0" locked="0" trackname="Audio 2" type="audio"/>
+   <trackinfo blind="1" mute="0" locked="0" trackname="Audio 1" type="audio"/>
+   <trackinfo blind="0" mute="0" locked="0" trackname="Video 3"/>
+   <trackinfo blind="0" mute="0" locked="0" trackname="Video 2"/>
+   <trackinfo blind="0" mute="0" locked="0" trackname="Video 1"/>
+  </tracksinfo>
+  <folder opened="1" id="1" name="Imágenes"/>
+  <folder opened="1" id="2" name="Videos"/>
+  <kdenlive_producer audio_max="63" id="2" pix_fmt="yuv420p" default_video="1" fps="14,523121" analysisdata="" name="video-2014-01-16-12-43-49.mp4" videocodecid="mpeg4" colorspace="601" videocodec="MPEG-4 part 2" resource="/home/rootalejadro/Escritorio/Servidor/video-2014-01-16-12-43-49.mp4" default_audio="0" audiocodec="Advanced Audio Coding" duration="1147" groupid="2" file_hash="89254d8283139c510948d953345ca120" aspect_ratio="1,000000" channels="1" frequency="48000" video_max="1" progressive="1" groupname="Videos" type="3" frame_size="320x240" file_size="4676022">
+   <metaproperty tool="" name="meta.attr.0.stream.creation_time">1948-01-16 12:44:36</metaproperty>
+   <metaproperty tool="" name="meta.attr.0.stream.language">eng</metaproperty>
+   <metaproperty tool="" name="meta.attr.1.stream.creation_time">1948-01-16 12:44:36</metaproperty>
+   <metaproperty tool="" name="meta.attr.1.stream.language">eng</metaproperty>
+   <metaproperty tool="" name="meta.attr.compatible_brands">isom3gp4</metaproperty>
+   <metaproperty tool="" name="meta.attr.creation_time">1948-01-16 12:44:35</metaproperty>
+   <metaproperty tool="" name="meta.attr.major_brand">isom</metaproperty>
+   <metaproperty tool="" name="meta.attr.minor_version">0</metaproperty>
+  </kdenlive_producer>
+  <kdenlive_producer audio_max="63" id="3" pix_fmt="yuv420p" default_video="1" fps="14,523199" analysisdata="" name="video-2014-01-16-12-52-02.mp4" videocodecid="mpeg4" colorspace="601" videocodec="MPEG-4 part 2" resource="/home/rootalejadro/Escritorio/Servidor/video-2014-01-16-12-52-02.mp4" default_audio="0" audiocodec="Advanced Audio Coding" duration="758" groupid="2" file_hash="8676e27d42396dd6a7e5ab2c6fcb44ca" aspect_ratio="1,000000" channels="1" frequency="48000" video_max="1" progressive="1" groupname="Videos" type="3" frame_size="320x240" file_size="2960931">
+   <metaproperty tool="" name="meta.attr.0.stream.creation_time">1948-01-16 12:52:33</metaproperty>
+   <metaproperty tool="" name="meta.attr.0.stream.language">eng</metaproperty>
+   <metaproperty tool="" name="meta.attr.1.stream.creation_time">1948-01-16 12:52:33</metaproperty>
+   <metaproperty tool="" name="meta.attr.1.stream.language">eng</metaproperty>
+   <metaproperty tool="" name="meta.attr.compatible_brands">isom3gp4</metaproperty>
+   <metaproperty tool="" name="meta.attr.creation_time">1948-01-16 12:52:33</metaproperty>
+   <metaproperty tool="" name="meta.attr.major_brand">isom</metaproperty>
+   <metaproperty tool="" name="meta.attr.minor_version">0</metaproperty>
+  </kdenlive_producer>
+  <kdenlive_producer audio_max="0" id="4" default_video="0" analysisdata="" name="2014-01-16 12.46.30.jpg" in="0" resource="/home/rootalejadro/Escritorio/Servidor/2014-01-16 12.46.30.jpg" default_audio="0" duration="125" groupid="1" file_hash="98626ee814ab91d3e136c5b9547ea82c" aspect_ratio="1,000000" channels="0" frequency="0" out="125" video_max="0" groupname="Imágenes" type="5" frame_size="2048x1536" file_size="1075576"/>
+  <kdenlive_producer audio_max="0" id="5" default_video="0" analysisdata="" name="2014-01-16 12.46.44.jpg" in="0" resource="/home/rootalejadro/Escritorio/Servidor/2014-01-16 12.46.44.jpg" default_audio="0" duration="125" groupid="1" file_hash="6f9e444cc3e637dddf1b03e965d0c83c" aspect_ratio="1,000000" channels="0" frequency="0" out="125" video_max="0" groupname="Imágenes" type="5" frame_size="2048x1536" file_size="1047765"/>
+  <kdenlive_producer audio_max="0" id="7" default_video="0" analysisdata="" name="2014-01-16 12.47.07.jpg" in="0" resource="/home/rootalejadro/Escritorio/Servidor/2014-01-16 12.47.07.jpg" default_audio="0" duration="125" groupid="1" file_hash="c05298ab758cb9417a0d5c7915204301" aspect_ratio="1,000000" channels="0" frequency="0" out="125" video_max="0" groupname="Imágenes" type="5" frame_size="2048x1536" file_size="1214491"/>
+  <kdenlive_producer audio_max="0" id="8" default_video="0" analysisdata="" name="2014-01-16 12.47.26.jpg" in="0" resource="/home/rootalejadro/Escritorio/Servidor/2014-01-16 12.47.26.jpg" default_audio="0" duration="125" groupid="1" file_hash="f1699463e03867d2f36211e2f5ad6a4e" aspect_ratio="1,000000" channels="0" frequency="0" out="125" video_max="0" groupname="Imágenes" type="5" frame_size="2048x1536" file_size="924642"/>
+  <kdenlive_producer audio_max="0" id="9" default_video="0" analysisdata="" name="2014-01-16 12.47.46.jpg" in="0" resource="/home/rootalejadro/Escritorio/Servidor/2014-01-16 12.47.46.jpg" default_audio="0" duration="125" groupid="1" file_hash="08114c7af97de7ef1e3799d6f4972e46" aspect_ratio="1,000000" channels="0" frequency="0" out="125" video_max="0" groupname="Imágenes" type="5" frame_size="2048x1536" file_size="950157"/>
+  <kdenlive_producer audio_max="0" id="10" default_video="0" analysisdata="" name="2014-01-16 12.48.40.jpg" in="0" resource="/home/rootalejadro/Escritorio/Servidor/2014-01-16 12.48.40.jpg" default_audio="0" duration="125" groupid="1" file_hash="3e6461a4faede44678c7ceccafcb7480" aspect_ratio="1,000000" channels="0" frequency="0" out="125" video_max="0" groupname="Imágenes" type="5" frame_size="2048x1536" file_size="1046496"/>
+  <kdenlive_producer audio_max="0" id="11" default_video="0" analysisdata="" name="2014-01-16 12.53.41.jpg" in="0" resource="/home/rootalejadro/Escritorio/Servidor/2014-01-16 12.53.41.jpg" default_audio="0" duration="125" groupid="1" file_hash="6aa55066d6e0231de9823bef62a1f2a5" aspect_ratio="1,000000" channels="0" frequency="0" out="125" video_max="0" groupname="Imágenes" type="5" frame_size="2048x1536" file_size="1134367"/>
+  <kdenlive_producer audio_max="0" id="12" default_video="0" analysisdata="" name="2014-01-16 12.59.34.jpg" in="0" resource="/home/rootalejadro/Escritorio/Servidor/2014-01-16 12.59.34.jpg" default_audio="0" duration="125" groupid="1" file_hash="2085b487556643620ae061e0dd54f7cf" aspect_ratio="1,000000" channels="0" frequency="0" out="125" video_max="0" groupname="Imágenes" type="5" frame_size="2048x1536" file_size="979012"/>
+  <kdenlive_producer audio_max="0" id="18" default_video="0" analysisdata="" name="2014-01-16 13.46.47.jpg" in="0" resource="/home/rootalejadro/Escritorio/Servidor/2014-01-16 13.46.47.jpg" default_audio="0" duration="125" groupid="1" file_hash="633a568590db3f0b7cc9237df14f732f" aspect_ratio="1,000000" channels="0" frequency="0" out="125" video_max="0" groupname="Imágenes" type="5" frame_size="2048x1536" file_size="1259258"/>
+  <kdenlive_producer audio_max="0" id="19" default_video="0" analysisdata="" name="2014-01-16 13.47.03.jpg" in="0" resource="/home/rootalejadro/Escritorio/Servidor/2014-01-16 13.47.03.jpg" default_audio="0" duration="125" groupid="1" file_hash="c16ac15656db1acd052f13a9b78fb64d" aspect_ratio="1,000000" channels="0" frequency="0" out="125" video_max="0" groupname="Imágenes" type="5" frame_size="2048x1536" file_size="1062839"/>
+  <kdenlive_producer audio_max="0" id="20" default_video="0" analysisdata="" name="2014-01-16 13.48.35.jpg" in="0" resource="/home/rootalejadro/Escritorio/Servidor/2014-01-16 13.48.35.jpg" default_audio="0" duration="125" groupid="1" file_hash="947eae32e63485b494ee17e760be7fdb" aspect_ratio="1,000000" channels="0" frequency="0" out="125" video_max="0" groupname="Imágenes" type="5" frame_size="2048x1536" file_size="965825"/>
+  <kdenlive_producer audio_max="0" channels="0" duration="125" transparency="1" default_audio="0" video_max="0" frame_size="1440x1080" frequency="0" in="0" analysisdata="" aspect_ratio="0,000000" out="125" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; height=&quot;1080&quot; out=&quot;125&quot; LC_NUMERIC=&quot;es_ES.UTF-8&quot;>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsPixmapItem&quot;>&#xa;  &lt;position x=&quot;1528,571428571428&quot; y=&quot;882,8571428571428&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content url=&quot;/home/rootalejadro/Escritorio/Servidor/logo-white.png&quot;/>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,0&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="23" name="Clip de título" default_video="0"/>
+  <kdenlive_producer audio_max="0" id="24" default_video="0" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; height=&quot;1080&quot; out=&quot;125&quot; LC_NUMERIC=&quot;es_ES.UTF-8&quot;>&#xa; &lt;item z-index=&quot;20&quot; type=&quot;QGraphicsPixmapItem&quot;>&#xa;  &lt;position x=&quot;1526&quot; y=&quot;882&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content url=&quot;/home/rootalejadro/Escritorio/Servidor/logo-white.png&quot;/>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;19&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;576&quot; y=&quot;549,8672566401621&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;254,255,240,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;50&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;Arial Black&quot; font-outline=&quot;2,7&quot;>Ariadna Jiménez Rodríguez&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;16&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;485&quot; y=&quot;454,9026548698967&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;254,255,240,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;50&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;Arial Black&quot; font-outline=&quot;2,7&quot;>Miguel Ángel González Rodríguez&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;16&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;830&quot; y=&quot;632,7777777777777&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;40&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;Arial Black&quot; font-outline=&quot;1,3&quot;>29/01/2014&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;10&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;850&quot; y=&quot;272,7777777777777&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;50&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;Arial Black&quot; font-outline=&quot;1&quot;>1º ASIR&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;9&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;521&quot; y=&quot;191,6666666666666&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;50&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;Arial Black&quot; font-outline=&quot;1&quot;>FUNDAMENTOS DE HARDWARE&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;5&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;628,6637168141888&quot; y=&quot;360,1878072755359&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;254,255,240,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;50&quot; font-italic=&quot;0&quot; alignment=&quot;4&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;Arial Black&quot; font-outline=&quot;2,7&quot;>Alejandro Ortega Freire&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;4&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;35&quot; y=&quot;915&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;254,255,240,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;79&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Arial Black&quot; font-outline=&quot;2,7&quot;>A1: Taller Práctico&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;1&quot; type=&quot;QGraphicsRectItem&quot;>&#xa;  &lt;position x=&quot;-6&quot; y=&quot;850&quot;>&#xa;   &lt;transform zoom=&quot;100&quot;>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content pencolor=&quot;0,0,0,0&quot; rect=&quot;0,0,1936,234&quot; penwidth=&quot;0&quot; brushcolor=&quot;175,175,175,136&quot;/>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,0&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" analysisdata="" name="inicioç.kdenlivetitle" in="0" transparency="1" default_audio="0" duration="126" file_hash="01fc2edbf39bf7b9cdc9bf509d2716bf" aspect_ratio="0,000000" channels="0" frequency="0" out="125" video_max="0" length="126" type="6" frame_size="1440x1080" file_size="2278"/>
+  <kdenlive_producer audio_max="0" channels="0" duration="125" transparency="1" default_audio="0" video_max="0" frame_size="1440x1080" frequency="0" in="0" analysisdata="" aspect_ratio="0,000000" out="125" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; height=&quot;1080&quot; out=&quot;125&quot; LC_NUMERIC=&quot;es_ES.UTF-8&quot;>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsPixmapItem&quot;>&#xa;  &lt;position x=&quot;0&quot; y=&quot;0&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content url=&quot;/home/rootalejadro/Escritorio/Servidor/purple-gradient-abstract-hd-wallpaper-1920x1080-6633.jpg&quot;/>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,0&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="28" name="Clip de título" default_video="0"/>
+  <kdenlive_producer audio_max="0" channels="0" duration="125" transparency="1" default_audio="0" video_max="0" frame_size="1440x1080" frequency="0" in="0" analysisdata="" aspect_ratio="0,000000" out="125" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; height=&quot;1080&quot; out=&quot;125&quot; LC_NUMERIC=&quot;es_ES.UTF-8&quot;>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsPixmapItem&quot;>&#xa;  &lt;position x=&quot;0&quot; y=&quot;0&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content url=&quot;/home/rootalejadro/Escritorio/Servidor/azul-oscuro-organizados-por-temas-91982.jpg&quot;/>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,0&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="29" name="Clip de título" default_video="0"/>
+  <kdenlive_producer audio_max="0" id="30" default_video="0" analysisdata="" name="CAM00478.jpg" in="0" resource="/home/rootalejadro/Escritorio/Servidor/FUW video practica/CAM00478.jpg" default_audio="0" duration="125" groupid="1" file_hash="2311079c07e153ac362e36bd61644519" aspect_ratio="1,000000" channels="0" frequency="0" out="125" video_max="0" groupname="Imágenes" type="5" frame_size="2560x1920" file_size="1029047"/>
+  <kdenlive_producer audio_max="0" id="31" default_video="0" analysisdata="" name="CAM00480.jpg" in="0" resource="/home/rootalejadro/Escritorio/Servidor/FUW video practica/CAM00480.jpg" default_audio="0" duration="125" groupid="1" file_hash="fe84759e456bfdf7225f4dfef60f2cf8" aspect_ratio="1,000000" channels="0" frequency="0" out="125" video_max="0" groupname="Imágenes" type="5" frame_size="2560x1920" file_size="1208823"/>
+  <kdenlive_producer audio_max="0" id="33" default_video="0" analysisdata="" name="CAM00482.jpg" in="0" resource="/home/rootalejadro/Escritorio/Servidor/FUW video practica/CAM00482.jpg" default_audio="0" duration="125" groupid="1" file_hash="2d99c4ffb6d4c74f431dd079fc502a7b" aspect_ratio="1,000000" channels="0" frequency="0" out="125" video_max="0" groupname="Imágenes" type="5" frame_size="1920x2560" file_size="1565751"/>
+  <kdenlive_producer audio_max="0" id="34" default_video="0" analysisdata="" name="CAM00483.jpg" in="0" resource="/home/rootalejadro/Escritorio/Servidor/FUW video practica/CAM00483.jpg" default_audio="0" duration="125" groupid="1" file_hash="07be34902ecef850239f0894bbc4aead" aspect_ratio="1,000000" channels="0" frequency="0" out="125" video_max="0" groupname="Imágenes" type="5" frame_size="1920x2560" file_size="1372151"/>
+  <kdenlive_producer audio_max="0" id="35" default_video="0" analysisdata="" name="CAM00484.jpg" in="0" resource="/home/rootalejadro/Escritorio/Servidor/FUW video practica/CAM00484.jpg" default_audio="0" duration="125" groupid="1" file_hash="e3f3c8eb8c7725cd0b39034a5d3bff96" aspect_ratio="1,000000" channels="0" frequency="0" out="125" video_max="0" groupname="Imágenes" type="5" frame_size="1920x2560" file_size="1135799"/>
+  <kdenlive_producer audio_max="63" id="36" pix_fmt="yuv420p" default_video="0" fps="29,609684" analysisdata="" name="CAM00486.mp4" videocodecid="mpeg4" colorspace="601" videocodec="MPEG-4 part 2" resource="/home/rootalejadro/Escritorio/Servidor/FUW video practica/CAM00486.mp4" default_audio="1" audiocodec="Advanced Audio Coding" duration="2344" groupid="2" file_hash="9719d19dddc4f1f08375f5b1c519dcc1" aspect_ratio="1,000000" channels="1" frequency="16000" video_max="0" progressive="1" groupname="Videos" type="3" frame_size="640x480" file_size="61102241">
+   <metaproperty tool="" name="meta.attr.0.stream.creation_time">2014-01-23 12:47:12</metaproperty>
+   <metaproperty tool="" name="meta.attr.0.stream.language">eng</metaproperty>
+   <metaproperty tool="" name="meta.attr.1.stream.creation_time">2014-01-23 12:47:12</metaproperty>
+   <metaproperty tool="" name="meta.attr.1.stream.language">eng</metaproperty>
+   <metaproperty tool="" name="meta.attr.compatible_brands">isom3gp4</metaproperty>
+   <metaproperty tool="" name="meta.attr.creation_time">2014-01-23 12:47:12</metaproperty>
+   <metaproperty tool="" name="meta.attr.major_brand">isom</metaproperty>
+   <metaproperty tool="" name="meta.attr.minor_version">0</metaproperty>
+  </kdenlive_producer>
+  <kdenlive_producer audio_max="63" id="37" pix_fmt="yuv420p" default_video="0" fps="25,686397" analysisdata="" name="CAM00487.mp4" videocodecid="mpeg4" thumbnail="100" colorspace="601" videocodec="MPEG-4 part 2" resource="/home/rootalejadro/Escritorio/Servidor/FUW video practica/CAM00487.mp4" default_audio="1" audiocodec="Advanced Audio Coding" duration="1889" groupid="2" file_hash="4bf44b1f6819d86d12a16b7012cf9a9a" aspect_ratio="1,000000" channels="1" frequency="16000" video_max="0" progressive="1" groupname="Videos" type="3" frame_size="640x480" file_size="48886848">
+   <metaproperty tool="" name="meta.attr.0.stream.creation_time">2014-01-23 13:04:43</metaproperty>
+   <metaproperty tool="" name="meta.attr.0.stream.language">eng</metaproperty>
+   <metaproperty tool="" name="meta.attr.1.stream.creation_time">2014-01-23 13:04:43</metaproperty>
+   <metaproperty tool="" name="meta.attr.1.stream.language">eng</metaproperty>
+   <metaproperty tool="" name="meta.attr.compatible_brands">isom3gp4</metaproperty>
+   <metaproperty tool="" name="meta.attr.creation_time">2014-01-23 13:04:43</metaproperty>
+   <metaproperty tool="" name="meta.attr.major_brand">isom</metaproperty>
+   <metaproperty tool="" name="meta.attr.minor_version">0</metaproperty>
+  </kdenlive_producer>
+  <kdenlive_producer audio_max="63" id="38" pix_fmt="yuv420p" default_video="0" fps="19,961519" analysisdata="" name="CAM00488.mp4" videocodecid="mpeg4" colorspace="601" videocodec="MPEG-4 part 2" resource="/home/rootalejadro/Escritorio/Servidor/FUW video practica/CAM00488.mp4" default_audio="1" audiocodec="Advanced Audio Coding" duration="1476" groupid="2" file_hash="a14edbba5bb53975bb50e2f5fc33ad64" aspect_ratio="1,000000" channels="1" frequency="16000" video_max="0" progressive="1" groupname="Videos" type="3" frame_size="640x480" file_size="37459971">
+   <metaproperty tool="" name="meta.attr.0.stream.creation_time">2014-01-23 13:09:48</metaproperty>
+   <metaproperty tool="" name="meta.attr.0.stream.language">eng</metaproperty>
+   <metaproperty tool="" name="meta.attr.1.stream.creation_time">2014-01-23 13:09:48</metaproperty>
+   <metaproperty tool="" name="meta.attr.1.stream.language">eng</metaproperty>
+   <metaproperty tool="" name="meta.attr.compatible_brands">isom3gp4</metaproperty>
+   <metaproperty tool="" name="meta.attr.creation_time">2014-01-23 13:09:48</metaproperty>
+   <metaproperty tool="" name="meta.attr.major_brand">isom</metaproperty>
+   <metaproperty tool="" name="meta.attr.minor_version">0</metaproperty>
+  </kdenlive_producer>
+  <kdenlive_producer audio_max="63" id="39" pix_fmt="yuv420p" default_video="0" fps="24,822475" analysisdata="" name="CAM00489.mp4" videocodecid="mpeg4" colorspace="601" videocodec="MPEG-4 part 2" resource="/home/rootalejadro/Escritorio/Servidor/FUW video practica/CAM00489.mp4" default_audio="1" audiocodec="Advanced Audio Coding" duration="143" groupid="2" file_hash="82ca42f4532cccf396844c6b6690ac54" aspect_ratio="1,000000" channels="1" frequency="16000" video_max="0" progressive="1" groupname="Videos" type="3" frame_size="640x480" file_size="3065291">
+   <metaproperty tool="" name="meta.attr.0.stream.creation_time">2014-01-23 13:10:18</metaproperty>
+   <metaproperty tool="" name="meta.attr.0.stream.language">eng</metaproperty>
+   <metaproperty tool="" name="meta.attr.1.stream.creation_time">2014-01-23 13:10:18</metaproperty>
+   <metaproperty tool="" name="meta.attr.1.stream.language">eng</metaproperty>
+   <metaproperty tool="" name="meta.attr.compatible_brands">isom3gp4</metaproperty>
+   <metaproperty tool="" name="meta.attr.creation_time">2014-01-23 13:10:18</metaproperty>
+   <metaproperty tool="" name="meta.attr.major_brand">isom</metaproperty>
+   <metaproperty tool="" name="meta.attr.minor_version">0</metaproperty>
+  </kdenlive_producer>
+  <kdenlive_producer audio_max="63" id="40" pix_fmt="yuv420p" default_video="0" fps="30,097120" analysisdata="" name="CAM00492.mp4" videocodecid="mpeg4" colorspace="601" videocodec="MPEG-4 part 2" resource="/home/rootalejadro/Escritorio/Servidor/FUW video practica/CAM00492.mp4" default_audio="1" audiocodec="Advanced Audio Coding" duration="4505" groupid="2" file_hash="dfaa3ee9f2d2629c806c100b3a9ee2a6" aspect_ratio="1,000000" channels="1" frequency="16000" video_max="0" progressive="1" groupname="Videos" type="3" frame_size="640x480" file_size="116953541">
+   <metaproperty tool="" name="meta.attr.0.stream.creation_time">2014-01-23 13:15:11</metaproperty>
+   <metaproperty tool="" name="meta.attr.0.stream.language">eng</metaproperty>
+   <metaproperty tool="" name="meta.attr.1.stream.creation_time">2014-01-23 13:15:11</metaproperty>
+   <metaproperty tool="" name="meta.attr.1.stream.language">eng</metaproperty>
+   <metaproperty tool="" name="meta.attr.compatible_brands">isom3gp4</metaproperty>
+   <metaproperty tool="" name="meta.attr.creation_time">2014-01-23 13:15:11</metaproperty>
+   <metaproperty tool="" name="meta.attr.major_brand">isom</metaproperty>
+   <metaproperty tool="" name="meta.attr.minor_version">0</metaproperty>
+  </kdenlive_producer>
+  <kdenlive_producer audio_max="54" id="41" pix_fmt="yuv420p" default_video="0" fps="16,113349" analysisdata="" name="MOV_0126.mp4" colorspace="601" videocodec="H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10" resource="/home/rootalejadro/Escritorio/Servidor/FUW video practica/MOV_0126.mp4" default_audio="1" audiocodec="Advanced Audio Coding" duration="948" groupid="2" file_hash="0cf094c70d58c522ac282906f8e39b22" aspect_ratio="1,000000" channels="2" frequency="48000" video_max="0" groupname="Videos" type="3" frame_size="640x480" file_size="6065870">
+   <metaproperty tool="" name="meta.attr.0.stream.creation_time">1948-01-16 12:45:38</metaproperty>
+   <metaproperty tool="" name="meta.attr.0.stream.language">eng</metaproperty>
+   <metaproperty tool="" name="meta.attr.1.stream.creation_time">1948-01-16 12:45:38</metaproperty>
+   <metaproperty tool="" name="meta.attr.1.stream.language">eng</metaproperty>
+   <metaproperty tool="" name="meta.attr.compatible_brands">isom3gp4</metaproperty>
+   <metaproperty tool="" name="meta.attr.creation_time">1948-01-16 12:45:38</metaproperty>
+   <metaproperty tool="" name="meta.attr.major_brand">isom</metaproperty>
+   <metaproperty tool="" name="meta.attr.minor_version">0</metaproperty>
+  </kdenlive_producer>
+  <kdenlive_producer audio_max="28" id="42" pix_fmt="yuv420p" default_video="0" fps="16,035415" analysisdata="" name="MOV_0127.mp4" videocodecid="h264" colorspace="601" videocodec="H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10" resource="/home/rootalejadro/Escritorio/Servidor/FUW video practica/MOV_0127.mp4" default_audio="1" audiocodec="Advanced Audio Coding" duration="205" groupid="2" file_hash="9c2ae10da6f083a1ee390cbbec615164" aspect_ratio="1,000000" channels="2" frequency="48000" video_max="0" progressive="1" groupname="Videos" type="3" frame_size="640x480" file_size="1605090">
+   <metaproperty tool="" name="meta.attr.0.stream.creation_time">1948-01-16 12:58:08</metaproperty>
+   <metaproperty tool="" name="meta.attr.0.stream.language">eng</metaproperty>
+   <metaproperty tool="" name="meta.attr.1.stream.creation_time">1948-01-16 12:58:08</metaproperty>
+   <metaproperty tool="" name="meta.attr.1.stream.language">eng</metaproperty>
+   <metaproperty tool="" name="meta.attr.compatible_brands">isom3gp4</metaproperty>
+   <metaproperty tool="" name="meta.attr.creation_time">1948-01-16 12:58:08</metaproperty>
+   <metaproperty tool="" name="meta.attr.major_brand">isom</metaproperty>
+   <metaproperty tool="" name="meta.attr.minor_version">0</metaproperty>
+  </kdenlive_producer>
+  <kdenlive_producer audio_max="0" channels="0" duration="125" transparency="1" default_audio="0" video_max="0" frame_size="1440x1080" frequency="0" in="0" analysisdata="" aspect_ratio="0,000000" out="125" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; duration=&quot;125&quot; height=&quot;1080&quot; LC_NUMERIC=&quot;es_ES.UTF-8&quot;>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;277&quot; y=&quot;430&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;0,0,0,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;90&quot; font-italic=&quot;0&quot; alignment=&quot;4&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;Arial Black&quot; font-outline=&quot;2,7&quot;>1. ABRIENDO EL SERVIDOR&#xa;COMPONENTES&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsPixmapItem&quot;>&#xa;  &lt;position x=&quot;-2&quot; y=&quot;-61&quot;>&#xa;   &lt;transform zoom=&quot;188&quot;>1.88,0,0,0,1.88,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content url=&quot;/home/rootalejadro/Escritorio/Servidor/fondo.png&quot;/>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;277&quot; y=&quot;430&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;0,0,0,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;90&quot; font-italic=&quot;0&quot; alignment=&quot;4&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;Arial Black&quot; font-outline=&quot;2,7&quot;>1. ABRIENDO EL SERVIDOR&#xa;COMPONENTES&lt;/content>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,0&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="46" name="Clip de título" default_video="0"/>
+  <kdenlive_producer duration="125" transparency="1" frame_size="1440x1080" thumbnail="100" in="0" analysisdata="" aspect_ratio="0,000000" out="124" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; duration=&quot;125&quot; height=&quot;1080&quot; LC_NUMERIC=&quot;es_ES.UTF-8&quot;>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsPixmapItem&quot;>&#xa;  &lt;position x=&quot;1528&quot; y=&quot;882&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content url=&quot;/home/rootalejadro/Escritorio/Servidor/logo-black.png&quot;/>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,0&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="47" name="Clip de título"/>
+  <kdenlive_producer duration="125" transparency="1" frame_size="1440x1080" in="0" analysisdata="" aspect_ratio="0,000000" out="124" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; duration=&quot;125&quot; height=&quot;1080&quot; LC_NUMERIC=&quot;es_ES.UTF-8&quot;>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;184&quot; y=&quot;483&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;0,0,0,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;90&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;Arial Black&quot; font-outline=&quot;2,7&quot;>2. ARRANCANDO EL SERVIDOR&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsPixmapItem&quot;>&#xa;  &lt;position x=&quot;-2&quot; y=&quot;-61&quot;>&#xa;   &lt;transform zoom=&quot;188&quot;>1.88,0,0,0,1.88,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content url=&quot;/home/rootalejadro/kdenlive/titles/bb2f15ce4495c786625ab55882b28fb3.titlepart&quot;/>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;184&quot; y=&quot;483&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;0,0,0,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;90&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;Arial Black&quot; font-outline=&quot;2,7&quot;>2. ARRANCANDO EL SERVIDOR&lt;/content>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,0&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="48" name="Clip de título"/>
+  <kdenlive_producer duration="125" transparency="1" frame_size="1440x1080" thumbnail="100" in="0" analysisdata="" aspect_ratio="0,000000" out="124" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; duration=&quot;125&quot; height=&quot;1080&quot; LC_NUMERIC=&quot;es_ES.UTF-8&quot;>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;588&quot; y=&quot;830,5579331134682&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,0,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;53&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;Arial Black&quot; font-outline=&quot;3,8&quot;>2 MICROPROCESADORES&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsPixmapItem&quot;>&#xa;  &lt;position x=&quot;1528&quot; y=&quot;882&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content url=&quot;/home/rootalejadro/Escritorio/Servidor/logo-white.png&quot;/>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,0&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="49" name="Clip de título"/>
+  <kdenlive_producer duration="125" transparency="1" frame_size="1440x1080" thumbnail="100" in="0" analysisdata="" aspect_ratio="0,000000" out="124" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; duration=&quot;125&quot; height=&quot;1080&quot; LC_NUMERIC=&quot;es_ES.UTF-8&quot;>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsPixmapItem&quot;>&#xa;  &lt;position x=&quot;1528&quot; y=&quot;882&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content url=&quot;/home/rootalejadro/kdenlive/titles/10a717183a8f2d46792ca6b1d010dfcb.titlepart&quot;/>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;669&quot; y=&quot;830,5579331134682&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,0,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;53&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;Arial Black&quot; font-outline=&quot;3,8&quot;>2 TARJETAS DE RED&lt;/content>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,0&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="50" name="Clip de título"/>
+  <kdenlive_producer duration="125" transparency="1" frame_size="1440x1080" thumbnail="100" in="0" analysisdata="" aspect_ratio="0,000000" out="124" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; duration=&quot;125&quot; height=&quot;1080&quot; LC_NUMERIC=&quot;es_ES.UTF-8&quot;>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;403&quot; y=&quot;830,5579331134682&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,0,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;53&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;Arial Black&quot; font-outline=&quot;3,8&quot;>5 DISCOS DUROS CON CONEXIÓN IDE&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsPixmapItem&quot;>&#xa;  &lt;position x=&quot;1528&quot; y=&quot;882&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content url=&quot;/home/rootalejadro/kdenlive/titles/10a717183a8f2d46792ca6b1d010dfcb.titlepart&quot;/>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,0&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="51" name="Clip de título"/>
+  <kdenlive_producer duration="125" transparency="1" frame_size="1440x1080" thumbnail="100" in="0" analysisdata="" aspect_ratio="0,000000" out="124" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; duration=&quot;125&quot; height=&quot;1080&quot; LC_NUMERIC=&quot;es_ES.UTF-8&quot;>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsPixmapItem&quot;>&#xa;  &lt;position x=&quot;1528&quot; y=&quot;882&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content url=&quot;/home/rootalejadro/kdenlive/titles/10a717183a8f2d46792ca6b1d010dfcb.titlepart&quot;/>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;510&quot; y=&quot;830,5579331134682&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,0,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;53&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;Arial Black&quot; font-outline=&quot;3,8&quot;>2 FUENTES DE ALIMENTACIÓN&lt;/content>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,0&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="52" name="Clip de título"/>
+  <kdenlive_producer duration="125" transparency="1" frame_size="1440x1080" thumbnail="100" in="0" analysisdata="" aspect_ratio="0,000000" out="124" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; duration=&quot;125&quot; height=&quot;1080&quot; LC_NUMERIC=&quot;es_ES.UTF-8&quot;>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsPixmapItem&quot;>&#xa;  &lt;position x=&quot;1528&quot; y=&quot;882&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content url=&quot;/home/rootalejadro/kdenlive/titles/10a717183a8f2d46792ca6b1d010dfcb.titlepart&quot;/>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;540&quot; y=&quot;830,5579331134682&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,0,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;53&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;Arial Black&quot; font-outline=&quot;3,8&quot;>1 UNIDAD LECTORA DVD/CD&lt;/content>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,0&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="53" name="Clip de título"/>
+  <kdenlive_producer audio_max="0" id="16" default_video="0" analysisdata="" name="2014-01-16 13.30.35.jpg" in="0" resource="/home/rootalejadro/Escritorio/Servidor/2014-01-16 13.30.35.jpg" default_audio="0" duration="125" groupid="1" file_hash="6741b0ebdf3a948ff0142472cd0b40ea" aspect_ratio="1,000000" channels="0" frequency="0" out="125" video_max="0" groupname="Imágenes" type="5" frame_size="2048x1536" file_size="994613"/>
+  <kdenlive_producer audio_max="0" id="15" default_video="0" analysisdata="" name="2014-01-16 13.30.23.jpg" in="0" resource="/home/rootalejadro/Escritorio/Servidor/2014-01-16 13.30.23.jpg" default_audio="0" duration="125" groupid="1" file_hash="2f358b21e8ad486c28a54a4dc8f01ce1" aspect_ratio="1,000000" channels="0" frequency="0" out="125" video_max="0" groupname="Imágenes" type="5" frame_size="2048x1536" file_size="1153942"/>
+  <kdenlive_producer audio_max="0" id="14" default_video="0" analysisdata="" name="2014-01-16 13.22.04.jpg" in="0" resource="/home/rootalejadro/Escritorio/Servidor/2014-01-16 13.22.04.jpg" default_audio="0" duration="125" groupid="1" file_hash="c534c4db8d97a00b0833c6bccc8a387d" aspect_ratio="1,000000" channels="0" frequency="0" out="125" video_max="0" groupname="Imágenes" type="5" frame_size="2048x1536" file_size="1097549"/>
+  <kdenlive_producer audio_max="0" id="13" default_video="0" analysisdata="" name="2014-01-16 13.21.55.jpg" in="0" resource="/home/rootalejadro/Escritorio/Servidor/2014-01-16 13.21.55.jpg" default_audio="0" duration="125" groupid="1" file_hash="13074838506fa5d7648e7b29058b7e71" aspect_ratio="1,000000" channels="0" frequency="0" out="125" video_max="0" groupname="Imágenes" type="5" frame_size="2048x1536" file_size="1149759"/>
+  <kdenlive_producer duration="125" transparency="1" frame_size="1440x1080" in="0" analysisdata="" aspect_ratio="0,000000" out="124" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; duration=&quot;125&quot; height=&quot;1080&quot; LC_NUMERIC=&quot;es_ES.UTF-8&quot;>&#xa; &lt;item z-index=&quot;1&quot; type=&quot;QGraphicsPixmapItem&quot;>&#xa;  &lt;position x=&quot;1528&quot; y=&quot;882&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content url=&quot;/home/rootalejadro/Escritorio/Servidor/logo-white.png&quot;/>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;1&quot; type=&quot;QGraphicsPixmapItem&quot;>&#xa;  &lt;position x=&quot;1822,222222222221&quot; y=&quot;-22&quot;>&#xa;   &lt;transform zoom=&quot;55&quot; rotation=&quot;0,0,90&quot;>0,0.55,0,-0.55,0,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content url=&quot;/home/rootalejadro/Escritorio/Servidor/2014-01-16 13.22.04.jpg&quot;/>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;1&quot; type=&quot;QGraphicsPixmapItem&quot;>&#xa;  &lt;position x=&quot;1528&quot; y=&quot;882&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content url=&quot;/home/rootalejadro/Escritorio/Servidor/logo-white.png&quot;/>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsPixmapItem&quot;>&#xa;  &lt;position x=&quot;937,6675925925925&quot; y=&quot;-29,40740740740739&quot;>&#xa;   &lt;transform zoom=&quot;55&quot; rotation=&quot;0,0,90&quot;>0,0.55,0,-0.55,0,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content url=&quot;/home/rootalejadro/Escritorio/Servidor/2014-01-16 13.21.55.jpg&quot;/>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,255&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="55" name="Clip de título"/>
+  <kdenlive_producer duration="125" transparency="1" frame_size="1440x1080" thumbnail="100" in="0" analysisdata="" aspect_ratio="0,000000" out="124" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; duration=&quot;125&quot; height=&quot;1080&quot; LC_NUMERIC=&quot;es_ES.UTF-8&quot;>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsPixmapItem&quot;>&#xa;  &lt;position x=&quot;1528&quot; y=&quot;882&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content url=&quot;/home/rootalejadro/kdenlive/titles/10a717183a8f2d46792ca6b1d010dfcb.titlepart&quot;/>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;125&quot; y=&quot;748,8275862068965&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,0,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;53&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;Arial Black&quot; font-outline=&quot;3,8&quot;>Al arrancar el equipo se observa que el Sistema Básico &#xa;de Arranque BIOS tiene contraseña. &lt;/content>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,0&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="56" name="Clip de título"/>
+  <kdenlive_producer duration="125" transparency="1" frame_size="1440x1080" thumbnail="100" in="0" analysisdata="" aspect_ratio="0,000000" out="124" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; duration=&quot;125&quot; height=&quot;1080&quot; LC_NUMERIC=&quot;es_ES.UTF-8&quot;>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsPixmapItem&quot;>&#xa;  &lt;position x=&quot;1528&quot; y=&quot;882&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content url=&quot;/home/rootalejadro/kdenlive/titles/10a717183a8f2d46792ca6b1d010dfcb.titlepart&quot;/>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;307&quot; y=&quot;773&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,0,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;53&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;Arial Black&quot; font-outline=&quot;3,8&quot;>Para borrar la BIOS se siguieron dos pasos:&lt;/content>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,0&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="57" name="Clip de título"/>
+  <kdenlive_producer duration="125" transparency="1" frame_size="1440x1080" thumbnail="100" in="0" analysisdata="" aspect_ratio="0,000000" out="124" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; duration=&quot;125&quot; height=&quot;1080&quot; LC_NUMERIC=&quot;es_ES.UTF-8&quot;>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;85&quot; y=&quot;773,8011763567114&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,0,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;53&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;Arial Black&quot; font-outline=&quot;3,8&quot;>1.- Retirar y colocar pasado unos minutos de nuevo la pila&#xa;de la BIOS.&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsPixmapItem&quot;>&#xa;  &lt;position x=&quot;1528&quot; y=&quot;882&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content url=&quot;/home/rootalejadro/kdenlive/titles/10a717183a8f2d46792ca6b1d010dfcb.titlepart&quot;/>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,0&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="58" name="Clip de título"/>
+  <kdenlive_producer duration="125" transparency="1" frame_size="1440x1080" thumbnail="100" in="0" analysisdata="" aspect_ratio="0,000000" out="124" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; duration=&quot;125&quot; height=&quot;1080&quot; LC_NUMERIC=&quot;es_ES.UTF-8&quot;>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;139&quot; y=&quot;773&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,0,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;53&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;Arial Black&quot; font-outline=&quot;3,8&quot;>2.- Modificar el jumper de la placa para borrar la BIOS.&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsPixmapItem&quot;>&#xa;  &lt;position x=&quot;1528&quot; y=&quot;882&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content url=&quot;/home/rootalejadro/kdenlive/titles/10a717183a8f2d46792ca6b1d010dfcb.titlepart&quot;/>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,0&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="59" name="Clip de título"/>
+  <kdenlive_producer duration="125" transparency="1" frame_size="1440x1080" thumbnail="100" in="0" analysisdata="" aspect_ratio="0,000000" out="124" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; duration=&quot;125&quot; height=&quot;1080&quot; LC_NUMERIC=&quot;es_ES.UTF-8&quot;>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsPixmapItem&quot;>&#xa;  &lt;position x=&quot;1528&quot; y=&quot;882&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content url=&quot;/home/rootalejadro/kdenlive/titles/10a717183a8f2d46792ca6b1d010dfcb.titlepart&quot;/>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;840&quot; y=&quot;830,5579331134682&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,0,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;53&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;Arial Black&quot; font-outline=&quot;3,8&quot;>JUMPER&lt;/content>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,0&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="61" name="Clip de título"/>
+  <kdenlive_producer duration="125" transparency="1" frame_size="1440x1080" in="0" analysisdata="" aspect_ratio="0,000000" out="124" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; duration=&quot;125&quot; height=&quot;1080&quot; LC_NUMERIC=&quot;es_ES.UTF-8&quot;>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;512&quot; y=&quot;483&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;0,0,0,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;90&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;Arial Black&quot; font-outline=&quot;2,7&quot;>3. PARTICIONADO&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsPixmapItem&quot;>&#xa;  &lt;position x=&quot;-2&quot; y=&quot;-61&quot;>&#xa;   &lt;transform zoom=&quot;188&quot;>1.88,0,0,0,1.88,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content url=&quot;/home/rootalejadro/kdenlive/titles/bb2f15ce4495c786625ab55882b28fb3.titlepart&quot;/>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;512&quot; y=&quot;483&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;0,0,0,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;90&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;Arial Black&quot; font-outline=&quot;2,7&quot;>3. PARTICIONADO&lt;/content>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,0&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="62" name="Clip de título"/>
+  <kdenlive_producer duration="125" transparency="1" frame_size="1440x1080" thumbnail="100" in="0" analysisdata="" aspect_ratio="0,000000" out="124" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; duration=&quot;125&quot; height=&quot;1080&quot; LC_NUMERIC=&quot;es_ES.UTF-8&quot;>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsPixmapItem&quot;>&#xa;  &lt;position x=&quot;1528&quot; y=&quot;882&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content url=&quot;/home/rootalejadro/kdenlive/titles/10a717183a8f2d46792ca6b1d010dfcb.titlepart&quot;/>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;24&quot; y=&quot;773&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,0,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;53&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;Arial Black&quot; font-outline=&quot;3,8&quot;>Después de colocar de nuevo la pila aún solicitaba contraseña&#xa;así que se pasó a modificar el jumper.&lt;/content>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,0&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="63" name="Clip de título"/>
+  <kdenlive_producer duration="125" transparency="1" frame_size="1440x1080" thumbnail="100" in="0" analysisdata="" aspect_ratio="0,000000" out="124" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; duration=&quot;125&quot; height=&quot;1080&quot; LC_NUMERIC=&quot;es_ES.UTF-8&quot;>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;145&quot; y=&quot;773&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,0,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;53&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;Arial Black&quot; font-outline=&quot;3,8&quot;>Para el particionado se usó un cd-live de knoppix 7.05&#xa;con la aplicación gparted.&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsPixmapItem&quot;>&#xa;  &lt;position x=&quot;1528&quot; y=&quot;882&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content url=&quot;/home/rootalejadro/Escritorio/Servidor/logo-white.png&quot;/>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,0&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="64" name="Clip de título"/>
+  <kdenlive_producer duration="125" transparency="1" frame_size="1440x1080" in="0" analysisdata="" aspect_ratio="0,000000" out="124" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; duration=&quot;125&quot; height=&quot;1080&quot; LC_NUMERIC=&quot;es_ES.UTF-8&quot;>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsPixmapItem&quot;>&#xa;  &lt;position x=&quot;1528&quot; y=&quot;882&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content url=&quot;/home/rootalejadro/kdenlive/titles/10a717183a8f2d46792ca6b1d010dfcb.titlepart&quot;/>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;135&quot; y=&quot;63&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,0,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;53&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;Arial Black&quot; font-outline=&quot;3,8&quot;>La memoria secundaria (543.89 GB) se particiona de la&#xa;siguiente forma:&#xa;&#xa;&#x9;- Partición primaria de 25 GB tipo NTFS para la&#xa;&#x9;instalación de Windows 2008 server.&#xa;&#xa;&#x9;- Una partición extendida para el resto con dos&#xa;&#x9;particiones lógicas:&#xa;&#x9;&#x9;&#xa;&#x9;&#x9;1.- Una de 20 GB tipo ext4 para la instalación de&#xa;&#x9;&#x9;OpenSuse 13.1&#xa;&#xa;&#x9;&#x9;2.- Otra de 2 GB tipo swap.&#xa;&#xa;&#x9;- El resto queda sin asignar.&lt;/content>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,0&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="65" name="Clip de título"/>
+  <kdenlive_producer duration="125" transparency="1" frame_size="1440x1080" thumbnail="100" in="0" analysisdata="" aspect_ratio="0,000000" out="124" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; duration=&quot;125&quot; height=&quot;1080&quot; LC_NUMERIC=&quot;es_ES.UTF-8&quot;>&#xa; &lt;item z-index=&quot;3&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;165&quot; y=&quot;773&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,0,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;53&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;Arial Black&quot; font-outline=&quot;3,8&quot;>Una vez borrada la contraseña se modifica la fecha y&#xa;hora de la BIOS.&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;1&quot; type=&quot;QGraphicsPixmapItem&quot;>&#xa;  &lt;position x=&quot;1528&quot; y=&quot;882&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content url=&quot;/home/rootalejadro/Escritorio/Servidor/logo-white.png&quot;/>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;1&quot; type=&quot;QGraphicsPixmapItem&quot;>&#xa;  &lt;position x=&quot;907,6923076923073&quot; y=&quot;-11,53846153846155&quot;>&#xa;   &lt;transform zoom=&quot;55&quot; rotation=&quot;0,0,90&quot;>0,0.55,0,-0.55,0,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content url=&quot;/home/rootalejadro/Escritorio/Servidor/2014-01-16 13.30.35.jpg&quot;/>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsPixmapItem&quot;>&#xa;  &lt;position x=&quot;1862,051282051282&quot; y=&quot;-35,89743589743568&quot;>&#xa;   &lt;transform zoom=&quot;60&quot; rotation=&quot;0,0,90&quot;>0,0.6,0,-0.6,0,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content url=&quot;/home/rootalejadro/Escritorio/Servidor/2014-01-16 13.48.35.jpg&quot;/>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,255&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="66" name="Clip de título"/>
+  <kdenlive_producer duration="125" transparency="1" frame_size="1440x1080" in="0" analysisdata="" aspect_ratio="0,000000" out="124" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; duration=&quot;125&quot; height=&quot;1080&quot; LC_NUMERIC=&quot;es_ES.UTF-8&quot;>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;340&quot; y=&quot;430&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;0,0,0,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;90&quot; font-italic=&quot;0&quot; alignment=&quot;4&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;Arial Black&quot; font-outline=&quot;2,7&quot;>4. INSTALACIÓN DE&#xa;WINDOWS 2008 SERVER&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsPixmapItem&quot;>&#xa;  &lt;position x=&quot;-2&quot; y=&quot;-61&quot;>&#xa;   &lt;transform zoom=&quot;188&quot;>1.88,0,0,0,1.88,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content url=&quot;/home/rootalejadro/kdenlive/titles/bb2f15ce4495c786625ab55882b28fb3.titlepart&quot;/>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;340&quot; y=&quot;430&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;0,0,0,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;90&quot; font-italic=&quot;0&quot; alignment=&quot;4&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;Arial Black&quot; font-outline=&quot;2,7&quot;>4. INSTALACIÓN DE &#xa;WINDOWS 2008 SERVER&lt;/content>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,0&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="67" name="Clip de título"/>
+  <kdenlive_producer duration="125" transparency="1" frame_size="1440x1080" thumbnail="100" in="0" analysisdata="" aspect_ratio="0,000000" out="124" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; duration=&quot;125&quot; height=&quot;1080&quot; LC_NUMERIC=&quot;es_ES.UTF-8&quot;>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsPixmapItem&quot;>&#xa;  &lt;position x=&quot;1528&quot; y=&quot;882&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content url=&quot;/home/rootalejadro/kdenlive/titles/10a717183a8f2d46792ca6b1d010dfcb.titlepart&quot;/>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;238&quot; y=&quot;773&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,0,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;53&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;Arial Black&quot; font-outline=&quot;3,8&quot;>Cambiar la política de contraseñas en Windows.&lt;/content>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,0&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="68" name="Clip de título"/>
+  <kdenlive_producer duration="125" transparency="1" frame_size="1440x1080" thumbnail="100" in="0" analysisdata="" aspect_ratio="0,000000" out="124" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; duration=&quot;125&quot; height=&quot;1080&quot; LC_NUMERIC=&quot;es_ES.UTF-8&quot;>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsPixmapItem&quot;>&#xa;  &lt;position x=&quot;1528&quot; y=&quot;882&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content url=&quot;/home/rootalejadro/kdenlive/titles/10a717183a8f2d46792ca6b1d010dfcb.titlepart&quot;/>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;429&quot; y=&quot;830,5579331134682&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,0,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;53&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;Arial Black&quot; font-outline=&quot;3,8&quot;>Cambiar la contraseña a &quot;profesor&quot;&lt;/content>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,0&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="69" name="Clip de título"/>
+  <markers/>
+  <groups/>
+ </kdenlivedoc>
+</mlt>

@@ -1,0 +1,608 @@
+<!--
+  AUTORES: Alejandro Ortega Freire, Ariadna Jiménez Rodríguez, Miguel Ángel González Rodríguez
+  ASIGNATURA: Fundamentos de Hardware
+  CURSO: 1º ASIR 
+  FECHA: 11/03/2014
+  ACTIVIDAD:  A2: Análisis del Rendimiento
+-->
+
+<html>
+	<head>
+		<title>A2: Análisis del rendimiento</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<style type="text/css">
+			img {border: 1px solid black;}
+			img.icon {border: none;}
+		</style>
+	</head>
+	<body>
+		<div id='indice' style='display:table-row; padding: 10px;'>
+			  <div style='float: left; width=20%; padding:10px;'>
+				<img class='icon' src='./files/logo.png'/>
+			  </div>
+			  <div style='float: left;padding:10px'>
+				  <ul>
+					<li><b>M&oacute;dulo:</b> <i>Fundamentos de Hardware</i></li>
+					<li><b>T&iacute;tulo del trabajo:</b> <i>A2: Análisis del rendimiento</i></li>
+					<li><b>Componentes del grupo:</b> <i>Alejandro Ortega Freire, Ariadna Jiménez Rodríguez, Miguel Ángel González Rodríguez</i></li>
+					<li><b>Curso Acad&eacute;mico:</b> <i>2013/2014</i></li>
+					<li><b>Fecha de entrega:</b> <i>11 de marzo de 2014</i></li>
+				  </ul>
+			  </div>
+		</div>
+		<div style='float: clear;background-color: #eeeeee; border:2px solid; border-radius:10px; padding: 10px;'>
+			<a href='#1'>1.- Análisis en Windows</a> | <a href='#1.1'>1.1.- SO Windows 7</a> | <a href='#1.2'>1.2.- SO Windows XP</a> | <a href='#1.3'>1.3.- Conclusiones</a> | <a href='#2'>2.- Análisis en GNU/Linux</a> | <a href='#2.1'>2.1.- SO Debian 7</a> | <a href='#2.2'>2.2.- SO Ubuntu 12.04</a> | <a href='#2.3'>2.3.- Conclusiones</a>  
+		</div>
+	<br/>
+	<div style='float: clear;background-color: #D7FABC; border:2px dotted; border-radius:10px; padding: 10px;'>
+		<b>NOTA 1:</b> Dado que en la práctica anterior el servidor que estábamos utilizando dejó de funcionar la presente práctica ha sido realizada enteramente con 4 máquinas virtuales, dos con SO Windows y dos con SO GNU/Linux. 
+	</div>	
+	<h1 id='1'>1.- Análisis en Windows</h1>
+	<h2 id='1.1'>1.1.- Sistema Operativo Windows 7</h2>
+	<h3>1.1.1.- Características de la máquina.</h3>
+	<ul>
+		<li><b>Detallar las características</b> de la máquina virtual con Window 7. Para ello se empleó el programa <b>Everest Ultimate Edition 5.5</b></li>
+		<li>Sus principales características son:
+			<ul type='square'>
+				<li><b>SO:</b> Microsoft Windows 7 Ultimate</li>
+				<li><b>Motherboard:</b> VirtualBox Virtual Platform</li>
+				<li><b>CPU:</b> Intel Core 2 Duo, 2400 MHz</li>
+				<li><b>Arquitectura:</b> 32 bits</li>
+				<li><b>Memoria Principal (RAM):</b> 1024 MB</li>
+				<li><b>Memoria Secundaria:</b> 29,9 GB</li>
+				<li><b>Tarjeta Gráfica:</b> VirtualBox Graphics Adapter (36 MB)</li>
+				<li><b>Placa de sonido:</b> Intel 82801FB(M) ICH6(-M)</li>
+				<li><b>Tarjeta de Red:</b> Intel(R) PRO/1000 MT</li>
+			</ul>
+		</li>
+	</ul>
+	<center>
+		<img src='./files/windows7/Imagen001.png' width='45%'/>
+		<img src='./files/windows7/Imagen002.png' width='45%'/><br/>
+		<p><i><b>Imágenes 1 y 2:</b> Resumen de las características de la máquina con Windows 7.</i></p>
+	</center>
+	<br/>
+	<div style='float: clear;background-color: #D7FABC; border:2px dotted; border-radius:10px; padding: 10px;'>
+		<b>NOTA 2:</b> Debemos asegurarnos de tener correctamente los drivers de nuestra máquina. Consultar <b>"Administrador de dispositivos"</b>.
+	</div>
+	<h3>1.1.2.- Pruebas de rendimiento.</h3>
+	<ul>
+		<li><b>Aplicar pruebas de rendimiento</b> a la máquina virtual con Window 7.</li>
+		<li>Se realizaron las siguientes pruebas:</li><br/>
+			<ul type='square'>
+				<li>Utilidad <b>EVEREST ULTIMATE EDITION 5.5</b>. Se generaron los siguientes informes:
+					<ul style=list-style:none;>
+						<li><a href='./files/windows7/Informehardware.htm' target='_blank'><img src='./files/documento.png' class='icon' width='25px'/></a> <a href='./files/windows7/Informehardware.htm' target='_blank'>Informe sobre los componentes del hardware</a></li>
+						<li><a href='./files/windows7/Informerendimiento.htm' target='_blank'><img src='./files/documento.png' class='icon' width='25px'/></a> <a href='./files/windows7/Informerendimiento.htm' target='_blank'>Informe sobre el rendimiento de la máquina</a></li>
+						<li><a href='./files/windows7/Informesistema.htm' target='_blank'><img src='./files/documento.png' class='icon' width='25px'/></a> <a href='./files/windows7/Informesistema.htm' target='_blank'>Informe sobre el sistema operativo de la máquina</a></li>
+						<li><a href='./files/windows7/InformeSO.htm' target='_blank'><img src='./files/documento.png' class='icon' width='25px'/></a> <a href='./files/windows7/InformeSO.htm' target='_blank'>Informe sobre los programas instalados</a></li>
+					</ul>
+				</li>
+			</ul>
+	</ul>
+	<ul>
+		<ul type='square'>
+			<li>Utilidad <b>Memtest86+</b>.</li><br/>
+			<a href='http://www.memtest.org/' target='_blank'><img src='./files/home-icon.png' class='icon' width='20px'/>Página Oficial.</a><a href='http://www.memtest.org/download/5.01/memtest86+-5.01.iso.zip'><img src='./files/download.png' class='icon' width='20px'/>Enlace de descarga.</a>
+		</ul>
+	</ul>
+	<center>
+		<img src='./files/windows7/Imagen003.png' width='45%'/>
+		<img src='./files/windows7/Imagen005.png' width='45%'/><br/>
+		<p><i><b>Imágenes 3 y 4:</b> Principio y fin Memtest en Windows 7.</i></p>
+	</center>
+	<ul>
+		<ul type='square'>
+			<li>Utilidad <b>CPU-Z</b>.</li><br/>
+			<a href='http://www.cpuid.com/softwares/cpu-z.html#directiontouse' target='_blank'><img src='./files/home-icon.png' class='icon' width='20px'/>Página Oficial.</a><a href='ftp://ftp.cpuid.com/cpu-z/cpu-z_1.68-setup-en.exe'><img src='./files/download.png' class='icon' width='20px'/>Enlace de descarga.</a><br/><br/>
+			<a href='./files/windows7/CPU-Z.html' target='_blank'><img src='./files/documento.png' class='icon' width='25px'/></a> <a href='./files/windows7/CPU-Z.html' target='_blank'>Informe sobre las características de la máquina</a>
+		</ul>
+	</ul>
+	<br/>
+	<center>
+		<img src='./files/windows7/Imagen006.png' class='icon' width='90%'/><br/><br/>
+		<img src='./files/windows7/Imagen007.png' class='icon' width='90%'/><br/>
+		<p><i><b>Imágenes 5 a 10:</b> Datos obtenidos con CPU-Z de la máquina con Windows 7.</i></p>
+	</center>
+	<ul>
+		<ul type='square'>
+				<li>Utilidad <b>GPU-Z</b>.</li><br/>
+				<a href='http://www.techpowerup.com/gpuz/' target='_blank'><img src='./files/home-icon.png' class='icon' width='20px'/>Página Oficial.</a><a href='http://www.techpowerup.com/downloads/2340/techpowerup-gpu-z-v0-7-7/start?server=13'><img src='./files/download.png' class='icon' width='20px'/>Enlace de descarga.</a><br/>
+			</ul>
+		</ul>
+	<div style='float: clear;background-color: #D7FABC; border:2px dotted; border-radius:10px; padding: 10px;'>
+		<b>NOTA 3:</b> GPU-Z permite conocer las características de tarjetas gráficas NVIDIA, ATI e Intel. Dado que la máquina de VirtualBox no dispone de tarjeta gráfica de esas marcas al iniciar el programa éste aparece vacío. Se realizó una prueba de la aplicación en una máquina real con una tarjeta gráfica NVIDIA para comprobar su funcionamiento. 
+	</div>
+	<br/>
+	<center>
+		<img src='./files/windows7/Imagen013.png' width='30%'/>
+		<img src='./files/windows7/Imagen015.png' width='30%'/><br/>
+		<p><i><b>Imágenes 11 y 12:</b> GPU-Z en máquina virtual (izquierda) y prueba en máquina real (derecha).</i></p>
+	</center>	
+	<ul>
+		<ul type='square'>
+			<li>Utilidad <b>HD tune</b>.</li><br/>
+			<a href='http://www.hdtune.com/' target='_blank'><img src='./files/home-icon.png' class='icon' width='20px'/>Página Oficial.</a><a href='http://www.hdtune.com/files/hdtunepro_550_trial.exe'><img src='./files/download.png' class='icon' width='20px'/>Enlace de descarga.</a><br/>
+		</ul>
+	</ul>
+	<br/>
+	<center>
+		<img src='./files/windows7/Imagen016.png' class='icon' width='78%'/><br/><br/>
+		<img src='./files/windows7/Imagen014.png' class='icon' width='90%'/><br/><br/>
+		<img src='./files/windows7/Imagen0162.png' class='icon' width='60%'/><br/>
+		<p><i><b>Imágenes 13 a 20:</b> Batería de pruebas de rendimiento realizadas con HD tune.</i></p>
+	</center>	
+	<ul>
+		<ul type='square'>
+			<li>Utilidad <b>CPUCool</b>. Averiguar tipo y temperatura del procesador.</li><br/>
+			<a href='http://www.cpufsb.de/DOWNLOAD.HTML' target='_blank'><img src='./files/home-icon.png' class='icon' width='20px'/>Página Oficial.</a><a href='http://www.cpufsb.de/CPUCOOL9.EXE'><img src='./files/download.png' class='icon' width='20px'/>Enlace de descarga.</a><br/>
+		</ul>
+	</ul>
+	<div style='float: clear;background-color: #D7FABC; border:2px dotted; border-radius:10px; padding: 10px;'>
+		<b>NOTA 4:</b> CPUCool no funciona en máquinas virtuales de VirtualBox.
+	</div>
+	<br/>
+	<center>
+		<img src='./files/windows7/Imagen017.png' width='40%'/><br/>
+		<p><i><b>Imagen 21:</b> CPUCool no funciona con VirtualBox.</i></p>
+	</center>	
+	<ul>
+		<ul type='square'>
+				<li><b>Monitorizar</b> rendimiento de CPU, memoria, disco duro. Aparte de las herramientas anteriores en el "Admimistrador de tareas" hay un "Monitor de recursos", además de poder monitorizar el uso de la CPU.</li><br/>
+			</ul>
+		</ul>
+	<center>
+		<img src='./files/windows7/Imagen021.png' class='icon' width='75%'/><br/>
+		<p><i><b>Imagen 22:</b> Monitorización de CPU y recursos.</i></p>
+	</center>	
+	<h3>1.1.3.- Herramientas de optimización.</h3>
+	<ul>
+		<li>Usar las siguientes utilidades de optimización y describir brevemente su cometido:</li><br/>
+			<ul type='square'>
+				<li><b>Scandisk:</b> es un software que sirve para comprobar tanto la integridad de la superficie física de los discos duros que analiza, como la integridad del sistema de archivos almacenado en ellos.</li>
+				<li><b>Desfragmentador del disco:</b>  es un programa incluido en Microsoft Windows diseñado para aumentar la velocidad de acceso al disco mediante la desfragmentación, es decir, la reordenación de los archivos almacenados en un disco de manera que sus pedazos ocupen un espacio contiguo. El objetivo es minimizar el tiempo de movimiento de los cabezales del disco y aumentar al máximo la velocidad de transferencia.</li>
+			</ul>
+	</ul>
+	<center>
+		<img src='./files/windows7/Imagen022.png' width='45%'/>
+		<img src='./files/windows7/Imagen023.png' width='45%'/><br/>
+		<p><i><b>Imágenes 23 y 24:</b> Análisis del disco duro con Scandisk y desfragmentado con el Desfragmentador de disco .</i></p>
+	</center>
+	<ul>
+		<ul type='square'>
+			<li><b>Utilidad TuneUp Utilities:</b> es un paquete de aplicaciones para optimizar, personalizar y corregir fallos del sistema. Entre otros propósitos, permite desfragmentar el disco duro, eliminar archivos temporales, realizar ajustes automáticos para incrementar la velocidad de navegación en Internet y desfragmentar y corregir errores del registro de Windows.</li><br/>
+			<a href='http://www.tuneup.es/download/?x-rest=&gclid=CJPZnaKp-7wCFYMSwwodfjEAHw' target='_blank'><img src='./files/home-icon.png' class='icon' width='20px'/>Página Oficial.</a><a href='http://www.tuneup.es/#data'><img src='./files/download.png' class='icon' width='20px'/>Enlace de descarga.</a><br/>
+		</ul>
+	</ul>
+	<center>
+		<img src='./files/windows7/Imagen028.png' width='45%'/>
+		<img src='./files/windows7/Imagen027.png' width='45%'/><br/>
+		<p><i><b>Imágenes 25 y 26:</b> TuneUp Utilities 2014.</i></p>
+		<img src='./files/windows7/Imagen032.png' width='60%'/><br/>
+		<p><i><b>Imagen 27:</b> Panel de control de TuneUp Utilities 2014.</i></p>
+	</center>		
+	<ul>
+		<ul type='square'>
+			<li><b>Utilidad Registry Healer:</b> aplicación que permite escanear el registro del sistema operativo y muestra las entradas no válidas, permitiendo eliminar los elementos obsoletos.</li><br/>
+			<a href='http://www.zoneutils.com/regheal/index.htm' target='_blank'><img src='./files/home-icon.png' class='icon' width='20px'/>Página Oficial.</a><a href='http://www.zoneutils.com/first/rhsetup.zip'><img src='./files/download.png' class='icon' width='20px'/>Enlace de descarga.</a><br/>
+		</ul>
+	</ul>
+	<center>
+		<img src='./files/windows7/Imagen033.png' width='50%'/><br/>
+		<p><i><b>Imagen 28:</b> Registry Healer.</i></p>
+	</center>		
+	<ul>
+		<ul type='square'>
+			<li><b>Utilidad Revo Uninstaller Pro:</b> es un programa de desinstalación que globaliza todos los módulos de desinstalación de los programas instalados en una misma ventana.</li><br/>
+			<a href='http://www.revouninstaller.com/' target='_blank'><img src='./files/home-icon.png' class='icon' width='20px'/>Página Oficial.</a><a href='http://www.revouninstaller.com/download-professional-version.php'><img src='./files/download.png' class='icon' width='20px'/>Enlace de descarga.</a><br/>
+		</ul>
+	</ul>
+	<center>
+		<img src='./files/windows7/Imagen034.png' width='65%'/><br/>
+		<p><i><b>Imagen 29:</b> Revo Uninstaller Pro.</i></p>
+	</center>	
+	<hr id='1.2' size='3px' noshade='noshade'/>
+	<a href='#1.1'><img src='./files/flecha2.png' class='icon' width='20px'/></a> <a href='#1.1'>Principio del Punto 1.1</a> | <a href='#1'><img src='./files/windows.png' class='icon' width='20px'/></a> <a href='#1'>Principio del Bloque 1</a> | <a href='#1.3'><img src='./files/flecha.png' class='icon' width='20px'/></a> <a href='#1.3'>Fin del punto 1.2</a> | <a href='#indice'><img src='./files/Icono_lupa.png' class='icon' width='20px'/></a> <a href='#indice'>Índice</a>	
+	<h2 id='1.1'>1.2.- Sistema Operativo Windows XP</h2>
+	<h3>1.2.1.- Características de la máquina.</h3>
+	<ul>
+		<li><b>Detallar las características</b> de la máquina virtual con Window XP. Para ello se empleó el programa <b>Everest Ultimate Edition 5.5</b></li>
+		<li>Sus principales características son:
+			<ul type='square'>
+				<li><b>SO:</b> Microsoft Windows XP Professional</li>
+				<li><b>Motherboard:</b> VirtualBox Virtual Platform</li>
+				<li><b>CPU:</b> Intel Core 2 Duo, 2400 MHz</li>
+				<li><b>Arquitectura:</b> 32 bits</li>
+				<li><b>Memoria Principal (RAM):</b> 512 MB</li>
+				<li><b>Memoria Secundaria:</b> 10 GB</li>
+				<li><b>Tarjeta Gráfica:</b> VirtualBox Graphics Adapter (32 MB)</li>
+				<li><b>Placa de sonido:</b> Sigma Tel STAC9700/83/84 Intel 82801AA</li>
+				<li><b>Tarjeta de Red:</b> Adaptador Ethernet PCI AMD PCNET Family</li>
+			</ul>
+		</li>
+	</ul>
+	<center>
+		<img src='./files/windowsxp/Imagen002.png' width='45%'/>
+		<img src='./files/windowsxp/Imagen003.png' width='45%'/><br/>
+		<p><i><b>Imágenes 30 y 31:</b> Resumen de las características de la máquina con Windows 7.</i></p>
+	</center>
+	<h3>1.2.2.- Pruebas de rendimiento.</h3>
+	<ul>
+		<li><b>Aplicar pruebas de rendimiento</b> a la máquina virtual con Window XP.</li>
+		<li>Se realizaron las siguientes pruebas:</li><br/>
+			<ul type='square'>
+				<li>Utilidad <b>EVEREST ULTIMATE EDITION 5.5</b>. Se generaron los siguientes informes:
+					<ul style=list-style:none;>
+						<li><a href='./files/windowsxp/Informehardware.htm' target='_blank'><img src='./files/documento.png' class='icon' width='25px'/></a> <a href='./files/windowsxp/Informehardware.htm' target='_blank'>Informe sobre los componentes del hardware</a></li>
+						<li><a href='./files/windowsxp/Informerendimiento.htm' target='_blank'><img src='./files/documento.png' class='icon' width='25px'/></a> <a href='./files/windowsxp/Informerendimiento.htm' target='_blank'>Informe sobre el rendimiento de la máquina</a></li>
+						<li><a href='./files/windowsxp/Informesistema.htm' target='_blank'><img src='./files/documento.png' class='icon' width='25px'/></a> <a href='./files/windowsxp/Informesistema.htm' target='_blank'>Informe sobre el sistema operativo de la máquina</a></li>
+						<li><a href='./files/windowsxp/InformeSO.htm' target='_blank'><img src='./files/documento.png' class='icon' width='25px'/></a> <a href='./files/windowsxp/InformeSO.htm' target='_blank'>Informe sobre los programas instalados</a></li>
+					</ul>
+				</li>
+			</ul>
+	</ul>
+	<ul>
+		<ul type='square'>
+			<li>Utilidad <b>Memtest86+</b>.</li>
+		</ul>
+	</ul>
+	<center>
+		<img src='./files/windowsxp/Imagen004.png' width='45%'/>
+		<img src='./files/windowsxp/Imagen005.png' width='45%'/><br/>
+		<p><i><b>Imágenes 32 y 33:</b> Principio y fin Memtest en Windows XP.</i></p>
+	</center>
+	<ul>
+		<ul type='square'>
+			<li>Utilidad <b>CPU-Z</b>.</li><br/>
+			<a href='./files/windowsxp/WindowXP32.html' target='_blank'><img src='./files/documento.png' class='icon' width='25px'/></a> <a href='./files/windowsxp/WindowXP32.html' target='_blank'>Informe sobre las características de la máquina</a>
+		</ul>
+	</ul>
+	<br/>
+	<center>
+		<img src='./files/windowsxp/Imagen006.png' class='icon' width='90%'/><br/><br/>
+		<img src='./files/windowsxp/Imagen007.png' class='icon' width='90%'/><br/>
+		<p><i><b>Imágenes 34 a 39:</b> Datos obtenidos con CPU-Z de la máquina con Windows XP.</i></p>
+	</center>
+	<ul>
+		<ul type='square'>
+			<li>Utilidad <b>GPU-Z</b>. Como en la máquina de Windows 7, al no disponer de tarjeta gráfica NVIDIA, ATI o Intel esta utilidad es innecesaria.</li><br/>
+			<li>Utilidad <b>HD tune</b>.</li>
+		</ul>
+	</ul>
+	<br/>
+	<center>
+		<img src='./files/windowsxp/Imagen008.png' class='icon' width='78%'/><br/><br/>
+		<img src='./files/windowsxp/Imagen009.png' class='icon' width='90%'/><br/><br/>
+		<img src='./files/windowsxp/Imagen010.png' class='icon' width='60%'/><br/>
+		<p><i><b>Imágenes 40 a 47:</b> Batería de pruebas de rendimiento realizadas con HD tune.</i></p>
+	</center>	
+	<ul>
+		<ul type='square'>
+			<li>Utilidad <b>CPUCool</b>. Como ya se indicó en el anterior punto, CPUCool no funciona en máquinas virtuales de VirtualBox.</li><br/>
+			<li><b>Monitorizar</b> rendimiento de CPU, memoria, disco duro. Aparte de las herramientas anteriores el "Admimistrador de tareas" permite monitorizar el uso de la CPU.</li><br/>
+		</ul>
+	</ul>
+	<center>
+		<img src='./files/windowsxp/Imagen024.png' class='icon' width='35%'/><br/>
+		<p><i><b>Imagen 48:</b> Monitorización de CPU.</i></p>
+	</center>	
+	<h3>1.2.3.- Herramientas de optimización.</h3>
+	<ul>
+		<li>Usar las siguientes utilidades de optimización y describir brevemente su cometido:</li><br/>
+			<ul type='square'>
+				<li><b>Scandisk:</b> es un software que sirve para comprobar tanto la integridad de la superficie física de los discos duros que analiza, como la integridad del sistema de archivos almacenado en ellos.</li>
+				<li><b>Desfragmentador del disco:</b>  es un programa incluido en Microsoft Windows diseñado para aumentar la velocidad de acceso al disco mediante la desfragmentación, es decir, la reordenación de los archivos almacenados en un disco de manera que sus pedazos ocupen un espacio contiguo. El objetivo es minimizar el tiempo de movimiento de los cabezales del disco y aumentar al máximo la velocidad de transferencia.</li>
+			</ul>
+	</ul>
+	<center>
+		<img src='./files/windowsxp/Imagen027.png' width='45%'/>
+		<img src='./files/windowsxp/Imagen026.png' width='45%'/><br/>
+		<p><i><b>Imágenes 49 y 50:</b> Análisis del disco duro con Scandisk y desfragmentado con el Desfragmentador de disco .</i></p>
+	</center>
+	<ul>
+		<ul type='square'>
+			<li><b>Utilidad TuneUp Utilities:</b> es un paquete de aplicaciones para optimizar, personalizar y corregir fallos del sistema. Entre otros propósitos, permite desfragmentar el disco duro, eliminar archivos temporales, realizar ajustes automáticos para incrementar la velocidad de navegación en Internet y desfragmentar y corregir errores del registro de Windows.</li>
+		</ul>
+	</ul>
+	<center>
+		<img src='./files/windowsxp/Imagen030.png' width='45%'/>
+		<img src='./files/windowsxp/Imagen031.png' width='45%'/><br/>
+		<p><i><b>Imágenes 51 y 52:</b> TuneUp Utilities 2014.</i></p>
+		<img src='./files/windowsxp/Imagen032.png' width='60%'/><br/>
+		<p><i><b>Imagen 53:</b> Panel de control de TuneUp Utilities 2014.</i></p>
+	</center>		
+	<ul>
+		<ul type='square'>
+			<li><b>Utilidad Registry Healer:</b> aplicación que permite escanear el registro del sistema operativo y muestra las entradas no válidas, permitiendo eliminar los elementos obsoletos.</li>
+		</ul>
+	</ul>
+	<center>
+		<img src='./files/windowsxp/Imagen034.png' width='50%'/><br/>
+		<p><i><b>Imagen 54:</b> Registry Healer.</i></p>
+	</center>		
+	<ul>
+		<ul type='square'>
+			<li><b>Utilidad Revo Uninstaller Pro:</b> es un programa de desinstalación que globaliza todos los módulos de desinstalación de los programas instalados en una misma ventana.</li>
+		</ul>
+	</ul>
+	<center>
+		<img src='./files/windowsxp/Imagen036.png' width='65%'/><br/>
+		<p><i><b>Imagen 55:</b> Revo Uninstaller Pro.</i></p>
+	</center>	
+	<hr id='1.3' size='3px' noshade='noshade'/>
+	<a href='#1.2'><img src='./files/flecha2.png' class='icon' width='20px'/></a> <a href='#1.2'>Principio del Punto 1.2</a> | <a href='#1'><img src='./files/windows.png' class='icon' width='20px'/></a> <a href='#1'>Principio del Bloque 1</a> | <a href='#2'><img src='./files/flecha.png' class='icon' width='20px'/></a> <a href='#2'>Fin del punto 1.3</a> | <a href='#indice'><img src='./files/Icono_lupa.png' class='icon' width='20px'/></a> <a href='#indice'>Índice</a>	
+	<h2>1.3.- Conclusiones</h2>	
+	<p>
+		<ol>
+			<li>De la obtención de las propiedades de las máquinas se puede indicar que ambas tienen características muy similares (al estar ambas máquinas virtuales 
+				realizadas en el mismo equipo) con la misma placa madre, procesador, arquitectura de 32 bits y misma tarjeta gráfica. La distinción entre una y otra en
+				este aspecto proviene de la memoria principal de 1024 MB en el caso de Windows 7 y 512 MB para Windows XP; la memoria secundaria, 29,9 GB (W7) y 10 GB 
+				(WXP); y la memoria de la tarjeta gráfica, 36 MB (W7) y 32 MB (WXP).
+			</li><br/>	
+			<li>En cuanto a la monitorización del rendimiento se observa:
+				<ol type='a'>
+					<li>En ambos casos las diferentes pruebas recogen que los discos duros no presentan errores (HD Tune).</li>
+					<li>Ninguna máquina presenta errores en la memoria principal (Memtest86+).</li>
+					<li>Una mayor velocidad de acceso a la memoria principal por parte de la máquina virtual con Windows XP, pero, en cambio, mayor rapidez 
+						de escritura en el caso de Windows 7(pruebas HD Tune).</li>
+					<li>Una mayor cantidad de memoria destinada a los servicios y procesos activos de inicio en W7, 303 MB frente a los 205 MB de WXP, pero dado que la primera dispone
+					una mayor capacidad de memoria, porcentualmente esta cantidad sólo corresponde a un 30% en W7 mientras que en la otra máquina ocupa un 40%, lo que se traduce en una
+					superior velocidad por parte del equipo con Windows 7.</li>
+				</ol>
+			</li><br/>
+			<li>En cuanto a la optimización de las máquinas:
+				<ol type='a'>
+					<li>Se obtuvieron resultados similares.</li>
+					<li>Ambas tenían un grado de fragmentación muy bajo (2%) debido a ser máquinas recien creadas.</li>
+					<li>Se limpiaron los problemas del registro en los dos equipos.</li>
+					<li>La aplicación de herramientas de optimización como el "Desfragmetador de disco" o "TuneUp Utilities" supuso la reparación de errores que aumentarán sus rendimientos.</li>
+				</ol>
+			</li>
+		</ol>
+	</p>
+	<br/>
+	<hr id='2' size='3px' noshade='noshade'/>
+	<a href='#1.3'><img src='./files/flecha2.png' class='icon' width='20px'/></a> <a href='#1.3'>Principio del Punto 1.3</a> | <a href='#1'><img src='./files/windows.png' class='icon' width='20px'/></a> <a href='#1'>Principio del Bloque 1</a> | <a href='#2.2'><img src='./files/flecha.png' class='icon' width='20px'/></a> <a href='#2.2'>Fin del punto 2.1</a> | <a href='#indice'><img src='./files/Icono_lupa.png' class='icon' width='20px'/></a> <a href='#indice'>Índice</a>	
+	<h1>2.- Análisis en GNU/Linux</h1>
+	<h2 id='2.1'>2.1.- Sistema Operativo Debian 7</h2>
+	<h3>2.1.1.- Características de la máquina.</h3>
+	<ul>
+		<li><b>Detallar las características</b> de la máquina virtual con Debian 7. Para ello se empleó la aplicación <b>HardInfo</b></li>
+		<li>Sus principales características son:
+			<ul type='square'>
+				<li><b>SO:</b> Debian GNU/Linux 7.1</li>
+				<li><b>CPU:</b> Intel(R) Core(TM)2 CPU 6400 @ 2.13GHz</li>
+				<li><b>Arquitectura:</b> 64 bits</li>
+				<li><b>Memoria Principal (RAM):</b> 508 MB</li>
+				<li><b>Memoria Secundaria:</b> 12 GB</li>
+				<li><b>Tarjeta Gráfica:</b> InnoTek Systemberatung GmbH VirtualBox Graphics Adapter </li>
+				<li><b>Placa de sonido:</b> Intel Corporation 82801AA Audio</li>
+				<li><b>Tarjeta de Red:</b> 	Intel Corporation 82540EM Gigabit Ethernet</li>
+			</ul>
+		</li>
+	</ul>
+	<center>
+		<img src='./files/debian/hardinfo1.png' width='45%'/>
+		<img src='./files/debian/hardinfo2.png' width='45%'/><br/>
+		<p><i><b>Imágenes 56 y 57:</b> Resumen de las características de la máquina con Debian 7.</i></p>
+	</center>
+	<h3>2.1.2.- Monitorización.</h3>
+	<ul>
+		<li>Se utilizaron para la monitorización las siguientes herramientas:</li><br/>
+			<ul type='square'>
+				<li><b>GNU Krell Monitors:</b> herramienta gráfica para monitorizar distintos parámetros del equipo.</li>
+			</ul>
+	</ul>
+	<center>
+		<img src='./files/debian/gnukrell.png'/><br/>
+		<p><i><b>Imagen 58:</b> GNU Krell en Debian 7.</i></p>
+	</center>	
+	<ul>
+		<ul type='square'>
+			<li><b>PSensor:</b> herramienta gráfica para monitorizar la temperatura del hardware (CPU, GPU, placa base, discos duros, velocidad de rotación de los ventiladores,...). Es posible incluso monitorizar una máquina remota (psensor-server).</li>
+		</ul>
+	</ul>
+	<center>
+		<img src='./files/debian/psensor.png' width='50%'/><br/>
+		<p><i><b>Imagen 59:</b> PSensor en Debian 7.</i></p>
+	</center>	
+	<ul>
+		<ul type='square'>
+			<li><b>SmartMonTools:</b> monitorización de los discos usando el sistema S.M.A.R.T. de los propios discos. Se instala con "apt-get install smartmontools".</li>
+		</ul>
+	</ul>
+	<div style='float: clear;background-color: #D7FABC; border:2px dotted; border-radius:10px; padding: 10px;'>
+		<b>NOTA 5:</b> la característica "SMART" de los discos duros no es posible activarla en máquinas virtuales con VirtualBox. Se realizó una prueba con la aplicación en una máquina real para comprobar su funcionamiento.
+	</div>
+	<br/>
+	<center>
+		<img src='./files/debian/smartcontrol.png' width='45%'/>
+		<img src='./files/debian/gmartcontrol.png' width='45%'/><br/>
+		<p><i><b>Imágenes 60 y 61:</b> SmartMonTools en Debian 7.</i></p>
+		<img src='./files/debian/gmartcontrol2.png' width='30%'/>
+		<img src='./files/debian/gmartcontrol3.png' width='30%'/>
+		<img src='./files/debian/gmartcontrol4.png' width='30%'/><br/>
+		<p><i><b>Imágenes 62 a 64:</b> SmartMonTools en máquina real.</i></p>
+	</center>
+	<ul>
+		<ul type='square'>
+			<li><b>Memtest86+:</b> herramienta de diagnóstico de memoria.Se puede iniciar al arrancar GNU/Linux o desde el propio CD de instalación. Para un sistema instalado, dejamos pulsado SHIFT al encender el equipo para que aparezca el menú de GRUB (gestor de arranque), y seleccionamos “Memtest86+”.</li>
+		</ul>
+	</ul>
+	<center>
+		<img src='./files/debian/memtest.png' width='45%'/>
+		<img src='./files/debian/memtest2.png' width='45%'/><br/>
+		<p><i><b>Imágenes 65 y 66:</b> Principio y fin Memtest en Debian 7.</i></p>
+	</center>
+	<ul>
+		<ul type='square'>
+			<li><b>hddtemp:</b> monitorización de temperatura de discos duros.</li>
+		</ul>
+	</ul>
+	<div style='float: clear;background-color: #D7FABC; border:2px dotted; border-radius:10px; padding: 10px;'>
+		<b>NOTA 6:</b> VirtualBox no emula la existencia de un sensor de temperatura en el disco duro.
+	</div>
+	<br/>
+	<center>
+		<img src='./files/debian/hddtemp.png' width='55%'/><br/>
+		<p><i><b>Imagen 67:</b> Hddtemp en Debian 7.</i></p>
+	</center>
+	<h3>2.1.3.- Rendimiento y estrés.</h3>
+	<ul>
+		<li>Se utilizaron para el análisis del rendimiento las siguientes herramientas:</li><br/>
+			<ul type='square'>
+				<li><b>HardInfo:</b> inventario del hardware del equipo y benckmarking. Modo de uso: "hardinfo &".</li>
+					<ul style=list-style:none;>
+						<li><a href='./files/debian/hardinfo_report.html' target='_blank'><img src='./files/documento.png' class='icon' width='25px'/></a> <a href='./files/debian/hardinfo_report.html' target='_blank'>Informe sobre los componentes del hardware y benchmarking</a></li>
+						<li><a href='./files/debian/hardinfo_report.html#bench' target='_blank'><img src='./files/documento.png' class='icon' width='25px'/></a> <a href='./files/debian/hardinfo_report.html#bench' target='_blank'>Enlace al apartado de Benchmarks del informe</a></li>
+					</ul>
+				<br/>
+				<li><b>Phoronix Test Suite:</b>conjunto de pruebas de rendimiento implementadas en PHP. Se instala como :"apt-get install phoronix-test-suite", y para iniciarlo: "phoronix-test-suite interactive". La primera vez que se realiza cada prueba se descarga de Internet el código necesario. Es un poco lento.</li>
+			</ul>
+	</ul>
+	<center>
+		<img src='./files/debian/phoronix2.png' width='45%'/>
+		<img src='./files/debian/phoronix3.png' width='45%'/><br/>
+		<p><i><b>Imágenes 68 y 69:</b> Pruebas con Phoronix Test en Debian 7.</i></p>
+	</center>
+	<hr id='2.2' size='3px' noshade='noshade'/>
+	<a href='#2'><img src='./files/flecha2.png' class='icon' width='20px'/></a> <a href='#2'>Principio del Punto 2.1</a> | <a href='#2'><img src='./files/debian.png' class='icon' width='20px'/></a> <a href='#2'>Principio del Bloque 2</a> | <a href='#2.3'><img src='./files/flecha.png' class='icon' width='20px'/></a> <a href='#2.3'>Fin del punto 2.2</a> | <a href='#indice'><img src='./files/Icono_lupa.png' class='icon' width='20px'/></a> <a href='#indice'>Índice</a>	
+	<h2 id='2.2'>2.2.- Sistema Operativo Ubuntu 12.04</h2>
+	<h3>2.2.1.- Características de la máquina.</h3>
+	<ul>
+		<li><b>Detallar las características</b> de la máquina virtual con Ubuntu 12.04. Para ello se empleó la aplicación <b>HardInfo</b></li>
+		<li>Sus principales características son:
+			<ul type='square'>
+				<li><b>SO:</b> Ubuntu 12.04.3 LTS</li>
+				<li><b>CPU:</b> Intel(R) Core(TM)2 CPU 6400 @ 2.13GHz</li>
+				<li><b>Arquitectura:</b> 64 bits</li>
+				<li><b>Memoria Principal (RAM):</b> 1019 MB</li>
+				<li><b>Memoria Secundaria:</b> 12 GB</li>
+				<li><b>Tarjeta Gráfica:</b> InnoTek Systemberatung GmbH VirtualBox Graphics Adapter </li>
+				<li><b>Placa de sonido:</b> Intel Corporation 82801AA Audio</li>
+				<li><b>Tarjeta de Red:</b> 	Intel Corporation 82540EM Gigabit Ethernet</li>
+			</ul>
+		</li>
+	</ul>
+	<center>
+		<img src='./files/ubuntu/hardinfo1.png' width='45%'/>
+		<img src='./files/ubuntu/hardinfo2.png' width='45%'/><br/>
+		<p><i><b>Imágenes 70 y 71:</b> Resumen de las características de la máquina con Ubuntu 12.04.</i></p>
+	</center>
+	<h3>2.2.2.- Monitorización.</h3>
+	<ul>
+		<li>Se utilizaron para la monitorización las siguientes herramientas:</li><br/>
+			<ul type='square'>
+				<li><b>GNU Krell Monitors:</b> herramienta gráfica para monitorizar distintos parámetros del equipo.</li>
+			</ul>
+	</ul>
+	<center>
+		<img src='./files/ubuntu/gkrellm.png'/><br/>
+		<p><i><b>Imagen 72:</b> GNU Krell en Ubuntu 12.04.</i></p>
+	</center>	
+	<ul>
+		<ul type='square'>
+			<li><b>PSensor:</b> herramienta gráfica para monitorizar la temperatura del hardware (CPU, GPU, placa base, discos duros, velocidad de rotación de los ventiladores,...). Es posible incluso monitorizar una máquina remota (psensor-server).</li>
+		</ul>
+	</ul>
+	<center>
+		<img src='./files/ubuntu/psensor.png' width='50%'/><br/>
+		<p><i><b>Imagen 73:</b> PSensor en Ubuntu 12.04.</i></p>
+	</center>	
+	<ul>
+		<ul type='square'>
+			<li><b>SmartMonTools:</b> monitorización de los discos usando el sistema S.M.A.R.T. de los propios discos. Se instala con "apt-get install smartmontools".<br/> Como en la anterior máquina, la característica "SMART" del disco duro no es posible activarla en máquinas virtuales con VirtualBox.</li>
+		</ul>
+	</ul>
+	<center>
+		<img src='./files/ubuntu/smartmontools.png' width='45%'/>
+		<img src='./files/ubuntu/gsmartcontrol.png' width='45%'/><br/>
+		<p><i><b>Imágenes 72 y 73:</b> SmartMonTools en Ubuntu 12.04.</i></p>
+	</center>
+	<ul>
+		<ul type='square'>
+			<li><b>Memtest86+:</b> herramienta de diagnóstico de memoria.Se puede iniciar al arrancar GNU/Linux o desde el propio CD de instalación. Para un sistema instalado, dejamos pulsado SHIFT al encender el equipo para que aparezca el menú de GRUB (gestor de arranque), y seleccionamos “Memtest86+”.</li>
+		</ul>
+	</ul>
+	<center>
+		<img src='./files/ubuntu/memtest.png' width='45%'/>
+		<img src='./files/ubuntu/memtest2.png' width='45%'/><br/>
+		<p><i><b>Imágenes 74 y 75:</b> Principio y fin Memtest en Ubuntu 12.04.</i></p>
+	</center>
+	<ul>
+		<ul type='square'>
+			<li><b>hddtemp:</b> monitorización de temperatura de discos duros.<br/> Como en la anterior máquina, VirtualBox no emula la existencia de un sensor de temperatura en el disco duro, por lo que no se puede utilizar hddtemp.</li>
+		</ul>
+	</ul>
+	<center>
+		<img src='./files/ubuntu/hddtemp.png' width='55%'/><br/>
+		<p><i><b>Imagen 76:</b> Hddtemp en Ubuntu 12.04.</i></p>
+	</center>
+	<h3>2.1.3.- Rendimiento y estrés.</h3>
+	<ul>
+		<li>Se utilizaron para el análisis del rendimiento las siguientes herramientas:</li><br/>
+			<ul type='square'>
+				<li><b>HardInfo:</b> inventario del hardware del equipo y benckmarking. Modo de uso: "hardinfo &".</li>
+					<ul style=list-style:none;>
+						<li><a href='./files/ubuntu/hardinfo_report.html' target='_blank'><img src='./files/documento.png' class='icon' width='25px'/></a> <a href='./files/ubuntu/hardinfo_report.html' target='_blank'>Informe sobre los componentes del hardware y benchmarking</a></li>
+						<li><a href='./files/ubuntu/hardinfo_report.html#bench' target='_blank'><img src='./files/documento.png' class='icon' width='25px'/></a> <a href='./files/ubuntu/hardinfo_report.html#bench' target='_blank'>Enlace al apartado de Benchmarks del informe</a></li>
+					</ul>
+				<br/>
+				<li><b>Phoronix Test Suite:</b>conjunto de pruebas de rendimiento implementadas en PHP. Se instala como :"apt-get install phoronix-test-suite", y para iniciarlo: "phoronix-test-suite interactive". La primera vez que se realiza cada prueba se descarga de Internet el código necesario. Es un poco lento.</li>
+			</ul>
+	</ul>
+	<center>
+		<img src='./files/ubuntu/phoronixtest1.png' width='45%'/>
+		<img src='./files/ubuntu/phoronixtest2.png' width='45%'/><br/>
+		<p><i><b>Imágenes 77 y 78:</b> Pruebas con Phoronix Test en Ubuntu 12.04.</i></p>
+	</center>
+	<ul>
+		<ul type='square'>
+			<li><b>CPUBurn:</b> pruebas de estrés de la CPU (PELIGROSO; úsalo bajo tu propia responsabilidad; vigilar la temperatura del micro cuando se hagan las pruebas). NOTA: Para microprocesadores Intel es "burnP6" y en micros micros AMD es "burnK7"..</li>
+		</ul>
+	</ul>
+	<center>
+		<img src='./files/ubuntu/cpuburn.png' width='50%'/><br/>
+		<p><i><b>Imagen 79:</b> CPUBurn en Ubuntu 12.04.</i></p>
+	</center>	
+	<ul>
+		<ul type='square'>
+			<li><b>SystemStabilityTester:</b> benckmarking calculando decimales de PI. Descargar de http://sourceforge.net/projects/systester, descomprimir y ejecutar “systester”.</li>
+		</ul>
+	</ul>
+	<center>
+		<img src='./files/ubuntu/System.png' width='40%'/><br/>
+		<p><i><b>Imagen 80:</b> SystemStabilityTester en Ubuntu 12.04.</i></p>
+	</center>	
+	<hr id='2.3' size='3px' noshade='noshade'/>
+	<a href='#2.2'><img src='./files/flecha2.png' class='icon' width='20px'/></a> <a href='#2'>Principio del Punto 2.2</a> | <a href='#2'><img src='./files/debian.png' class='icon' width='20px'/></a> <a href='#2'>Principio del Bloque 2</a> | <a href='#2.4'><img src='./files/flecha.png' class='icon' width='20px'/></a> <a href='#2.4'>Fin del punto 2.3</a> | <a href='#indice'><img src='./files/Icono_lupa.png' class='icon' width='20px'/></a> <a href='#indice'>Índice</a>	
+	<h2 id='2.3'>2.3.- Conclusiones</h2>
+	<p>
+		<ol>
+			<li>De la obtención de las propiedades de las máquinas se puede indicar, como antes, que ambas tienen características muy similares con el mismo procesador, mismo disco duro, arquitectura de 64 bits, misma tarjeta de sonido y misma tarjeta gráfica. La distinción entre una y otra en
+				este aspecto proviene de la memoria principal de 1019 MB en el caso de Ubuntu 12.04 y 508 MB para Debian 7.
+			</li><br/>	
+			<li>En cuanto a la monitorización del rendimiento se observa:
+				<ol type='a'>
+					<li>Ninguna máquina presenta errores en la memoria principal (Memtest86+).</li>
+					<li>Una mayor cantidad de memoria destinada a los servicios y procesos activos de inicio en Ubuntu 12.04 que en Debian 7 (GNU Krell).
+					</li>
+					<li>La fluctuación de temperatura cuando trabaja la CPU es similar en ambos casos (PSensor).</li>
+					<li>Un mayor uso de la CPU en el inicio de la máquina con Debian 7 que en Ubuntu 12.04, un 5% frente al 2% (GNU Krell).</li>
+				</ol>
+			</li>
+		</ol>
+	</p>
+	<br/>
+	<hr id='2.4' size='3px' noshade='noshade'/>
+	<a href='#2.3'><img src='./files/flecha2.png' class='icon' width='20px'/></a> <a href='#2.3'>Principio del Punto 2.3</a> | <a href='#2'><img src='./files/debian.png' class='icon' width='20px'/></a> <a href='#2'>Principio del Bloque 2</a> | <a href='#indice'><img src='./files/Icono_lupa.png' class='icon' width='20px'/></a> <a href='#indice'>Índice</a>	
+	<br/><br/>	
+	<center>
+		<font size='2' color='grey'>Alejandro Ortega Freire - Ariadna Jiménez Rodríguez - Miguel Ángel González Rodríguez - 1ºASIR
+		<br/>
+		Fundamentos de Hardware
+		</font>
+		<br/><br/>
+	</center>	
+	</body>
+</html>
