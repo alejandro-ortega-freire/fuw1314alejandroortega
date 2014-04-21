@@ -1,0 +1,387 @@
+<!--
+  AUTORES: Alejandro Ortega Freire
+  ASIGNATURA: Fundamentos de Hardware
+  CURSO: 1º ASIR 
+  FECHA: 22/04/2014
+  ACTIVIDAD:  A3: Almacenamiento en la nube
+-->
+
+<html>
+	<head>
+		<title>A3: Almacenamiento en la nube</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	</head>
+	<body>
+		<div id='indice' style='display:table-row; padding: 10px;'>
+			  <div style='float: left; width=20%; padding:10px;'>
+				<img src='./files/logo.png'/>
+			  </div>
+			  <div style='float: left;padding:10px'>
+				  <ul>
+					<li><b>M&oacute;dulo:</b> <i>Fundamentos de Hardware</i></li>
+					<li><b>T&iacute;tulo del trabajo:</b> <i>A3: Almacenamiento en la nube</i></li>
+					<li><b>Componentes del grupo:</b> <i>Alejandro Ortega Freire</i></li>
+					<li><b>Curso Acad&eacute;mico:</b> <i>2013/2014</i></li>
+					<li><b>Fecha de entrega:</b> <i>22 de abril de 2014</i></li>
+				  </ul>
+			  </div>
+		</div>
+		<div style='float: clear;background-color: #eeeeee; border:2px solid; border-radius:10px; padding: 10px;'>
+			<a href='#indice'>1.- Introducción</a> | <a href='#2'>2- Servidor ownCloud</a> | <a href='#3'>3.- Clientes ownCloud</a> | <a href='#3.1'>3.1- Cliente Windows 7</a> | <a href='#3.2'>3.2- Cliente Debian 7</a> | <a href='#4'>4.- Ejemplos</a> | <a href='#5'>5.- Conclusiones</a>
+		</div>
+	<h1>1.- Introducción - OWNCLOUD</h1>
+	<center>
+		<img src='./files/Owncloud-logo.png' width='35%' class='icon'/><br/>
+	</center>
+	<br/>
+	<div style='float: clear;background-color: #D7FABC; border:2px dotted; border-radius:10px; padding: 10px;'>
+		<b>NOTA 1:</b>
+			<ul>
+				<li>Últimamente se están poniendo de moda servicios de almacenamiento y sincronización de ficheros en la nube, entre los que destacan Dropbox y Google Drive. Ambas soluciones son cerradas.</li>
+				<li>Dentro de las soluciones libres disponemos de <b>ownCloud</b>, por el que parece que apuesta Suse, y que utilizan varios proveedores para ofrecer servicios de almacenamiento en la nube con un modelo de negocio freemium, como son OwnCubey GetFreeCloud.</li>
+				<li>Las fuentes están disponibles para poder instalarlo en máquinas propias o alquiladas, así como clientes de sincronización para Windows, Linux, Android y próximamente para iOs y Mac.</li>
+			</ul>
+	</div>
+	<p><b>OwnCloud</b> es una aplicación libre que permite el almacenamiento en línea y aplicaciones en línea - <b>cloud computing</b>. En la presente práctica <b>se crea un servidor de ownCloud en una máquina con SO Debian 7 y se comprueba el acceso a partir de dos máquinas clientes, una con SO Windows, y otra con distribución GNU/Linux</b>.
+	<br/><br/>
+	Para ello se emplean las siguientes Máquinas Virtuales (MV):
+	<br/>
+	<ul>
+		<li><font color='red'><b>MV1 con SO Debian 7</b></font> con dirección IP 172.16.108.11 y nombre <font color='red'><b>ORTEGA3</b></font>. ESTA MÁQUINA SERÁ EL <font color='red'><b>SERVIDOR OWNCLOUD</b></font>.</li>
+		<br/>
+		<li><font color='red'><b>MV2 con SO Debian 7</b></font> con dirección IP 172.16.108.111 y nombre <font color='red'><b>ORTEGA3B</b></font>. ESTA MÁQUINA SERÁ UNO DE LOS <font color='red'><b>CLIENTES OWNCLOUD</b></font>.</li>
+		<br/>
+		<li><font color='red'><b>MV3 con SO Windows 7</b></font> con dirección IP 172.16.108.211 y nombre <font color='red'><b>ORTEGA2</b></font>. ESTA MÁQUINA SERÁ UNO DE LOS <font color='red'><b>CLIENTES OWNCLOUD</b></font>.</li>
+	</ul></p>
+	<hr id='2' size='3px' noshade='noshade'/>
+	<a href='#indice'><img src='./files/flecha2.png' class='icon' width='20px'/></a> <a href='#indice'>Principio del punto 1</a> | <a href='#3'><img src='./files/flecha.png' class='icon' width='20px'/></a> <a href='#3'>Fin del punto 2</a> | <a href='#indice'><img src='./files/Icono_lupa.png' class='icon' width='20px'/></a> <a href='#indice'>Índice</a>	
+	<h1>2.- Servidor ownCloud (Debian 7)</h1>
+	<h3 id='2.1'>2.1- Prerrequisitos</h3>
+	<p>
+		Se parte de una distribución Debian 7. ownCloud necesita 2 tipos de paquetes para funcionar correctamente, los principales y los opcionales, que en este caso son muy recomendables y permiten mayor flexibilidad a la hora de configurar el servidor en la nube.
+	</p>
+	<h3 id='2.2'>2.2- Instalación de los paquetes principales</h3>
+	<p>
+		Los paquetes principales básicamente son para montar el servidor web <b>Apache</b> y el intérprete de paginas <b>PHP</b>. Para su instalación se utiliza el siguiente comando:
+	</p>
+	<ul>
+		<li><b>apt-get install apache2 php5 php5-gd php-xml-parser php5-intl</b></li>
+	</ul>
+	<center>
+		<img src='./files/servidor/Imagen060.png' width='70%'/><br/><br/>
+		<img src='./files/servidor/Imagen061.png' width='70%'/><br/>		
+		<p><i><b>Imagen 1:</b> Instalación del servidor Apache y el intérprete PHP.</i></p>			
+	</center>
+	<h3 id='2.3'>2.3- Instalación de los paquetes opcionales</h3>
+	<p>
+		Para su instalación se utiliza el siguiente comando:
+	</p>
+	<ul>
+		<li><b>apt-get install php5-sqlite php5-mysql smbclient curl libcurl3 php5-curl</b></li>
+	</ul>
+	<center>
+		<img src='./files/servidor/Imagen062.png' width='70%'/><br/><br/>
+		<img src='./files/servidor/Imagen063.png' width='70%'/><br/>		
+		<p><i><b>Imagen 2:</b> Instalación de los paquetes opcionales.</i></p>			
+	</center>
+	<h3 id='2.4'>2.4- Descargar el paquete ownCloud e instalarlo</h3>
+	<ul>
+		<li>Se procede a la descarga en la máquina del paquete disponible de ownCloud mediante el comando <b>wget</b>.</li>
+		<br/>
+		<ul type='square'>
+			<li><b>wget http://download.owncloud.org/community/owncloud-5.0.11.tar.bz2</b></li>
+		</ul>
+	</ul>
+	<center>
+		<img src='./files/servidor/Imagen065.png' width='70%'/><br/>
+		<p><i><b>Imagen 3:</b> Descargar el paquete ownCloud.</i></p>			
+	</center>
+	<ul>
+		<li>Con el comando <b>tar</b> se desempaqueta y descomprime el paquete descargado en el punto anterior.</li>
+		<br/>
+		<ul type='square'>
+			<li><b>tar -xjf owncloud-5.0.11.tar.bz2</b></li>
+		</ul>
+	</ul>
+	<center>
+		<img src='./files/servidor/Imagen066.png' width='70%'/><br/>
+		<p><i><b>Imagen 4:</b> Desempaquetar y descomprimir el paquete descargado.</i></p>			
+	</center>	
+	<ul>
+		<li>Seguidamente, se copia el paquete ya descomprimido, dentro del servidor web Apache en el directorio <b>/var/www</b> mediante el comando <b>cp</b>.</li>
+		<br/>
+		<ul type='square'>
+			<li><b>cp -r owncloud /var/www</b></li>
+		</ul>
+	</ul>
+	<center>
+		<img src='./files/servidor/Imagen067.png' width='55%'/><br/>
+		<p><i><b>Imagen 5:</b> Copiar el contenido del paquete en /var/www.</i></p>			
+	</center>
+	<h3 id='2.5'>2.5- Establecer los permisos de directorio</h3>
+	<ul>
+		<li>Se establecen los permisos de directorio. Se hace propietario del directorio copiado (/var/www/owncloud/) al usuario y grupo <b>www-data</b> mediante el comando <b>chown</b>.</li>
+		<br/>
+		<ul type='square'>
+			<li><b>chown -R www-data:www-data /var/www/owncloud/</b></li>
+		</ul>
+	</ul>
+	<center>
+		<img src='./files/servidor/Imagen068.png' width='65%'/><br/>
+		<p><i><b>Imagen 6:</b> Establecer los permisos del directorio /var/www/owncloud.</i></p>			
+	</center>
+	<h3 id='2.6'>2.6- Activar el fichero .htaccess y mod_rewrite en Apache</h3>
+	<ul>
+		<li>En nuestra distribución Debian 7, se hará con el comando <b>a2enmod</b>.</li>
+		<br/>
+		<ul type='square'>
+			<li><b>a2enmod rewrite</b></li>
+		</ul>
+	</ul>
+	<center>
+		<img src='./files/servidor/Imagen069.png' width='65%'/><br/>
+		<p><i><b>Imagen 7:</b> Activar el fichero .htaccess y mod_rewrite.</i></p>			
+	</center>	
+	<ul>
+		<li>Comprobar que en el fichero <b>/etc/apache2/sites-enabled/000-default</b> del directorio virtual <b>/var/www/</b> tenemos la opción <i>AllowOverride</i> establecida como <i>All</i>.</li>
+		<br/>
+		<ul type='square'>
+			<li><b>nano /etc/apache2/sites-enabled/000-default</b></li>
+		</ul>
+	</ul>
+	<center>
+		<img src='./files/servidor/Imagen070.png' width='65%'/><br/><br/>
+		<img src='./files/servidor/Imagen071.png' width='65%'/><br/>
+		<p><i><b>Imagen 8:</b> Fichero /etc/apache2/sites-enabled/000-default.</i></p>			
+	</center>	
+	<ul>
+		<li>Reiniciar el servidor apache con el comando <b>restart</b>.</li>
+		<br/>
+		<ul type='square'>
+			<li><b>apache2ctl restart</b></li>
+		</ul>
+	</ul>
+	<center>
+		<img src='./files/servidor/Imagen072.png' width='70%'/><br/>
+		<p><i><b>Imagen 9:</b> Reiniciar el servicio apache.</i></p>			
+	</center>
+	<h3 id='2.7'>2.7- Finalizar la instalación</h3>
+	<ul>
+		<li>Desde un navegador web se introduce la dirección de nuestro servidor ownCloud de la siguiente manera:</li>
+	</ul>
+	<center>
+		<img src='./files/servidor/Imagen0761.png' width='45%' border='1'/><br/>
+		<p><i><b>Imagen 10:</b> Acceder a la nube a través de servidor web.</i></p>			
+	</center>		
+	<ul>
+		<li>Aparece lo siguiente:</li>
+	</ul>
+	<center>
+		<img src='./files/servidor/Imagen076.png' width='85%'/><br/>
+		<p><i><b>Imagen 11:</b> Accediendo a la nube por primera vez.</i></p>			
+	</center>	
+	<ul>
+		<li>Ahora se indica un nombre de usuario (ortega3_owncloud) y una contraseña (administrador) para el administrador del servidor, y se pulsa sobre el botón Finish Setup (Completa la instalación).</li>
+	</ul>
+	<center>
+		<img src='./files/servidor/Imagen0762.png' width='35%' border='1'/><br/>
+		<p><i><b>Imagen 12:</b> Crear la cuenta del administrador del servidor.</i></p>			
+	</center>	
+	<h3 id='2.8'>2.8- Entrando por primera vez en Ownclud</h3>
+	<ul>
+		<li>Una vez finalizada la instalación, el sistema ownCloud da la bienvenida.</li>
+	</ul>
+	<center>
+		<img src='./files/servidor/Imagen073.png' width='95%' border='1'/><br/>
+		<p><i><b>Imagen 13:</b> Primer acceso a ownCloud.</i></p>			
+	</center>	
+	<ul>
+		<li>La pantalla principal del sistema ownCloud será la siguiente:</li>
+	</ul>
+	<center>
+		<img src='./files/servidor/Imagen058.png' width='95%' border='1'/><br/>
+		<p><i><b>Imagen 14:</b> Primer acceso a ownCloud.</i></p>			
+	</center>	
+	<ul>
+		<li>En la que se observan los módulos que se pueden utilizar:</li>
+		<ul type='square'>
+			<li>Files (Archivos)</li>
+			<li>Music (Música)</li>
+			<li>Calendar (Calendario)</li>
+			<li>Contacts (Contactos)</li>
+			<li>Pictures (Imágenes)</li>
+		</ul>
+		<li>Desde aquí ya se podrán subir o crear archivos/directorios.</li>
+	</ul>
+	<h3 id='2.9'>2.9- Elementos básicos de la interfaz de ownCloud</h3>
+	<center>
+		<img src='./files/servidor/Imagen059.png' width='95%' border='1'/><br/>
+		<p><i><b>Imagen 15:</b> Elementos básicos de la interfaz.</i></p>			
+	</center>	
+	<hr id='3' size='3px' noshade='noshade'/>
+	<a href='#2'><img src='./files/flecha2.png' class='icon' width='20px'/></a> <a href='#2'>Principio del punto 2</a> | <a href='#4'><img src='./files/flecha.png' class='icon' width='20px'/></a> <a href='#4'>Fin del punto 3</a> | <a href='#indice'><img src='./files/Icono_lupa.png' class='icon' width='20px'/></a> <a href='#indice'>Índice</a>	
+	<h1>3.- Clientes ownCloud</h1>
+	<h3 id='3.1'>3.1- Cliente ownCloud (Windows 7) - MV ORTEGA2</h3>
+	<h3>3.1.1.- Instalar aplicación cliente de ownCloud para Windows</h3>
+	<ul>
+		<li>Descargar la aplicación de la página oficial de ownCloud.</li><br/>
+			<a href='http://owncloud.org/' target='_blank'><img src='./files/owncloud.png' class='icon' width='20px'/>Página Oficial.</a><a href='https://download.owncloud.com/desktop/stable/ownCloud-1.5.4.2686-setup.exe'><img src='./files/download.png' class='icon' width='20px'/>Enlace de descarga.</a>
+		<br/><br/>
+		<li>Proceder a su instalación.</li>
+	</ul>
+		<center>
+		<img src='./files/clientes/Imagen078.png' width='35%' border='1'/>
+		<img src='./files/clientes/Imagen079.png' width='35%' border='1'/><br/><br/>
+		<img src='./files/clientes/Imagen080.png' width='35%' border='1'/>
+		<img src='./files/clientes/Imagen081.png' width='35%' border='1'/><br/>
+		<p><i><b>Imágenes 16-19:</b> Instalación del cliente de ownCloud en Windows 7.</i></p>			
+	</center>	
+	<h3>3.1.2.- Establecer conexión con el servidor y sincronizar</h3>
+	<ul>
+		<li>Acceder a la aplicación mediante el acceso directo creado.</li><br/>
+	</ul>
+	<center>
+		<img src='./files/clientes/Imagen055.png' width='35%' border='1'/><br/>
+		<p><i><b>Imagen 20:</b> Acceso directo.</i></p>			
+	</center>	
+	<ul>
+		<li>Conectar con el servidor ownCloud a través de su dirección. Dado que el servidor es la MV1 su dirección será la siguiente: <b>http://172.16.108.11/owncloud/</b></li>
+	</ul>
+	<center>
+		<img src='./files/clientes/Imagen088.png' width='60%' border='1'/><br/>
+		<p><i><b>Imagen 21:</b> Conexión con el servidor.</i></p>			
+	</center>		
+	<ul>
+		<li>Se solicita un usuario y contraseña. En este caso se usa el administrador (ortega3_owncloud) que, de momento, es el único creado con acceso al servidor ownCloud.</li>
+	</ul>
+	<center>
+		<img src='./files/clientes/Imagen089.png' width='55%' border='1'/><br/>
+		<p><i><b>Imagen 22:</b> Usuario y contraseña.</i></p>	
+		<img src='./files/clientes/Imagen090.png' width='55%' border='1'/><br/>
+		<p><i><b>Imagen 23:</b> Directorio que se sincronizará con el repositorio ownCloud.</i></p>		
+		<img src='./files/clientes/Imagen091.png' width='55%' border='1'/><br/>
+		<p><i><b>Imagen 24:</b> Acceso a través del cliente ownCloud de Windows.</i></p>		
+		<img src='./files/clientes/Imagen095.png' width='55%' border='1'/><br/>
+		<p><i><b>Imagen 25:</b> Sincronización con el servidor.</i></p>		
+	</center>	
+	<ul>
+		<li>Ahora se puede acceder al almacenamiento alojado en el servido a través de la carpeta local en Windows (C:\Users\alejandro\ownCloud) o a través de un navegador web (http://172.16.108.11/owncloud/).</li>
+	</ul>
+	<center>
+		<img src='./files/clientes/Imagen018.png' width='60%' border='1'/><br/>
+		<p><i><b>Imagen 26:</b> Carpeta local.</i></p>	
+		<img src='./files/clientes/Imagen019.png' width='95%' border='1'/><br/>
+		<p><i><b>Imagen 27:</b> Acceso por navegador web.</i></p>			
+	</center>
+	<h3 id='3.2'>3.2- Cliente ownCloud (Debian 7) - MV ORTEGA3B</h3>
+	<h3>3.2.1.- Instalar aplicación cliente de ownCloud para Debian 7</h3>
+	<ul>
+		<li>Añadir repositorios de ownCloud para Debian 7 e instalar según lo indicado en su página web.</li>
+	</ul>
+	<center>
+		<img src='./files/clientes/Imagen020.png' width='75%' border='1'/><br/><br/>
+		<img src='./files/clientes/Imagen021.png' width='70%' border='1'/><br/><br/>
+		<img src='./files/clientes/Imagen022.png' width='70%' border='1'/><br/><br/>
+		<img src='./files/clientes/Imagen084.png' width='70%' border='1'/><br/><br/>
+		<img src='./files/clientes/Imagen085.png' width='70%' border='1'/><br/>
+		<p><i><b>Imágenes 28-32:</b> Instalación owncloud-client en Debian 7.</i></p>
+	</center>	
+	<h3>3.2.1.- Establecer conexión con el servidor y sincronizar</h3>
+	<ul>
+		<li>Acceder a la aplicación mediante el acceso creado en el inicio.</li><br/>
+	</ul>
+	<center>
+		<img src='./files/clientes/Imagen099.png' width='55%' border='1'/><br/>
+		<p><i><b>Imagen 33:</b> Acceso al cliente de owncloud instalado.</i></p>			
+	</center>	
+	<ul>
+		<li>Conectar con el servidor ownCloud a través de su dirección. Dado que el servidor es la MV1 su dirección será la siguiente: <b>http://172.16.108.11/owncloud/</b></li>
+	</ul>
+	<center>
+		<img src='./files/clientes/Imagen100.png' width='60%' border='1'/><br/>
+		<p><i><b>Imagen 34:</b> Conexión con el servidor.</i></p>			
+	</center>		
+	<ul>
+		<li>Se solicita un usuario y contraseña. En este caso se usa el administrador (ortega3_owncloud) que, de momento, es el único creado con acceso al servidor ownCloud.</li>
+	</ul>
+	<center>
+		<img src='./files/clientes/Imagen113.png' width='55%' border='1'/><br/>
+		<p><i><b>Imagen 35:</b> Usuario y contraseña.</i></p>	
+		<img src='./files/clientes/Imagen114.png' width='55%' border='1'/><br/>
+		<p><i><b>Imagen 36:</b> Directorio que se sincronizará con el repositorio ownCloud.</i></p>		
+		<img src='./files/clientes/Imagen115.png' width='55%' border='1'/><br/>
+		<p><i><b>Imagen 34:</b> Acceso a través del cliente ownCloud de Debian.</i></p>		
+	</center>	
+	<ul>
+		<li>Ahora se puede acceder al almacenamiento alojado en el servido a través de la carpeta local en Debian (/home/alejandro/ownCloud) o a través de un navegador web (http://172.16.108.11/owncloud/).</li>
+	</ul>
+	<center>
+		<img src='./files/clientes/Imagen116.png' width='60%' border='1'/><br/>
+		<p><i><b>Imagen 35:</b> Carpeta local.</i></p>	
+		<img src='./files/clientes/Imagen117.png' width='95%' border='1'/><br/>
+		<p><i><b>Imagen 36:</b> Acceso por navegador web.</i></p>			
+	</center>	
+	<hr id='4' size='3px' noshade='noshade'/>
+	<a href='#3'><img src='./files/flecha2.png' class='icon' width='20px'/></a> <a href='#3'>Principio del punto 3</a> | <a href='#5'><img src='./files/flecha.png' class='icon' width='20px'/></a> <a href='#5'>Fin del punto 4</a> | <a href='#indice'><img src='./files/Icono_lupa.png' class='icon' width='20px'/></a> <a href='#indice'>Índice</a>	
+	<h1>4.- Ejemplos</h1>	
+	<ul>
+		<li>Se procede a crear directorios y ficheros de prueba en las tres máquinas para comprobar la sincronización entre las tres. Los ficheros/directorios creados son:</li>
+		<li style=list-style:none;><ul type='square'>
+			<li><b>MV1 - ORTEGA3 - SERVIDOR OWNCLOUD</b>
+				<ul style=list-style:none;>
+					<li>Directorio <b>Prueba_DEB7_Servidor</b></li>
+					<li>Archivo <b>Prueba_DEB7_Servidor.txt</b></li>
+				</ul>
+			</li><br/>
+			<li><b>MV2 - ORTEGA3B - CLIENTE OWNCLOUD</b>
+				<ul style=list-style:none;>
+					<li>Directorio <b>Prueba_DEB7_Cliente</b></li>
+					<li>Archivo <b>Prueba_DEB7_Cliente.txt</b></li>
+				</ul>
+			</li><br/> 
+			<li><b>MV3 - ORTEGA2 - CLIENTE OWNCLOUD</b>
+				<ul style=list-style:none;>
+					<li>Directorio <b>Prueba_W7_Cliente</b></li>
+					<li>Archivo <b>Prueba_W7_Cliente.txt</b></li>
+				</ul>
+			</li>
+		</ul></li>
+		<br/>
+		<li>Se accede al repositorio desde cada máquina y se comprueba la existencia en cada carpeta local de los archivos/directorios creados.
+	</ul>
+	<center>
+		<h2><u>DEBIAN 7 - SERVIDOR OWNCLOUD</u></h2>
+		<img src='./files/clientes/Imagen119.png' width='60%' border='1'/><br/>
+		<p><i><b>Imagen 37:</b> Carpeta local en ORTEGA3 - SERVIDOR.</i></p>	
+		<img src='./files/clientes/Imagen118.png' width='95%' border='1'/><br/>
+		<p><i><b>Imagen 38:</b> Acceso por navegador web en ORTEGA3 - SERVIDOR.</i></p>		
+		<h2><u>WINDOWS 7 - CLIENTE OWNCLOUD</u></h2>
+		<img src='./files/clientes/Imagen122.png' width='60%' border='1'/><br/>
+		<p><i><b>Imagen 39:</b> Carpeta local en ORTEGA2 - CLIENTE.</i></p>	
+		<img src='./files/clientes/Imagen123.png' width='95%' border='1'/><br/>
+		<p><i><b>Imagen 40:</b> Acceso por navegador web en ORTEGA2 - CLIENTE.</i></p>		
+		<h2><u>DEBIAN 7 - CLIENTE OWNCLOUD</u></h2>
+		<img src='./files/clientes/Imagen121.png' width='60%' border='1'/><br/>
+		<p><i><b>Imagen 37:</b> Carpeta local en ORTEGA3B - CLIENTE.</i></p>	
+		<img src='./files/clientes/Imagen120.png' width='95%' border='1'/><br/>
+		<p><i><b>Imagen 38:</b> Acceso por navegador web en ORTEGA3B - CLIENTE.</i></p>
+	</center>
+	<hr id='5' size='3px' noshade='noshade'/>
+	<a href='#4'><img src='./files/flecha2.png' class='icon' width='20px'/></a> <a href='#4'>Principio del punto 4</a> | <a href='#6'><img src='./files/flecha.png' class='icon' width='20px'/></a> <a href='#6'>Fin del punto 5</a> | <a href='#indice'><img src='./files/Icono_lupa.png' class='icon' width='20px'/></a> <a href='#indice'>Índice</a>	
+	<h1>5.- Conclusiones</h1>
+	<p>ownCloud	es una <b>muy buena alternativa Open Source de almacenamiento en la nube</b> y gratuita. Transforma nuestro servidor en un punto de almacenaje desde el que podremos intercambiar nuestros datos, integrarlo con otras aplicaciones o simplemente usarlo como aplicacion para el trabajo colaborativo.</p>
+	<p>Para ello la aplicación <b>se basa en tres funcionalidades: sincronizar nuestros datos, acceder a ellos y poder compartirlos</b>. Es, por lo tanto, una herramienta perfecta para reutilizar viejos equipos, dándoles una segunda vida y montar un servidor a semejanza de dropbox, box, sugasync,etc. pero propio, con un entorno web y de una manera muy sencilla.</p>
+	<br/>
+	<hr id='6' size='3px' noshade='noshade'/>
+	<a href='#5'><img src='./files/flecha2.png' width='20px'/></a> <a href='#5'>Principio del punto 5</a> | <a href='#indice'><img src='./files/Icono_lupa.png' width='20px'/></a> <a href='#indice'>Índice</a>
+	<br/><br/>	
+	<center>
+		<font size='2' color='grey'>Alejandro Ortega Freire 1ºASIR
+		<br/>
+		Fundamentos de Hardware
+		</font>
+		<br/>
+		<img src='./files/logoale.png' width='100px' class='icon'/><br/>
+	</center>
+	</body>
+</html>
