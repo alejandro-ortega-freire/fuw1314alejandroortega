@@ -1,0 +1,251 @@
+<!--
+  AUTORES: Alejandro Ortega Freire
+  ASIGNATURA: Fundamentos de Hardware
+  CURSO: 1º ASIR 
+  FECHA: 01/05/2014
+  ACTIVIDAD:  A1: Almacenamiento NAS
+-->
+
+<html>
+	<head>
+		<title>A1: Almacenamiento NAS</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	</head>
+	<body>
+		<div id='indice' style='display:table-row; padding: 10px;'>
+			  <div style='float: left; width=20%; padding:10px;'>
+				<img src='./files/logo.png'/>
+			  </div>
+			  <div style='float: left;padding:10px'>
+				  <ul>
+					<li><b>M&oacute;dulo:</b> <i>Fundamentos de Hardware</i></li>
+					<li><b>T&iacute;tulo del trabajo:</b> <i>A1: Almacenamiento NAS</i></li>
+					<li><b>Componentes del grupo:</b> <i>Alejandro Ortega Freire</i></li>
+					<li><b>Curso Acad&eacute;mico:</b> <i>2013/2014</i></li>
+					<li><b>Fecha de entrega:</b> <i>01 de mayo de 2014</i></li>
+				  </ul>
+			  </div>
+		</div>
+		<div style='float: clear;background-color: #eeeeee; border:2px solid; border-radius:10px; padding: 10px;'>
+			<a href='#indice'>1.- Introducción NAS</a> | <a href='#2'>2- Almacenamiento NAS</a> | <a href='#3'>3.- Configuración FreeNAS</a> | <a href='#4'>4.- Crear volumen</a> | <a href='#5'>5.- Comprobar desde cliente</a>
+		</div>
+	<h1>1.- Introducción - NAS</h1>
+	<center>
+		<img src='./files/freenas_logo.png' class='icon'/><br/>
+	</center>
+	<br/>
+	<div style='float: clear;background-color: #D7FABC; border:2px dotted; border-radius:10px; padding: 10px;'>
+		<b>NOTA 1:</b> como no disponemos de hardware NAS para hacer las prácticas con todos los alumnos, nos vamos a crear nuestro propio NAS, en una MV usando la distro FreeNAS (Sistema Operativo BDS).
+	</div>
+	<h3 id='1.1'>1.1- Enlaces de interés</h3>
+	<ul>
+		<li>Página web: <a href='http://www.freenas.org/' target='_blank'>http://www.freenas.org/</a></li>
+		<br/>
+		<li>Consultar video <a href='http://www.youtube.com/watch?v=gEjpxQLphxI' target='_blank'>http://www.youtube.com/watch?v=gEjpxQLphxI</a></li>
+		<br/>
+		<li>Definición de <a href='http://es.wikipedia.org/wiki/Network-attached_storage' target='_blank'>NAS</a> según wikipedia.</li>
+	</ul>
+	<hr id='2' size='3px' noshade='noshade'/>
+	<a href='#indice'><img src='./files/flecha2.png' class='icon' width='20px'/></a> <a href='#indice'>Principio del punto 1</a> | <a href='#3'><img src='./files/flecha.png' class='icon' width='20px'/></a> <a href='#3'>Fin del punto 2</a> | <a href='#indice'><img src='./files/Icono_lupa.png' class='icon' width='20px'/></a> <a href='#indice'>Índice</a>	
+	<h1>2.- Almacenamiento NAS</h1>
+	<h3 id='2.1'>2.1- Preparar la Máquina Virtual</h3>
+	<ul>
+		<li>Crear la MV en VBox. Elegir MV del tipo <b>FreeBSD</b>. Si la ISO es x86 elegimos de 32 bits, y si la ISO es amd64 escogemos de 64bits.</li>
+	</ul>
+	<center>
+		<img src='./files/nas/001.png'/><br/>		
+		<p><i><b>Imagen 1:</b> Crear la MV para la instalación de FreeNAS.</i></p>			
+	</center>	
+	<ul>
+		<li>Además del disco duro virtual donde instalar FreeNAS, vamos a <b>añadir a la máquina virtual 2 discos más de 2GB cada uno</b>, para crear el volumen de almacenamiento del NAS.</li>
+	</ul>
+	<center>
+		<img src='./files/nas/002.png'/><br/><br/>	
+		<img src='./files/nas/003.png' border='1px'/><br/>	
+		<p><i><b>Imagen 2:</b> Discos de la MV.</i></p>			
+	</center>	
+	<ul>
+		<li><b>Configurar MV con la red en modo puente.</b> Para que al terminar podamos acceder al NAS desde cualquier equipo de nuestra red.</li>
+	</ul>
+	<h3 id='2.2'>2.2- Instalar FreeNAS</h3>
+	<ul>
+		<li>Descargar la ISO del servidor del departamento, o desde la <a href='http://www.freenas.org/' target='_blank'>web de FreeNAS</a>.</li>
+	</ul>
+	<div style='float: clear;background-color: #D7FABC; border:2px dotted; border-radius:10px; padding: 10px;'>
+		<b>NOTA 2:</b> si la ISO es de 32 bits crear la MV del tipo FreeBSD. SI la ISO es 64 bits, crear la MV del tipo FreeBDS-64-bits (RAM 1128 MB).
+	</div>
+	<ul>
+		<li>Comenzamos la instalación.</li>
+	</ul>
+	<center>
+		<img src='./files/nas/004.png'/><br/><br/>	
+		<img src='./files/nas/005.png'/><br/><br/>	
+		<img src='./files/nas/006.png'/><br/><br/>	
+		<img src='./files/nas/007.png'/><br/>	
+		<p><i><b>Imágenes 3 a 6:</b> Instalación de FreeNAS.</i></p>			
+	</center>		
+	<ul>
+		<li>Apagar el sistema. Quitar el disco de instalación (Fichero ISO).</li>
+	</ul>	
+	<hr id='3' size='3px' noshade='noshade'/>
+	<a href='#2'><img src='./files/flecha2.png' class='icon' width='20px'/></a> <a href='#2'>Principio del punto 2</a> | <a href='#4'><img src='./files/flecha.png' class='icon' width='20px'/></a> <a href='#4'>Fin del punto 3</a> | <a href='#indice'><img src='./files/Icono_lupa.png' class='icon' width='20px'/></a> <a href='#indice'>Índice</a>	
+	<h1>3.- Configuración de FreeNAS</h1>
+	<h3 id='3.1'>3.1- Primera configuración de FreeNAS</h3>
+	<ul>
+		<li>Reiniciar la MV FreeNAS.</li>
+		<br/>
+		<li>Vamos a realizar la configuración inicial. Éste es el aspecto del menú:</li>
+	</ul>	
+	<center>
+		<img src='./files/nas/008.png'/><br/>	
+		<p><i><b>Imagen 7:</b> Menú de FreeNAS.</i></p>			
+	</center>
+	<h3 id='3.2'>3.2- Configuración de red</h3>
+	<div style='float: clear;background-color: #D7FABC; border:2px dotted; border-radius:10px; padding: 10px;'>
+		<b>NOTA 3:</b> <b>el interfaz de red no se llama eth0, eth0, wlan0, etc. sino em0</b>. Por defecto el interfaz de red está configurado de forma automática (DHCP). Nosotros vamos a configurarlo de forma manual (static).
+	</div>
+	<ul>
+		<li><b>Elegimos la opción 1 (Configure Network Interface) para configurar el interfaz de red:</b> configurar la IP, máscara de red.</li>
+	</ul>	
+	<center>
+		<img src='./files/nas/009.png'/><br/>	
+		<p><i><b>Imagen 8:</b> Configurar la interfaz de red.</i></p>			
+	</center>
+	<ul>
+		<li><b>Pulsamos 5 (Configure Static Route)</b> para configurar la puerta de enlace.</li>
+	</ul>	
+	<center>
+		<img src='./files/nas/010.png'/><br/>	
+		<p><i><b>Imagen 9:</b> Configurar la puerta de enlace.</i></p>			
+	</center>
+	<ul>
+		<li><b>Pulsamos 6 (Configure DNS)</b> para configurar el servidor DNS.</li>
+	</ul>	
+	<center>
+		<img src='./files/nas/011.png'/><br/>	
+		<p><i><b>Imagen 10:</b> Configurar el servidor DNS.</i></p>			
+	</center>
+	<div style='float: clear;background-color: #c8dfe7; border:2px dotted; border-radius:10px; padding: 10px;'>
+		<b>PREGUNTA: ¿Qué parámetros de configuración de red, son los mínimos necesarios para tener una comunicación efectiva dentro de la red LAN? ¿ip, máscara, servidor dns, puerta de enlace, servidor dhcp, etc.?</b>
+		<br/>
+		Como mínimo para que haya comunicación entre dos equipos dentro de la red LAN deben conocerse: la dirección ip de los equipos (IP Address), la dirección de red (Network) y la máscara (Netmask).
+	</div>
+	<ul>
+		<li><b>En la opción 9 entramos en una shell</b> y podemos probar comandos como: <i>ifconfig, ping, nslookup, df -hT.</i></li><br/>
+		<li>Para consultar las particiones usamos los comandos BSD siguientes: <i>fdisk /dev/ada0, fdisk /dev/adad1, fdisk /dev/ada2, etc.</i></li>
+	</ul>	
+	<center>
+		<img src='./files/nas/012.png'/><br/>	
+		<p><i><b>Imagen 11:</b> Ejemplo de comando ifconfig.</i></p>
+		<img src='./files/nas/013.png'/><br/>	
+		<p><i><b>Imagen 12:</b> Ejemplo de comando ping.</i></p>		
+		<img src='./files/nas/014.png'/><br/>	
+		<p><i><b>Imagen 13:</b> Ejemplo de comando df -hT.</i></p>
+	</center>
+	<ul>
+		<li><b>En la opción 7 (Reset WebGUI Login Credentials)</b> podemos comprobar el usuario/contraseña por defecto que es:</li>
+		<ul type='square'>
+			<li><b>usuario:</b> admin</li>
+			<li><b>contraseña:</b> freenas</li>
+		</ul>
+	</ul>	
+	<center>
+		<img src='./files/nas/015.png'/><br/>	
+		<p><i><b>Imagen 14:</b> Usuario/contraseña por defecto.</i></p>			
+	</center>
+	<ul>
+		<li>Con <i>exit</i> volvemos de nuevo al menú de configuración.</li>
+	</ul>		
+	<h3 id='3.3'>3.3- Comprobar que ha funcionado</h3>
+	<ul>
+		<li>Para acceder al PANEL de configuración (GUI, por entorno gráfico) de FreeNAS, iniciamos un navegador web desde otro PC de la red. Y navegamos usando la IP del servidor FreeNAS.</li>
+	</ul>	
+	<center>
+		<img src='./files/nas/016.png' width='80%'/><br/>	
+		<p><i><b>Imagen 15:</b> Acceso al panel de configuración de FreeNAS.</i></p>			
+	</center>
+	<hr id='4' size='3px' noshade='noshade'/>
+	<a href='#3'><img src='./files/flecha2.png' class='icon' width='20px'/></a> <a href='#3'>Principio del punto 3</a> | <a href='#5'><img src='./files/flecha.png' class='icon' width='20px'/></a> <a href='#5'>Fin del punto 4</a> | <a href='#indice'><img src='./files/Icono_lupa.png' class='icon' width='20px'/></a> <a href='#indice'>Índice</a>	
+	<h1>4.- Crear un volumen</h1>	
+	<ul>
+		<li>Para acceder al PANEL de configuración (GUI, por entorno gráfico) de FreeNAS, iniciamos un navegador web desde otro PC de la red. Y navegamos usando la IP del servidor FreeNAS.</li><br/>
+		<li>Si no recuerdas el usuario/clave... vuelve al la MV FreeNAS, usa la opción 7 (Reset Credentials) del menú.</li><br/>
+		<li>Ahora vamos a <b>crear un VOLUMEN a partir de los dos discos creados de 2GB</b>.</li>
+		<ul type='square'>
+			<li>Ir a <b>Storage -> Create Volume</b>.</li>
+			<li>Elegir <b>mirror (RAID1)</b> con los dos discos y el montaje en <b>/mnt/data</b>.</li>
+			<li>Si lo necesitamos, crear directorio /mnt/data, para montar el volumen.</li>
+		</ul>
+	</ul>
+	<center>
+		<img src='./files/nas/017.png'/><br/>	
+		<p><i><b>Imagen 16:</b> Crear volumen data.</i></p>		
+		<img src='./files/nas/018.png'/><br/>	
+		<p><i><b>Imagen 17:</b> Volumen creado.</i></p>			
+	</center>
+	<ul>
+		<li>Activar el servicio de carpetas compartidas, ir a <b>Servicios -> Control de Servicios - > CIFS -> ON</b>.</li>
+	</ul>	
+	<center>
+		<img src='./files/nas/019.png'/><br/>	
+		<p><i><b>Imagen 18:</b> Activar el servicio CIFS.</i></p>			
+	</center>
+	<ul>
+		<li>Ir al servidor FreeNAS. Entrar en la Shell (Opción 9). Ejecutar los comandos siguientes:</li>
+		<ul type='square'>
+			<li><b>df -hT</b> (para comprobar que está montado el volumen data)</li>
+			<li><b>mkdir /mnt/data/public</b></li>
+			<li><b>chmod 777 /mnt/data/public</b> (creamos una carpeta de uso público lectura/escritura).</li>
+		</ul>
+	</ul>	
+	<center>
+		<img src='./files/nas/020.png'/><br/>	
+		<p><i><b>Imagen 19:</b> Crear carpeta de uso público.</i></p>			
+	</center>	
+	<ul>
+		<li>Creamos un recurso compartida CIFS/SMB, ir a <b>Sharing/Compartido -> Añadir recurso CIFS</b>. Path a /mnt/data/public.</li>
+	</ul>	
+	<center>
+		<img src='./files/nas/021.png'/><br/>	
+		<p><i><b>Imagen 20:</b> Crear recurso compartido.</i></p>	
+		<img src='./files/nas/022.png'/><br/>	
+		<p><i><b>Imagen 21:</b> Recurso compartido creado.</i></p>	
+	</center>	
+	<hr id='5' size='3px' noshade='noshade'/>
+	<a href='#4'><img src='./files/flecha2.png' class='icon' width='20px'/></a> <a href='#4'>Principio del punto 4</a> | <a href='#6'><img src='./files/flecha.png' class='icon' width='20px'/></a> <a href='#6'>Fin del punto 5</a> | <a href='#indice'><img src='./files/Icono_lupa.png' class='icon' width='20px'/></a> <a href='#indice'>Índice</a>	
+	<h1>5.- Comprobar desde cliente</h1>
+	<ul>
+		<li>Probar que podemos acceder a dicho recurso compartido SMB/CIFS, desde otro equipo de la red. Por ejemplo, usando un cliente Windows7.</li><br/>
+		<li>Acceder al recurso mediante un cliente Windows 7.</li>
+	</ul>	
+	<center>
+		<img src='./files/nas/023.png'/><br/>	
+		<p><i><b>Imagen 22:</b> Acceder al recurso con cliente Windows 7.</i></p>	
+	</center>
+	<ul>
+		<li>Se crea un fichero txt de prueba (PruebaNAS.txt) para comprobar que desde el cliente se pueden crear/modificar archivos del recurso public.</li>
+	</ul>	
+	<center>
+		<img src='./files/nas/024.png'/><br/>	
+		<p><i><b>Imagen 23:</b> Crear fichero de prueba desde el cliente Windows 7.</i></p>	
+	</center>	
+	<ul>
+		<li>A través del comando <b>cat /mnt/data/public/PruebaNAS.txt</b> se comprueba desde la consola de FreeNAS el contenido del fichero de creado.</li>
+	</ul>	
+	<center>
+		<img src='./files/nas/025.png'/><br/>	
+		<p><i><b>Imagen 24:</b> Visualizar contenido de PruebaNAS.txt desde consola.</i></p>	
+	</center>	
+	<hr id='6' size='3px' noshade='noshade'/>
+	<a href='#5'><img src='./files/flecha2.png' width='20px'/></a> <a href='#5'>Principio del punto 5</a> | <a href='#indice'><img src='./files/Icono_lupa.png' width='20px'/></a> <a href='#indice'>Índice</a>
+	<br/><br/>	
+	<center>
+		<font size='2' color='grey'>Alejandro Ortega Freire 1ºASIR
+		<br/>
+		Fundamentos de Hardware
+		</font>
+		<br/>
+		<img src='./files/logoale.png' width='100px' class='icon'/><br/>
+	</center>
+	</body>
+</html>
