@@ -1,0 +1,219 @@
+<!--
+  AUTORES: Alejandro Ortega Freire
+  ASIGNATURA: Fundamentos de Hardware
+  CURSO: 1º ASIR 
+  FECHA: 31/05/2014
+  ACTIVIDAD:  A5: Raspberry PI
+-->
+
+<html>
+	<head>
+		<title>A5: Raspberry PI</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	</head>
+	<body>
+		<div id='indice' style='display:table-row; padding: 10px;'>
+			  <div style='float: left; width=20%; padding:10px;'>
+				<img src='./files/logo.png'/>
+			  </div>
+			  <div style='float: left;padding:10px'>
+				  <ul>
+					<li><b>M&oacute;dulo:</b> <i>Fundamentos de Hardware</i></li>
+					<li><b>T&iacute;tulo del trabajo:</b> <i>A5: Raspberry PI</i></li>
+					<li><b>Componentes del grupo:</b> <i>Alejandro Ortega Freire</i></li>
+					<li><b>Curso Acad&eacute;mico:</b> <i>2013/2014</i></li>
+					<li><b>Fecha de entrega:</b> <i>31 de mayo de 2014</i></li>
+				  </ul>
+			  </div>
+		</div>
+		<div style='float: clear;background-color: #eeeeee; border:2px solid; border-radius:10px; padding: 10px;'>
+			<a href='#indice'>1.- Introducción Raspberry PI</a> | <a href='#2'>2- Instalar SO</a> | <a href='#3'>3.- Rapberry PI</a> | <a href='#3.1'>3.1- Montaje</a> | <a href='#3.2'>3.2- Primer arranque</a> | <a href='#4'>4.- Trabajando con Raspberry PI</a>
+		</div>
+	<h1>1.- Introducción - Raspberry PI</h1>
+	<br/>
+	<center>
+		<img src='./files/RPi_Logo.png' width='500px' class='icon'/><br/>
+	</center>
+	<ul>
+		<li>El profesor entregará el siguiente material al alumno:</li>
+		<ul type='circle'>
+			<li>Placa Raspberry PI</li>
+			<li>Carcasa</li>
+			<li>Fuente de alimentación</li>
+			<li>Memoria SD</li>
+			<li>Adaptador SD-USB</li>
+			<li>Cable HDMI</li>
+			<li>Teclado USB</li>
+			<li>Ratón USB</li>
+		</ul>
+	</ul>
+	<center>
+		<img src='./files/rasp/a.png' width='750px'/><br/>		
+		<p><i><b>Imagen 1:</b> Material entregado para realizar la práctica.</i></p>			
+	</center>	
+	<ul>
+		<li>El alumno en casa debe hacer lo siguiente:</li>
+		<ul type='circle'>
+			<li>Consultar la web de <a href='http://www.raspberrypi.org/' target='_blank'>Raspberry PI</a>.</li>
+			<li>Instalar el sistema operativo en la memoria SD.</li>
+			<li>Conectar Rb a la Tele HDMI, teclado y ratón USB.</li>
+			<li>Entrar al sistema y activar el modo gráfico.</li>
+			<li>Crear usuario profesor con clave/profesor</li>
+			<li>Poner clave profesor al usuario root</li>
+			<li>Poner clave profesor al usuario pi</li>
+			<li>Apuntar la MAC del interfaz de red en una etiqueta que se pegará a la carcasa de la Rb.</li>
+		</ul>
+	</ul>
+	<hr id='2' size='3px' noshade='noshade'/>
+	<a href='#indice'><img src='./files/flecha2.png' class='icon' width='20px'/></a> <a href='#indice'>Principio del punto 1</a> | <a href='#3'><img src='./files/flecha.png' class='icon' width='20px'/></a> <a href='#3'>Fin del punto 2</a> | <a href='#indice'><img src='./files/Icono_lupa.png' class='icon' width='20px'/></a> <a href='#indice'>Índice</a>	
+	<h1>2.- Instalar SO</h1>
+	<ul>
+		<li>Lo primero será instalar el Sistema Operativo en la memoria SD. Para ello nos dirigimos a la página oficia de Raspberry PI, a la sección de descargas (<a href='http://www.raspberrypi.org/downloads/' target='_blank'>http://www.raspberrypi.org/downloads/</a>).</li>
+		<br/>
+		<li>De entre las diferentes opciones de sistemas operativos se elige el <b>Raspbian Debian Wheezy</b> para ser instalado en la memoria SD.</li>
+	</ul>
+	<center>
+		<img src='./files/rasp/b.png' width='750px' border='1'/><br/>		
+		<p><i><b>Imagen 2:</b> Descargar Raspbian de la página oficial.</i></p>			
+	</center>	
+	<ul>
+		<li>Para grabar la distribución Raspbian en la memoria SD se empleará la aplicación <b>Win32 Disk Imager</b> descargada del siguiente enlace: <a href='http://sourceforge.net/projects/win32diskimager/' target='_blank'>http://sourceforge.net/projects/win32diskimager/</a></li>
+	</ul>
+	<center>
+		<img src='./files/rasp/c.png' width='750px' border='1'/><br/>		
+		<p><i><b>Imagen 3:</b> Descargar Win32 Disk Imager.</i></p>			
+	</center>	
+	<ul>
+		<li>A continuación, utilizando el adaptador SD-USB entregado, se conecta la tarjeta SD al ordenador.</li>
+		<br/>
+		<li>Se graba la imagen de Raspbian en la memoria SD utilizando el programa Win32.</li>
+	</ul>
+	<center>
+		<img src='./files/rasp/d.png' border='1'/><br/>		
+		<p><i><b>Imagen 4:</b> Grabar imagen SO en la memoria SD.</i></p>	
+		<img src='./files/rasp/005.png' border='1'/><br/>		
+		<p><i><b>Imagen 5:</b> Proceso de grabación completado con éxito.</i></p>			
+	</center>	
+	<ul>
+		<li>Una vez finalizada la grabación el contenido de la memoria SD será el mostrado en la siguiente imagen:</li>
+	</ul>
+	<center>
+		<img src='./files/rasp/006.png' width='600px' border='1'/><br/>		
+		<p><i><b>Imagen 6:</b> Contenido de la memoria SD.</i></p>			
+	</center>
+	<hr id='3' size='3px' noshade='noshade'/>
+	<a href='#2'><img src='./files/flecha2.png' class='icon' width='20px'/></a> <a href='#2'>Principio del punto 2</a> | <a href='#4'><img src='./files/flecha.png' class='icon' width='20px'/></a> <a href='#4'>Fin del punto 3</a> | <a href='#indice'><img src='./files/Icono_lupa.png' class='icon' width='20px'/></a> <a href='#indice'>Índice</a>	
+	<h1>3.- Raspberry PI</h1>
+	<h3 id='3.1'>3.1- Montaje</h3>
+	<ul>
+		<li>Lo primero que hay que hacer es montar la placa Raspberry en la carcasa.</li>
+	</ul>	
+	<center>
+		<img src='./files/rasp/e.jpg' width='600px'/><br/><br/>
+		<img src='./files/rasp/f.jpg' width='600px'/><br/>		
+		<p><i><b>Imágenes 7-8:</b> Montar la placa en la carcasa.</i></p>			
+	</center>
+	<ul>
+		<li>Seguidamente se conecta a la placa Raspberry la fuente de alimentadción, el teclado y el ratón por USB, la pantalla con el cable HDMI, y se introduce la memoria SD con el sistema operativo instalado.</li>
+	</ul>	
+	<center>
+		<img src='./files/rasp/007.jpg' width='400px'/><br/>		
+		<p><i><b>Imagen 9:</b> Conectar los componentes del ordenador.</i></p>			
+	</center>
+	<h3 id='3.2'>3.2- Primer arranque</h3>
+	<ul>
+		<li>Una vez se conecte la fuente a la electricidad, el ordenador arrancará mostrando las siguientes pantallas:</li>
+	</ul>	
+	<center>
+		<img src='./files/rasp/008.png' width='85%'/><br/>		
+		<p><i><b>Imágenes 10-11:</b> Cargando el sistema operativo.</i></p>			
+	</center>
+	<ul>
+		<li>Cuando acabe de cargar aparecerá el siguiente menú. Pulsando la tecla <b>ESC</b> accedemos a la consola, y ejecutando el comando <b>startx</b> se iniciará el entorno gráfico del sistema operativo Raspbian.</li>
+	</ul>	
+	<center>
+		<img src='./files/rasp/010.jpg' width='750px'/><br/>		
+		<p><i><b>Imagen 12:</b> Menú inicial.</i></p>		
+		<img src='./files/rasp/012.png' width='600px'/><br/>		
+		<p><i><b>Imagen 13:</b> Iniciar el entorno gráfico del SO.</i></p>
+		<img src='./files/rasp/013.jpg' width='750px'/><br/>		
+		<p><i><b>Imagen 14:</b> Primer arranque de Raspbian.</i></p>		
+	</center>
+	<hr id='4' size='3px' noshade='noshade'/>
+	<a href='#3'><img src='./files/flecha2.png' class='icon' width='20px'/></a> <a href='#3'>Principio del punto 3</a> | <a href='#5'><img src='./files/flecha.png' class='icon' width='20px'/></a> <a href='#5'>Fin del punto 4</a> | <a href='#indice'><img src='./files/Icono_lupa.png' class='icon' width='20px'/></a> <a href='#indice'>Índice</a>	
+	<h1>4.- Trabajando con Raspberry PI</h1>
+	<ul>
+		<li>Una vez arrancado el entorno gráfico accederemos a un terminal desde el cual se realizan las siguientes acciones:</li>
+		<br/>
+		<li>Crear usuario profesor con clave profesor. Para ello se emplean los siguientes comandos:</li>
+		<ul type='circle'>
+			<li><b>sudo su</b>: entrar como el usuario root</li>
+			<li><b>useradd -m profesor</b>: crea el usuario profesor (el párametro m, crea el "home" del usuario)</li>
+			<li><b>su profesor</b>: entrar como el usuario profesor como comprobación</li>
+		</ul>
+	</ul>	
+	<center>
+		<img src='./files/rasp/014.png' width='600px'/><br/>		
+		<p><i><b>Imagen 15:</b> Crear usuario profesor.</i></p>			
+	</center>
+	<ul>
+		<li>Comprobar que el usuario profesor está creado con el comando <b>cat /etc/passwd | grep profesor</b>.</li>
+	</ul>	
+	<center>
+		<img src='./files/rasp/014b.png' width='600px'/><br/>		
+		<p><i><b>Imagen 16:</b> Comprobar que el usuario profesor está creado.</i></p>			
+	</center>
+	<div style='float: clear;background-color: #D7FABC; border:2px dotted; border-radius:10px; padding: 10px;'>
+		<b>NOTA:</b> 
+		<ul type='square'>
+			<li>/etc/passwd es el archivo donde se guardan los usuarios del sistema. Cualquier usuario definido en el sistema aparece en él.</li>
+			<br/>
+			<li>Al ejecutar el comando <b>cat /etc/passwd | grep profesor</b> estamos pidiendo que se visualicen las líneas del fichero /etc/passwd donde aparezca profesor, comprobando por lo tanto que existe.</li>
+	</div>	
+	<ul>
+		<li>Poner clave profesor al usuario root. Para ello se emplean los siguientes comandos:</li>
+		<ul type='circle'>
+			<li><b>sudo su</b>: entrar como el usuario root</li>
+			<li><b>passwd root</b>: cambia la contraseña del usuario root</li>
+		</ul>
+	</ul>	
+	<center>
+		<img src='./files/rasp/015.png' width='600px'/><br/>		
+		<p><i><b>Imagen 17:</b> Poner clave profesor al usuario root.</i></p>			
+	</center>	
+	<ul>
+		<li>Poner clave profesor al usuario pi. Para ello se emplea el siguiente comando:</li>
+		<ul type='circle'>
+			<li><b>passwd pi</b>: cambia la contraseña del usuario pi</li>
+		</ul>
+	</ul>	
+	<center>
+		<img src='./files/rasp/016.png' width='600px'/><br/>		
+		<p><i><b>Imagen 18:</b> Poner clave profesor al usuario pi.</i></p>			
+	</center>	
+	<ul>
+		<li>Apuntar la MAC del interfaz de red. Para ello se emplea el siguiente comando:</li>
+		<ul type='circle'>
+			<li><b>sudo su</b>: entrar como el usuario root</li>
+			<li><b>ifconfig</b>: muestra la información de las interfaces existentes en la placa</li>
+		</ul>
+		<br/>
+		<li>La MAC de la placa Raspberry PI con la que se trabajó es <b>b8:27:eb:27:09:b5</b>
+	</ul>	
+	<center>
+		<img src='./files/rasp/017.png' width='600px'/><br/>		
+		<p><i><b>Imagen 19:</b> Apuntar la MAC del interfaz de red.</i></p>			
+	</center>	
+	<hr id='5' size='3px' noshade='noshade'/>
+	<a href='#4'><img src='./files/flecha2.png' class='icon' width='20px'/></a> <a href='#4'>Principio del punto 4</a> | <a href='#indice'><img src='./files/Icono_lupa.png' class='icon' width='20px'/></a> <a href='#indice'>Índice</a>	
+	<br/><br/>	
+	<center>
+		<font size='2' color='grey'>Alejandro Ortega Freire 1ºASIR
+		<br/>
+		Fundamentos de Hardware
+		</font>
+		<br/>
+		<img src='./files/logoale.png' width='100px' class='icon'/><br/>
+	</center>
+	</body>
+</html>
